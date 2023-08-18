@@ -1,0 +1,138 @@
+ButtonWidgetClass {
+ {
+  SizeLayoutWidgetClass "{5548EB41A8E48247}" {
+   Prefab "{5548EB41A8E48247}"
+   {
+    OverlayWidgetClass "{5548EB41A8E48245}" {
+     Prefab "{5548EB41A8E48245}"
+     {
+      HorizontalLayoutWidgetClass "{5578914E99EDB48D}" {
+       Prefab "{5578914E99EDB48D}"
+       {
+        SizeLayoutWidgetClass "{5910684106752759}" {
+         Prefab "{5910684106752759}"
+         "Is Enabled" 0
+         "Is Visible" 0
+        }
+        SizeLayoutWidgetClass "{5916CD850A925E62}" {
+         Prefab "{5916CD850A925E62}"
+         "Is Enabled" 0
+         "Is Visible" 0
+        }
+        SizeLayoutWidgetClass "{59165EA42A11233F}" {
+         Prefab "{59165EA42A11233F}"
+         "Is Enabled" 0
+         "Is Visible" 0
+        }
+        SizeLayoutWidgetClass "{59165EA401518727}" {
+         Prefab "{59165EA401518727}"
+         "Is Enabled" 0
+         "Is Visible" 0
+        }
+        SizeLayoutWidgetClass "{59165EA40969369A}" {
+         Prefab "{59165EA40969369A}"
+         "Is Visible" 0
+        }
+        ButtonWidgetClass "{5578914C89A1E534}" {
+         Prefab "{5578914C89A1E534}"
+         "Is Enabled" 0
+         "Is Visible" 0
+        }
+        ButtonWidgetClass "{5578914C8983C694}" {
+         Prefab "{5578914C8983C694}"
+         "Is Enabled" 0
+         "Is Visible" 0
+         {
+          SizeLayoutWidgetClass "{5548E6E7E6AEDDA7}" {
+           Prefab "{5548E6E7E6AEDDA7}"
+           "Is Enabled" 0
+           "Is Visible" 0
+           {
+            OverlayWidgetClass "{5548E6E7F213FBF1}" {
+             Prefab "{5548E6E7F213FBF1}"
+             {
+              ScaleWidgetClass "{55589476C896A09B}" {
+               Prefab "{55589476C896A09B}"
+               "Is Enabled" 0
+               "Is Visible" 0
+               {
+                ImageWidgetClass "{55589476CBD910D4}" {
+                 Prefab "{55589476CBD910D4}"
+                 "Is Enabled" 0
+                 "Is Visible" 0
+                }
+               }
+              }
+             }
+            }
+           }
+          }
+         }
+        }
+        ButtonWidgetClass "{5AA28B352C862CE7}" {
+         Prefab "{5AA28B352C862CE7}"
+         "Is Enabled" 0
+         "Is Visible" 0
+         {
+          SizeLayoutWidgetClass "{5AA28B35D82FB8FF}" {
+           Prefab "{5AA28B35D82FB8FF}"
+           "Is Enabled" 0
+           "Is Visible" 0
+           {
+            OverlayWidgetClass "{55367D8E531FD623}" {
+             Prefab "{55367D8E531FD623}"
+             {
+              HorizontalLayoutWidgetClass "{55367D8E4592BC6E}" {
+               Prefab "{55367D8E4592BC6E}"
+               {
+                ButtonWidgetClass "{5AA28B35D82FB8FB}" {
+                 Prefab "{5AA28B35D82FB8FB}"
+                 {
+                  HorizontalLayoutWidgetClass "{5AA28B35D82FB8C4}" {
+                   Prefab "{5AA28B35D82FB8C4}"
+                   {
+                    OverlayWidgetClass "{5AA28B35D82FB8C5}" {
+                     Prefab "{5AA28B35D82FB8C5}"
+                     {
+                      SizeLayoutWidgetClass "{5AA28B35D82FB8C3}" {
+                       Prefab "{5AA28B35D82FB8C3}"
+                       {
+                        OverlayWidgetClass "{5AA28B35D82FB8CC}" {
+                         Prefab "{5AA28B35D82FB8CC}"
+                         {
+                          ScaleWidgetClass "{5AA28B35D82FB8C8}" {
+                           Prefab "{5AA28B35D82FB8C8}"
+                           {
+                            ImageWidgetClass "{5AA28B35D82FB8C9}" {
+                             Prefab "{5AA28B35D82FB8C9}"
+                             "Is Enabled" 0
+                             "Is Visible" 0
+                            }
+                           }
+                          }
+                         }
+                        }
+                       }
+                      }
+                     }
+                    }
+                   }
+                  }
+                 }
+                }
+               }
+              }
+             }
+            }
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   }
+  }
+ }
+}

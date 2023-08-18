@@ -1,0 +1,118 @@
+GenericEntity {
+ coords 6702.914 148.536 6512.125
+ angleY 68.215
+}
+GenericEntity : "{01969A28078FCA69}Prefabs/Compositions/Misc/SubCompositions/BarrelClutter_02.et" {
+ coords 6682.949 150.698 6499.835
+}
+$grp StaticModelEntity : "{059125C8BBD5ECED}Prefabs/Compositions/Misc/SubCompositions/Tent_Medical_Cluttered_US_02.et" {
+ {
+  coords 6694.553 149.442 6517.008
+  angleY 21
+  {
+   GenericEntity {
+    ID "58B88DF3F8F3624C"
+    components {
+     SCR_ArsenalComponent "{589F01C9C8D4A475}" {
+      Enabled 0
+     }
+    }
+   }
+  }
+ }
+ {
+  coords 6682.366 150.394 6513.482
+  angleY -20.334
+  {
+   GenericEntity {
+    ID "58B88DF3F8F3624C"
+    components {
+     SCR_ArsenalComponent "{589F01C9C8D4A475}" {
+      Enabled 0
+     }
+    }
+   }
+  }
+ }
+}
+DecalEntity : "{4AD6EB80A8B1FA3A}Prefabs/Decals/Dirt/Decal_Dirt_Patch_03.et" {
+ coords 6693.842 149.77 6507.038
+ angleX -89.972
+ angleZ -76.163
+ scale 10
+}
+$grp GenericEntity : "{64C9C1D1C2C1B38D}Prefabs/Props/Infrastructure/Roadblocks/RoadBlock_01.et" {
+ RoadBlock6 {
+  coords 6702.914 148.536 6512.125
+  angleY 68.215
+ }
+ {
+  coords 6680.182 150.982 6500.352
+  angleY 62.348
+ }
+ {
+  coords 6703.484 148.736 6506.851
+  angleY 56.437
+ }
+ {
+  coords 6679.587 150.986 6502.573
+  angleY 86.2
+ }
+ {
+  coords 6679.376 150.825 6504.823
+  angleY 77.345
+ }
+ {
+  coords 6679.883 150.769 6506.869
+  angleY -43.754
+  angleZ 2.685
+ }
+ {
+  coords 6703.042 148.532 6509.964
+  angleY 108.491
+ }
+}
+GenericEntity : "{7783AE4B44D3CF29}Prefabs/Props/Wrecks/M923A1_wreck.et" {
+ coords 6695.222 149.396 6501.805
+ angleX 6.419
+ angleY -108.439
+}
+$grp SCR_LAGPrefabSpawnPoint : "{A94949C8B6A3893B}Prefabs/LootSpawning/DZ_loot_military.et" {
+ {
+  coords 6692.392 150.064 6516.103
+ }
+ {
+  coords 6694.943 150.065 6522.954
+ }
+ {
+  coords 6693.441 150.064 6518.226
+ }
+ {
+  coords 6694.509 150.07 6520.344
+ }
+ {
+  coords 6681.888 151.021 6511.653
+ }
+ {
+  coords 6680.798 151.029 6513.964
+ }
+ {
+  coords 6679.137 151.018 6518.296
+ }
+}
+DecalEntity : "{AF4AA779A4546D51}Prefabs/Decals/Dirt/Decal_Dirt_Patch_02.et" {
+ coords 6696.675 149.396 6507.477
+ angleX -89.972
+ angleZ -15.229
+ scale 5
+}
+DecalEntity : "{D0ADBF5A3B6783C0}Prefabs/Decals/Dirt/Decal_Dirt_Crossroad_01.et" {
+ coords 6684.512 150.454 6504.45
+ angleX -89.98
+ scale 4.8
+}
+GenericEntity : "{EE292A592614735C}Prefabs/Compositions/Misc/SubCompositions/CanvasCover_Cluttered_US_04.et" {
+ coords 6688.088 150.357 6498.896
+ angleY -17.557
+ angleZ 3.13
+}

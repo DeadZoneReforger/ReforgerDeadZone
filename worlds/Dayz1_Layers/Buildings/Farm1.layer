@@ -1,0 +1,104 @@
+SCR_DestructibleBuildingEntity : "{0C55DFF2B0385FFE}Prefabs/Structures/Agriculture/Hayloft/Hayloft_E_01_wood.et" {
+ coords 4372.583 0.918 8377.161
+ angleY -53.194
+}
+SCR_DestructibleBuildingEntity : "{1CBF9151BABF3290}Prefabs/Structures/Agriculture/Cowshed Large.et" {
+ coords 4423.172 79.079 8429.664
+ angleY 47.591
+}
+GenericEntity : "{24DE47095BD6BE7B}Prefabs/Props/Agriculture/Farm/HayBale_01_square_big.et" {
+ coords 4392.757 81.031 8384.563
+ angleX -3.062
+ angleY -43.937
+ scale 2
+}
+GenericEntity : "{2B07A2B8170DF481}Prefabs/Props/Agriculture/CultivatorWreck_01_Damaged.et" {
+ coords 4451.205 78.636 8440.879
+ angleY 0
+}
+$grp GenericEntity : "{520626A206926F47}Prefabs/Props/Agriculture/Farm/Haystack_01.et" {
+ {
+  coords 4399.327 82.042 8363.501
+  angleY 0
+ }
+ {
+  coords 4422.006 85.53 8347.695
+  angleY 0
+ }
+ {
+  coords 4393.059 82.146 8354.621
+  angleY 0
+ }
+ {
+  coords 4417.774 82.91 8368.081
+  angleY 0
+ }
+ {
+  coords 4403.445 85.048 8337.133
+  angleY 0
+ }
+ {
+  coords 4372.393 81.278 8340.126
+  angleY 0
+ }
+ {
+  coords 4350.771 78.714 8348.966
+  angleY 0
+ }
+ {
+  coords 4401.751 81.507 8377.782
+  angleY 0
+ }
+ {
+  coords 4420.454 79.871 8406.695
+  angleY 80.183
+ }
+ {
+  coords 4405.533 79.871 8398.594
+  angleY 63.919
+ }
+ {
+  coords 4410.396 79.871 8395.159
+  angleY 63.919
+ }
+ {
+  coords 4418.383 79.871 8400.719
+  angleY 63.919
+ }
+}
+GenericEntity : "{A98BA618430E9BAA}Prefabs/Props/Agriculture/PlowWreck_01.et" {
+ coords 4453.762 78.585 8443.443
+ angleY 52.583
+}
+GenericEntity : "{AE300E34EA8FF40C}Prefabs/Props/Wrecks/Ural4320_wreck_static.et" {
+ coords 4467.03 77.965 8457.777
+ angleX -5.468
+ angleY -0.045
+ angleZ 0.524
+}
+GenericEntity : "{C7BE6D1395342D32}Prefabs/Props/Agriculture/WaterTank_01_v1.et" {
+ coords 4455.364 78.53 8448.282
+ angleX -14.94
+ angleY -33.301
+}
+$grp GenericEntity : "{E537DCDB9B3F2278}Prefabs/Props/Agriculture/Farm/HayPile_01.et" {
+ {
+  coords 4438.9 79.265 8424.007
+  angleX -2.354
+  angleY 22.58
+  scale 3
+ }
+ {
+  coords 4432.397 79.455 8416.205
+  angleX -1.329
+  angleY 52.818
+  angleZ -2.265
+  scale 3
+ }
+ {
+  coords 4392.414 80.524 8384.153
+  angleX -3.062
+  angleY -43.937
+  scale 3
+ }
+}

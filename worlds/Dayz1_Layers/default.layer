@@ -1,0 +1,47 @@
+SCR_BaseGameMode Gamemode2 : "{E610646B582890B8}Prefabs/GameMode/Gamemode.et" {
+ components {
+  EPF_BasicRespawnSystemComponent "{5E18C84B48CFB4B2}" {
+   m_rDefaultPrefab "{7A9EE19AB67B298B}Prefabs/Characters/Factions/INDFOR/FIA/Character_FIA_base.et"
+  }
+  EPF_PersistenceManagerComponent "{5D6ED6C2AD953A40}" {
+   m_fAutosaveInterval 120
+  }
+  SCR_GameModeHealthSettings "{5DEAD859730834F6}" {
+   m_bPermitUnconsciousness 0
+  }
+  SCR_RadialMenuGameModeComponent "{5D652A9BFBB3618A}" {
+   m_Menu SCR_RadialMenu "{5C7E7549355B981C}" {
+    m_Inputs SCR_RadialMenuInputs "{5B26E2FE7B2FF1D4}" {
+     m_fGamepadSelectionTreshhold 0.5
+    }
+   }
+  }
+  SCR_TimeAndWeatherHandlerComponent "{5D66E9646AB51591}" {
+   m_iStartingHours 6
+   m_fDayTimeAcceleration 3.5
+   m_bRandomStartingWeather 1
+  }
+  ServerAdminTools_GamemodeComponent "{5E0F76C64790655F}" {
+  }
+ }
+ PlayerControllerPrefab "{CC42DCDAD458D66B}Prefabs/Characters/Core/PlayerControllerMP.et"
+ {
+  SCR_GarbageManager {
+   ID "5D7AB887782A3D21"
+   CharacterLifetime 400
+   ItemCollect 0
+   ItemLifetime 400
+  }
+  SCR_LoadoutManager : "{AA4E7419A1FF65B0}Prefabs/MP/Managers/Loadouts/LoadoutManager_Base.et" {
+  }
+ }
+}
+PREFIX_Restart {
+ components {
+  RplComponent "{5D8A57C8C26CD566}" {
+  }
+ }
+ m_fShutdownAfter 3
+}
+SCR_LAGPrefabsSpawnerManager : "{6903D8DB4B0957FF}Prefabs/LootSpawning/LootSpawner.et" {
+}

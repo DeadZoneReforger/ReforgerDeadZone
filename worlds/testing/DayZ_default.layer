@@ -1,0 +1,9 @@
+GenericEntity {
+ coords 4880.563 28.595 11879.544
+}
+SCR_ChimeraCharacter Campaign_US_Player_5D3CA0EB1F404045 : "{8D89B17BCFBFAE44}Prefabs/Characters/Campaign/Final/Campaign_US_Player.et" {
+ coords 4873.456 28.595 11876.999
+}
+Vehicle M151A2_M2HB1 : "{F6B23D17D5067C11}Prefabs/Vehicles/Wheeled/M151A2/M151A2_M2HB.et" {
+ coords 4878.863 28.595 11869.906
+}

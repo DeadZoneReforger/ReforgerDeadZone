@@ -1,0 +1,874 @@
+EL_GameModeRoleplay {
+ components {
+  EL_PersistenceManagerComponent "{59D28944F1C3532E}" {
+   m_bEnabled 0
+   m_fInterval 10
+  }
+  EL_RespawnHandlerComponent "{5A10698ABECAD262}" {
+  }
+  EL_RespawnSytemComponent "{5A10698A884816E6}" {
+   m_aDefaultCharacterPrefabs {
+    "{CE23D4366B47E9B9}Prefabs/Characters/Presets/White_Male_01.et" "{C465F15DDF56A6D8}Prefabs/Characters/Presets/Asian_Male_02.et" "{BFD6AFB8A1D8E2F9}Prefabs/Characters/Presets/Black_Male_02.et"
+   }
+   m_aDefaultCharacterItems {
+    EL_DefaultLoadoutItem "{5B04BEA632661AF2}" {
+     m_rPrefab "{9F546CCA2582D16F}Prefabs/Characters/Uniforms/Jacket_M88.et"
+     m_aStoredItems {
+      EL_DefaultLoadoutItem "{5B04BEA625F04EAC}" {
+       m_rPrefab "{C3F1FA1E2EC2B345}Prefabs/Items/Medicine/FieldDressing_USSR_01.et"
+      }
+      EL_DefaultLoadoutItem "{5CE6A04205E31581}" {
+       m_rPrefab "{77EAE5E07DC4678A}Prefabs/Weapons/Grenades/Smoke_RDG2.et"
+      }
+     }
+    }
+    EL_DefaultLoadoutItem "{5CE71B93BA15C9CE}" {
+     m_rPrefab "{9CAC68BA551417A4}Prefabs/Tools/Axe/Axe.et"
+     m_ePurpose PURPOSE_WEAPON_PROXY
+    }
+    EL_DefaultLoadoutItem "{5B04BEA657DB0F2D}" {
+     m_rPrefab "{DCF980831E880F6A}Prefabs/Characters/Uniforms/Pants_M88.et"
+     m_aStoredItems {
+      EL_DefaultLoadoutItem "{5D3C69DE7C6E4069}" {
+       m_rPrefab "{C0F7DD85A86B2900}Prefabs/Weapons/Handguns/PM/Handgun_PM.et"
+       m_aStoredItems {
+        EL_DefaultLoadoutItem "{5D3C69DEBEC8F1C7}" {
+         m_rPrefab "{8B853CDD11BA916E}Prefabs/Weapons/Magazines/Magazine_9x18_PM_8rnd_Ball.et"
+        }
+       }
+      }
+     }
+    }
+    EL_DefaultLoadoutItem "{5B04BEA6507A8381}" {
+     m_rPrefab "{C7923961D7235D70}Prefabs/Characters/Footwear/CombatBoots_Soviet_01.et"
+    }
+   }
+  }
+  SCR_DestructionManagerComponent "{59751432896EFC0B}" {
+  }
+  SCR_HintManagerComponent "{59E8CC4E575D1802}" {
+  }
+  SCR_NametagConfigComponent "{597514328498E41D}" {
+   Enabled 0
+   m_sConfigPath "{8547E1B142411624}Configs/NameTags/NametagRoleplay.conf"
+  }
+  SCR_NotificationSenderComponent "{5CE71B92E08D59EE}" {
+   m_iKillFeedType FULL
+   m_iReceiveKillFeedType ALL
+   m_aKillfeedTypeNames {
+    SCR_NotificationKillfeedTypeName "{5D3CA0EB003E3B94}" {
+     m_iKillfeedType FULL
+    }
+   }
+  }
+  SCR_RadialMenuComponent "{5C7B0A4E4002C0BA}" {
+   m_pRadialMenu SCR_RadialMenuItems "{5C7B02924D4A0C24}" {
+   }
+   m_RadialMenuVisuals SCR_RadialMenuVisualsItems "{5C7B02924D4A0C26}" {
+    m_LayoutPath "{C967377E3D96107D}UI/layouts/Common/RadialMenu/RadialMenuVisuals.layout"
+    m_eLayer HIGH
+    m_rElementLayoutPath "{95123068DC2C2ECF}UI/layouts/Common/RadialMenu/radialElementIcon.layout"
+    m_rBorderLinePath "{639717DA6610F1C1}UI/layouts/Common/RadialMenu/RadialMenuBorderLine.layout"
+    m_sPageIndicationLayout "{595FE46A06BE9DB3}UI/layouts/Common/RadialMenu/MenuPageIndication.layout"
+    m_sPageIconsSet "{2EFEA2AF1F38E7F0}UI/Textures/Icons/icons_wrapperUI-64.imageset"
+    m_sTxtAction "TxtAction"
+    m_sTxtItemName "TxtItemName"
+    m_sImageSelector "ImgSelector"
+    m_sSelectLast "SelectLast"
+    m_fSizeMenu 660
+    m_fSizeEntries 660
+    m_fRadiusEntries 250
+    m_fSelectorDistance 185
+   }
+   m_bUseCategories 0
+   m_sInput_Toggle "Inventory_WeaponSwitchingRadial"
+   m_bUsingLeftStick 0
+   m_bHoldToggleToOpen 1
+   m_iEntryPerformType OnClose
+   m_bEvenlyPlacedEntries 1
+   m_iSelectionBehavior FreeMove
+  }
+  ServerAdminTools_GamemodeComponent "{5CE72AB1E21EBB61}" {
+  }
+  RplComponent "{597514327E500A0C}" {
+   "Rpl State Override" Static
+   Streamable Disabled
+  }
+ }
+ PlayerControllerPrefab "{CC42DCDAD458D66B}Prefabs/Characters/Core/PlayerControllerRoleplayMP.et"
+ m_bAdvanceTimeRequiresPlayers 0
+ {
+  SCR_AIWorld : "{E0A05C76552E7F58}Prefabs/AI/SCR_AIWorld.et" {
+   coords 0 0 0
+  }
+  PerceptionManager PerceptionManager1 : "{028DAEAD63E056BE}Prefabs/World/Game/PerceptionManager.et" {
+   coords 0 0 0
+  }
+  TagManager TagManager : "{2FA9E172CAB1857A}Prefabs/MP/Managers/TagManager.et" {
+   coords 0 0 0
+  }
+  SCR_FactionManager FactionManager_Editor1 : "{4A188E44289B9A50}Prefabs/MP/Managers/Factions/FactionManager_Editor.et" {
+  }
+  RadioManagerEntity RadioManager : "{B8E09FAB91C4ECCD}Prefabs/Radio/RadioManager.et" {
+  }
+  ScriptedChatEntity ScriptedChatEntity : "{E67EAC45379783C0}Prefabs/MP/Modes/Roleplay/Chat_Roleplay.et" {
+   Channels {
+    LocalChatChannel "{5CC4AA25DBFF3B65}" {
+    }
+    AdminChatChannel "{5CC54D7550251DE7}" {
+     "Channel name" "Admin"
+    }
+   }
+  }
+  HitRegistrationManager HitRegManager1 : "{0EDA3D48791120DD}Prefabs/MP/HitRegManager.et" {
+  }
+  SCR_GarbageManager GarbageManager : "{9B883A7D8EBB282A}Prefabs/MP/Managers/GarbageManager.et" {
+   CharacterLifetime 240
+   VehicleLifetime 240
+   ItemLifetime 240
+   m_bOnlyDestroyed 1
+  }
+  SCR_MPDestructionManager MPDestructionManager : "{9BB369F2803C6F71}Prefabs/MP/MPDestructionManager.et" {
+  }
+ }
+}
+SCR_PrefabsSpawnerManager SCR_PrefabsSpawnerManager_1 {
+ coords -8.55 0 -5.833
+ m_aPrefabsSpawners {
+  SCR_PrefabsSpawner "{5CE4D7E604A7278D}" {
+   m_eType ItemCiv
+   m_iTotalPrefabs 80
+   m_aPrefabsCategories {
+    SCR_PrefabsCategory "{5CE4D7E61467F5BB}" {
+     m_iRatio 70
+     m_sName "Clothing"
+     m_aPrefabsCategories {
+      SCR_PrefabCategory "{5CE4D7E62F68649C}" {
+       m_iRatio 1
+       m_Prefab "{BBA08EC4EC40FA94}Prefabs/Characters/Uniforms/Jacket_M70.et"
+      }
+      SCR_PrefabCategory "{5CE4D7E631DDD865}" {
+       m_iRatio 1
+       m_Prefab "{9F546CCA2582D16F}Prefabs/Characters/Uniforms/Jacket_M88.et"
+      }
+      SCR_PrefabCategory "{5CE4D7E7DE22EFFC}" {
+       m_iRatio 1
+       m_Prefab "{D262D2102B9931C6}Prefabs/Characters/Uniforms/Jacket_M88_rolledup.et"
+      }
+      SCR_PrefabCategory "{5CE4D7ED05156704}" {
+       m_iRatio 1
+       m_Prefab "{C7861F11D5334C0E}Prefabs/Characters/Uniforms/Jacket_US_BDU.et"
+      }
+      SCR_PrefabCategory "{5CE4D7ED05E61B64}" {
+       m_iRatio 1
+       m_Prefab "{3CCA7A9BB4FD3197}Prefabs/Characters/Uniforms/Jacket_US_BDU_rolledup.et"
+      }
+      SCR_PrefabCategory "{5CE4D7ED04AD2A69}" {
+       m_iRatio 1
+       m_Prefab "{06BC3F18B47799AE}Prefabs/Characters/Uniforms/Pants_M70.et"
+      }
+      SCR_PrefabCategory "{5CE4D7ED0B8EE82D}" {
+       m_iRatio 1
+       m_Prefab "{DCF980831E880F6A}Prefabs/Characters/Uniforms/Pants_M88.et"
+      }
+      SCR_PrefabCategory "{5CE4D7ED0A63E565}" {
+       m_iRatio 1
+       m_Prefab "{604BB72BE8E023C2}Prefabs/Characters/Uniforms/Pants_US_BDU.et"
+      }
+      SCR_PrefabCategory "{5CE4D7ED094B17ED}" {
+       m_iRatio 1
+       m_Prefab "{C7923961D7235D70}Prefabs/Characters/Footwear/CombatBoots_Soviet_01.et"
+      }
+      SCR_PrefabCategory "{5CE4D7ED0823994E}" {
+       m_iRatio 1
+       m_Prefab "{DAAFD15478BDE1C3}Prefabs/Characters/Footwear/CombatBoots_US_01.et"
+      }
+      SCR_PrefabCategory "{5CE4D7C44B77A898}" {
+       m_iRatio 1
+       m_Prefab "{BE5A1F7A2EDE094E}Prefabs/Characters/Eyewear/Goggles_PASGT_01.et"
+      }
+      SCR_PrefabCategory "{5CE4D7C44AB12BEF}" {
+       m_iRatio 1
+       m_Prefab "{E12126CDE731EED5}Prefabs/Characters/HeadGear/Hat_Boonie_US_01/Hat_Boonie_US_01.et"
+      }
+      SCR_PrefabCategory "{5CE4D7C44979D811}" {
+       m_iRatio 1
+       m_Prefab "{BE19A15F1073E7BD}Prefabs/Characters/HeadGear/Hat_Knitted_01/Hat_Knitted_01_black.et"
+      }
+      SCR_PrefabCategory "{5CE4D7C448336964}" {
+       m_iRatio 1
+       m_Prefab "{6B2256EBB8E267DD}Prefabs/Characters/HeadGear/Hat_Knitted_01/Hat_Knitted_01_blue.et"
+      }
+      SCR_PrefabCategory "{5CE4D7C448F52014}" {
+       m_iRatio 1
+       m_Prefab "{B9687B8829272E14}Prefabs/Characters/HeadGear/Hat_Knitted_01/Hat_Knitted_01_brown.et"
+      }
+      SCR_PrefabCategory "{5CE4D7C44F8AB78F}" {
+       m_iRatio 1
+       m_Prefab "{D8D9EE7F3966589E}Prefabs/Characters/HeadGear/Hat_Knitted_01/Hat_Knitted_01_red.et"
+      }
+      SCR_PrefabCategory "{5CE4D7C44E67EF93}" {
+       m_iRatio 1
+       m_Prefab "{B02281435AED8274}Prefabs/Characters/HeadGear/Hat_M70_01/Hat_M70_01.et"
+      }
+      SCR_PrefabCategory "{5CE4D7C44D39B192}" {
+       m_iRatio 1
+       m_Prefab "{2B29B7E1C6BD1048}Prefabs/Characters/HeadGear/Hat_M88_01/Hat_M88_01_v1.et"
+      }
+      SCR_PrefabCategory "{5CE4D7C44C15CAEC}" {
+       m_iRatio 1
+       m_Prefab "{B54B78383E64268F}Prefabs/Characters/HeadGear/Hat_M88_01/Hat_M88_01_v2.et"
+      }
+      SCR_PrefabCategory "{5CE4D7C44CBAA2E1}" {
+       m_iRatio 1
+       m_Prefab "{793EEE2C133176F9}Prefabs/Characters/HeadGear/Hat_Panama_Soviet/Hat_Panama_Soviet_01_v1.et"
+      }
+      SCR_PrefabCategory "{5CE4D7C4534DBACD}" {
+       m_iRatio 1
+       m_Prefab "{6852E0D026AA8F79}Prefabs/Characters/HeadGear/Hat_Panama_Soviet/Hat_Panama_Soviet_01_v2.et"
+      }
+      SCR_PrefabCategory "{5CE4D7C4523F0C18}" {
+       m_iRatio 1
+       m_Prefab "{5C5C6EE05EE2FF1A}Prefabs/Items/Equipment/Backpacks/Backpack_ALICE_Medium_assembled.et"
+      }
+      SCR_PrefabCategory "{5CE4D7C452F55E53}" {
+       m_iRatio 1
+       m_Prefab "{41A9C55B61F375F0}Prefabs/Items/Equipment/Backpacks/Backpack_Kolobok.et"
+      }
+      SCR_PrefabCategory "{5CE4D7C4518C49E6}" {
+       m_iRatio 1
+       m_Prefab "{FDA7B6630DB87991}Prefabs/Items/Equipment/Backpacks/Backpack_M70_Swiss.et"
+      }
+      SCR_PrefabCategory "{5CE4D7C45E69BF92}" {
+       m_iRatio 1
+       m_Prefab "{4805E67E2AE30F8D}Prefabs/Items/Equipment/Backpacks/Backpack_Medical_M5.et"
+      }
+      SCR_PrefabCategory "{5CE4D7C45D8DC041}" {
+       m_iRatio 1
+       m_Prefab "{7AC107CA7AFC9B59}Prefabs/Items/Equipment/Backpacks/Backpack_Medical_Soviet.et"
+      }
+      SCR_PrefabCategory "{5CE4D7C45C592CB2}" {
+       m_iRatio 1
+       m_Prefab "{6A39B5843B3F36DA}Prefabs/Items/Equipment/Backpacks/Backpack_RPG_Assistant.et"
+      }
+      SCR_PrefabCategory "{5CE4D7C463271954}" {
+       m_iRatio 1
+       m_Prefab "{0D39750E5695B9D8}Prefabs/Items/Equipment/Backpacks/Backpack_RPG_Gunner.et"
+      }
+      SCR_PrefabCategory "{5CE4D7C4621D1C3A}" {
+       m_iRatio 1
+       m_Prefab "{3DE0155EC9767B98}Prefabs/Items/Equipment/Backpacks/Backpack_Veshmeshok.et"
+      }
+      SCR_PrefabCategory "{5CE4D7C462FE42F5}" {
+       m_iRatio 1
+       m_Prefab "{0CF54B9A85D8E0D4}Prefabs/Items/Equipment/Binoculars/Binoculars_M22.et"
+      }
+      SCR_PrefabCategory "{5CE521FBFEF6E1A8}" {
+       m_iRatio 1
+       m_Prefab "{7CEF68E2BC68CE71}Prefabs/Items/Equipment/Compass/Compass_Adrianov.et"
+      }
+      SCR_PrefabCategory "{5CE521FBFDA50833}" {
+       m_iRatio 1
+       m_Prefab "{61D4F80E49BF9B12}Prefabs/Items/Equipment/Compass/Compass_SY183.et"
+      }
+      SCR_PrefabCategory "{5CE521FBFC591128}" {
+       m_iRatio 1
+       m_Prefab "{3A421547BC29F679}Prefabs/Items/Equipment/Flashlights/Flashlight_MX991.et"
+      }
+      SCR_PrefabCategory "{5CE521FB031B2C56}" {
+       m_iRatio 1
+       m_Prefab "{575EA58E67448C2A}Prefabs/Items/Equipment/Flashlights/Flashlight_Soviet_01.et"
+      }
+      SCR_PrefabCategory "{5CE521FB03AEF90D}" {
+       m_iRatio 1
+       m_Prefab "{13772C903CB5E4F7}Prefabs/Items/Equipment/Maps/PaperMap_01_folded.et"
+      }
+      SCR_PrefabCategory "{5CE521FB0272FA88}" {
+       m_iRatio 1
+       m_Prefab "{73950FBA2D7DB5C5}Prefabs/Items/Equipment/Radios/Radio_ANPRC68.et"
+      }
+      SCR_PrefabCategory "{5CE521FB0139AF5C}" {
+       m_iRatio 1
+       m_Prefab "{9B6B61BB3FE3DFB0}Prefabs/Items/Equipment/Radios/Radio_ANPRC77.et"
+      }
+      SCR_PrefabCategory "{5CE521FB07DAF039}" {
+       m_iRatio 1
+       m_Prefab "{54C68E438DD34265}Prefabs/Items/Equipment/Radios/Radio_R107M.et"
+      }
+      SCR_PrefabCategory "{5CE521FB05D7196D}" {
+       m_iRatio 1
+       m_Prefab "{E1A5D4B878AA8980}Prefabs/Items/Equipment/Radios/Radio_R148.et"
+      }
+      SCR_PrefabCategory "{5CE521FB04FE8215}" {
+       m_iRatio 1
+       m_Prefab "{78ED4FEF62BBA728}Prefabs/Items/Equipment/Watches/Watch_SandY184A.et"
+      }
+      SCR_PrefabCategory "{5CE521FB0BE00325}" {
+       m_iRatio 1
+       m_Prefab "{6FD6C96121905202}Prefabs/Items/Equipment/Watches/Watch_Vostok.et"
+      }
+      SCR_PrefabCategory "{5CE521FB0AED5971}" {
+       m_iRatio 2
+       m_Prefab "{A81F501D3EF6F38E}Prefabs/Items/Medicine/FieldDressing_US_01.et"
+      }
+      SCR_PrefabCategory "{5CE521FB085D2AF8}" {
+       m_iRatio 2
+       m_Prefab "{C3F1FA1E2EC2B345}Prefabs/Items/Medicine/FieldDressing_USSR_01.et"
+      }
+      SCR_PrefabCategory "{5CE521FB0F89E3A6}" {
+       m_iRatio 2
+       m_Prefab "{CDCC313B2FB76FE7}Prefabs/Items/Medicine/Gauze_01.et"
+      }
+      SCR_PrefabCategory "{5CE6E040BD2BB541}" {
+       m_iRatio 1
+       m_Prefab "{C0F7DD85A86B2900}Prefabs/Weapons/Handguns/PM/Handgun_PM.et"
+      }
+      SCR_PrefabCategory "{5CE6E040BC1D7F2B}" {
+       m_iRatio 1
+       m_Prefab "{9B5AA2C731485ACA}Prefabs/Weapons/Magazines/Magazine_9x18_PM_8rnd_Base.et"
+      }
+      SCR_PrefabCategory "{5CE6E040CCDCA76E}" {
+       m_iRatio 1
+       m_Prefab "{1353C6EAD1DCFE43}Prefabs/Weapons/Handguns/M9/Handgun_M9.et"
+      }
+      SCR_PrefabCategory "{5CE6E040CEFF4565}" {
+       m_iRatio 1
+       m_Prefab "{DFFBF5F097FCF797}Prefabs/Weapons/Magazines/Magazine_9x19_M9_15rnd_Base.et"
+      }
+      SCR_PrefabCategory "{5D3A3B69CC944030}" {
+       m_iRatio 1
+       m_Prefab "{74FB185EA47F14A2}Prefabs/Weapons/Handguns/3RBN_Glock17_Gen5/3RBN_Glock17_Gen5_Base.et"
+      }
+      SCR_PrefabCategory "{5D3A3B69CD4C99EB}" {
+       m_iRatio 1
+       m_Prefab "{7C17A63021BC9650}Prefabs/Weapons/Magazines/Magazine_3RBN_9x19_Glock17_17rnd.et"
+      }
+     }
+    }
+   }
+  }
+  SCR_PrefabsSpawner "{5CE4D7F97CFE3B9F}" {
+   m_eType ItemMilitary
+   m_iTotalPrefabs 83
+   m_aPrefabsCategories {
+    SCR_PrefabsCategory "{5CE521F95E400AFE}" {
+     m_iRatio 60
+     m_sName "Military"
+     m_aPrefabsCategories {
+      SCR_PrefabCategory "{5CE521F967E5D672}" {
+       m_iRatio 1
+       m_Prefab "{B74A4FF0DD8BB116}Prefabs/Characters/HeadGear/Helmet_PASGT_01/Helmet_PASGT_01.et"
+      }
+      SCR_PrefabCategory "{5D3C95F439D6A698}" {
+       m_iRatio 1
+       m_Prefab "{C09E38965362EE26}Prefabs/Characters/Uniforms/BDUs_Pants_V1_CADPAT_Temperate.et"
+      }
+      SCR_PrefabCategory "{5D3C95F75C7553B2}" {
+       m_iRatio 1
+       m_Prefab "{6B5D736012FA4957}Prefabs/Characters/Footwear/Combat_Boot_Coyote_brown.et"
+      }
+      SCR_PrefabCategory "{5D3C95F75DC24E7F}" {
+       m_iRatio 1
+       m_Prefab "{DF59B719845CFD0A}Prefabs/Characters/Footwear/Swats_Black.et"
+      }
+      SCR_PrefabCategory "{5D3C95F75EE775F7}" {
+       m_iRatio 1
+       m_Prefab "{678CBECD265441C6}Prefabs/Characters/Footwear/crye_boots.et"
+      }
+      SCR_PrefabCategory "{5D3C95F43F63756E}" {
+       m_iRatio 1
+       m_Prefab "{9FDBD0F130898444}Prefabs/Characters/Uniforms/OTW_shirt_CADPAT_Temperate.et"
+      }
+      SCR_PrefabCategory "{5D3C95F57C92D9FE}" {
+       m_iRatio 1
+       m_Prefab "{6AA650C1CFE185C2}Prefabs/Characters/Uniforms/OTW_shirt_OCP.et"
+      }
+      SCR_PrefabCategory "{5D3C95F5369577BB}" {
+       m_iRatio 1
+       m_Prefab "{56A6E608966463AC}Prefabs/Characters/Uniforms/OTW_Pants_OCP.et"
+      }
+      SCR_PrefabCategory "{5D3C69DC6F891260}" {
+       m_iRatio 1
+       m_Prefab "{66B0618D59B4BB9B}Prefabs/Weapons/Attachments/Optics/Optic_3RBN_ElcanSpecterDR/3RW_Optic_SpecterDR_Base.et"
+      }
+      SCR_PrefabCategory "{5D3C69DC6A0B884C}" {
+       m_iRatio 1
+       m_Prefab "{EB1E7C7E2E65D446}Prefabs/Weapons/Attachments/Optics/Optic_3RBN_TA31_RMR/3RBN_TA31_RMR.et"
+      }
+      SCR_PrefabCategory "{5D3C69DC6AF119DF}" {
+       m_iRatio 1
+       m_Prefab "{F113ACD0BA8565E8}Prefabs/Weapons/Attachments/Optics/Optic_3RBN_XPS3Holo/Optic_3RBN_XPS3_Black.et"
+      }
+      SCR_PrefabCategory "{5CE521F966E4814D}" {
+       m_iRatio 1
+       m_Prefab "{FE5C49069C2499D9}Prefabs/Characters/HeadGear/Helmet_PASGT_01/Helmet_PASGT_01_cover.et"
+      }
+      SCR_PrefabCategory "{5CE521F8B3FD7A37}" {
+       m_iRatio 1
+       m_Prefab "{03C1F3DB6BB9796A}Prefabs/Characters/HeadGear/Helmet_PASGT_01/Helmet_PASGT_01_cover_w_scrim.et"
+      }
+      SCR_PrefabCategory "{5CE521F8E20D893C}" {
+       m_iRatio 1
+       m_Prefab "{A7E6D7ECD5F684D7}Prefabs/Characters/HeadGear/Helmet_SSh68_01/Helmet_SSh68_01.et"
+      }
+      SCR_PrefabCategory "{5CE521F8E2ED3EDB}" {
+       m_iRatio 1
+       m_Prefab "{66196D85AB93D2BE}Prefabs/Characters/HeadGear/Helmet_SSh68_01/Helmet_SSh68_01_camo.et"
+      }
+      SCR_PrefabCategory "{5CE521F8E1A4FF42}" {
+       m_iRatio 1
+       m_Prefab "{D4028ED16DEE99EE}Prefabs/Characters/HeadGear/Helmet_SSh68_01/Helmet_SSh68_01_camonet.et"
+      }
+      SCR_PrefabCategory "{5CE521F8E078D2D6}" {
+       m_iRatio 1
+       m_Prefab "{3D74845B9D0867B0}Prefabs/Characters/HeadGear/Helmet_SSh68_01/Helmet_SSh68_01_cover.et"
+      }
+      SCR_PrefabCategory "{5CE521F8E7D2372B}" {
+       m_iRatio 1
+       m_Prefab "{22963D69CA50EB9E}Prefabs/Characters/HeadGear/Helmet_SSh68_01/Helmet_SSh68_01_net.et"
+      }
+      SCR_PrefabCategory "{5CE521F8E51540DF}" {
+       m_iRatio 1
+       m_Prefab "{156DC7109CEE6F69}Prefabs/Characters/Vests/Vest_ALICE/Variants/Vest_ALICE_AR.et"
+      }
+      SCR_PrefabCategory "{5CE521F8E5A1D8D7}" {
+       m_iRatio 1
+       m_Prefab "{18B8B9316B590643}Prefabs/Characters/Vests/Vest_ALICE/Variants/Vest_ALICE_GL.et"
+      }
+      SCR_PrefabCategory "{5CE521F8E4D28043}" {
+       m_iRatio 1
+       m_Prefab "{477A190AF2A17B8A}Prefabs/Characters/Vests/Vest_ALICE/Variants/Vest_ALICE_MG.et"
+      }
+      SCR_PrefabCategory "{5CE521F8EB66FAE7}" {
+       m_iRatio 1
+       m_Prefab "{2835A0EA3B79E63E}Prefabs/Characters/Vests/Vest_ALICE/Variants/Vest_ALICE_rifleman.et"
+      }
+      SCR_PrefabCategory "{5CE521F8EA3C0C23}" {
+       m_iRatio 1
+       m_Prefab "{9CEA24A1A9CC2675}Prefabs/Characters/Vests/Vest_ALICE/Variants/Vest_ALICE_sniper.et"
+      }
+      SCR_PrefabCategory "{5CE521F8EAC0ED2F}" {
+       m_iRatio 1
+       m_Prefab "{9713FE6DDCC9510D}Prefabs/Characters/Vests/Vest_Lifchik/Vest_Lifchik.et"
+      }
+      SCR_PrefabCategory "{5CE521F8E968DE69}" {
+       m_iRatio 1
+       m_Prefab "{C8516078375CBE45}Prefabs/Characters/Vests/Vest_Lifchik/Vest_Lifchik_GL.et"
+      }
+      SCR_PrefabCategory "{5CE521F8E821E546}" {
+       m_iRatio 1
+       m_Prefab "{AB84E597273FAECA}Prefabs/Characters/Vests/Vest_Lifchik/Vest_Lifchik_GrenadeBelt.et"
+      }
+      SCR_PrefabCategory "{5CE521F8E8FC66F8}" {
+       m_iRatio 1
+       m_Prefab "{9945D5435F12C370}Prefabs/Characters/Vests/Vest_M79GrenadeCarrier/Vest_M79GrenadeCarrier.et"
+      }
+      SCR_PrefabCategory "{5CE521F8EFBD17E5}" {
+       m_iRatio 1
+       m_Prefab "{4B57C11AA5161760}Prefabs/Characters/Vests/Vest_PASGT/Vest_PASGT.et"
+      }
+      SCR_PrefabCategory "{5CE521F8EE586CB9}" {
+       m_iRatio 1
+       m_Prefab "{4711A4CAF64C4CEE}Prefabs/Characters/Vests/Vest_SovietHarness/Variants/Vest_SovietHarness_AR.et"
+      }
+      SCR_PrefabCategory "{5CE521F8ED1FD91F}" {
+       m_iRatio 1
+       m_Prefab "{6726C63F4F56F12F}Prefabs/Characters/Vests/Vest_SovietHarness/Variants/Vest_SovietHarness_medic.et"
+      }
+      SCR_PrefabCategory "{5CE521F8EDBC5716}" {
+       m_iRatio 1
+       m_Prefab "{15067AD09803580D}Prefabs/Characters/Vests/Vest_SovietHarness/Variants/Vest_SovietHarness_MG.et"
+      }
+      SCR_PrefabCategory "{5CE521F8EC59121E}" {
+       m_iRatio 1
+       m_Prefab "{08155E701A949620}Prefabs/Characters/Vests/Vest_SovietHarness/Variants/Vest_SovietHarness_rifleman.et"
+      }
+      SCR_PrefabCategory "{5CE521F8F31766AA}" {
+       m_iRatio 1
+       m_Prefab "{12C8933903D18885}Prefabs/Characters/Vests/Vest_SovietHarness/Variants/Vest_SovietHarness_sharpshooter.et"
+      }
+      SCR_PrefabCategory "{5CE521F8F3ABAAEE}" {
+       m_iRatio 1
+       m_Prefab "{ED5574EA7F63B457}Prefabs/Characters/Vests/Vest_Type56/Vest_Type56.et"
+      }
+      SCR_PrefabCategory "{5CE521F8F26459B0}" {
+       m_iRatio 1
+       m_Prefab "{5375FA7CB1F68573}Prefabs/Weapons/Ammo/Ammo_Grenade_HE_M406.et"
+      }
+      SCR_PrefabCategory "{5CE521F8F10946C1}" {
+       m_iRatio 1
+       m_Prefab "{262F0D09C4130826}Prefabs/Weapons/Ammo/Ammo_Grenade_HE_VOG25.et"
+      }
+      SCR_PrefabCategory "{5CE521F8F1AC7FF4}" {
+       m_iRatio 1
+       m_Prefab "{32E12D322E107F1C}Prefabs/Weapons/Ammo/Ammo_Rocket_PG7VM.et"
+      }
+      SCR_PrefabCategory "{5CE521F8F07494A0}" {
+       m_iRatio 1
+       m_Prefab "{C7534F7A79EA3331}Prefabs/Weapons/Attachments/Bayonets/Bayonet_6Kh4.et"
+      }
+      SCR_PrefabCategory "{5CE521F8F0E8F8D2}" {
+       m_iRatio 1
+       m_Prefab "{A4AF9C38A4179880}Prefabs/Weapons/Attachments/Bayonets/Bayonet_M9.et"
+      }
+      SCR_PrefabCategory "{5CE521F8F7A77EFF}" {
+       m_iRatio 1
+       m_Prefab "{BD496EE1B40DC510}Prefabs/Weapons/Attachments/Optics/Optic_4x20/Optic_4x20.et"
+      }
+      SCR_PrefabCategory "{5CE521F8F648EDC4}" {
+       m_iRatio 1
+       m_Prefab "{D2018EDB1BBF4C88}Prefabs/Weapons/Attachments/Optics/Optic_ARTII.et"
+      }
+      SCR_PrefabCategory "{5CE521F8F6E12493}" {
+       m_iRatio 1
+       m_Prefab "{C850A33226B8F9C1}Prefabs/Weapons/Attachments/Optics/Optic_PSO1.et"
+      }
+      SCR_PrefabCategory "{5CE521F8F5B088F3}" {
+       m_iRatio 1
+       m_Prefab "{1ABABE3551512B0A}Prefabs/Weapons/Attachments/Underbarrel/UGL_GP25.et"
+      }
+      SCR_PrefabCategory "{5CE521F8F81155F8}" {
+       m_iRatio 1
+       m_Prefab "{43FDAF3FA0FF2299}Prefabs/Weapons/Attachments/Underbarrel/UGL_M203.et"
+      }
+      SCR_PrefabCategory "{5CE521F8F8F13B89}" {
+       m_iRatio 1
+       m_Prefab "{E8F00BF730225B00}Prefabs/Weapons/Grenades/Grenade_M67.et"
+      }
+      SCR_PrefabCategory "{5CE521F8FF9E2ACB}" {
+       m_iRatio 1
+       m_Prefab "{645C73791ECA1698}Prefabs/Weapons/Grenades/Grenade_RGD5.et"
+      }
+      SCR_PrefabCategory "{5CE521F806563C52}" {
+       m_iRatio 1
+       m_Prefab "{9DB69176CEF0EE97}Prefabs/Weapons/Grenades/Smoke_ANM8HC.et"
+      }
+      SCR_PrefabCategory "{5CE521F806E1A95A}" {
+       m_iRatio 1
+       m_Prefab "{77EAE5E07DC4678A}Prefabs/Weapons/Grenades/Smoke_RDG2.et"
+      }
+      SCR_PrefabCategory "{5CE521F805B59400}" {
+       m_iRatio 1
+       m_Prefab "{D41D22DD1B8E921E}Prefabs/Weapons/Grenades/M18/Smoke_M18_Green.et"
+      }
+      SCR_PrefabCategory "{5CE521F8045AA8FF}" {
+       m_iRatio 1
+       m_Prefab "{3343A055A83CB30D}Prefabs/Weapons/Grenades/M18/Smoke_M18_Red.et"
+      }
+      SCR_PrefabCategory "{5CE521F804EBA3CD}" {
+       m_iRatio 1
+       m_Prefab "{14C1A0F061D9DDEE}Prefabs/Weapons/Grenades/M18/Smoke_M18_Violet.et"
+      }
+      SCR_PrefabCategory "{5CE521F80BA187AE}" {
+       m_iRatio 1
+       m_Prefab "{9BBDEE253A16CC66}Prefabs/Weapons/Grenades/M18/Smoke_M18_Yellow.et"
+      }
+      SCR_PrefabCategory "{5CE521F80A6432C9}" {
+       m_iRatio 1
+       m_Prefab "{1353C6EAD1DCFE43}Prefabs/Weapons/Handguns/M9/Handgun_M9.et"
+      }
+      SCR_PrefabCategory "{5CE521F8090B51FA}" {
+       m_iRatio 1
+       m_Prefab "{C0F7DD85A86B2900}Prefabs/Weapons/Handguns/PM/Handgun_PM.et"
+      }
+      SCR_PrefabCategory "{5CE521F809DE6EB6}" {
+       m_iRatio 1
+       m_Prefab "{9C5C20FB0E01E64F}Prefabs/Weapons/Launchers/M72/Launcher_M72A3.et"
+      }
+      SCR_PrefabCategory "{5CE521F8086494FF}" {
+       m_iRatio 1
+       m_Prefab "{7A82FE978603F137}Prefabs/Weapons/Launchers/RPG7/Launcher_RPG7.et"
+      }
+      SCR_PrefabCategory "{5CE521F80F3DEFF2}" {
+       m_iRatio 1
+       m_Prefab "{D2B48DEBEF38D7D7}Prefabs/Weapons/MachineGuns/M249/MG_M249.et"
+      }
+      SCR_PrefabCategory "{5CE521F80FC09504}" {
+       m_iRatio 1
+       m_Prefab "{D182DCDD72BF7E34}Prefabs/Weapons/MachineGuns/M60/MG_M60.et"
+      }
+      SCR_PrefabCategory "{5CE521F80EBF0117}" {
+       m_iRatio 1
+       m_Prefab "{A89BC9D55FFB4CD8}Prefabs/Weapons/MachineGuns/PKM/MG_PKM.et"
+      }
+      SCR_PrefabCategory "{5CE521F80D454FEF}" {
+       m_iRatio 1
+       m_Prefab "{A7AF84C6C58BA3E8}Prefabs/Weapons/MachineGuns/RPK74/MG_RPK74.et"
+      }
+      SCR_PrefabCategory "{5CE521F80C1027A5}" {
+       m_iRatio 1
+       m_Prefab "{0261DDFDDD21D614}Prefabs/Weapons/Magazines/Box_145x114_KPVT_50rnd_Base.et"
+      }
+      SCR_PrefabCategory "{5CE521F80CD01C1D}" {
+       m_iRatio 1
+       m_Prefab "{8E9682666CB56092}Prefabs/Weapons/Magazines/Box_556x45_M249_200rnd_base.et"
+      }
+      SCR_PrefabCategory "{5CE521F817F79487}" {
+       m_iRatio 1
+       m_Prefab "{4EEDDB27C023B8B9}Prefabs/Weapons/Magazines/Box_556x45_M249_200rnd_Tracer.et"
+      }
+      SCR_PrefabCategory "{5CE521F816B6C681}" {
+       m_iRatio 1
+       m_Prefab "{995CF44535296AE3}Prefabs/Weapons/Magazines/Box_762x51_M60_100rnd_Base.et"
+      }
+      SCR_PrefabCategory "{5CE521F815657325}" {
+       m_iRatio 1
+       m_Prefab "{AD8AB93729348C3E}Prefabs/Weapons/Magazines/Box_762x51_M60_100rnd_Tracer.et"
+      }
+      SCR_PrefabCategory "{5CE521F8142C093D}" {
+       m_iRatio 1
+       m_Prefab "{E045E14D186D580F}Prefabs/Weapons/Magazines/Box_762x54_PK_100rnd_Base.et"
+      }
+      SCR_PrefabCategory "{5CE521F814F11710}" {
+       m_iRatio 1
+       m_Prefab "{BEEA49E27174B224}Prefabs/Weapons/Magazines/Box_762x54_PK_100rnd_Tracer.et"
+      }
+      SCR_PrefabCategory "{5CE521F81BBE1DC7}" {
+       m_iRatio 1
+       m_Prefab "{D99AF37E07F32ECB}Prefabs/Weapons/Magazines/Box_762x54_PK_250rnd_Base.et"
+      }
+      SCR_PrefabCategory "{5CE521F81A410350}" {
+       m_iRatio 1
+       m_Prefab "{B386EEE8AED8E386}Prefabs/Weapons/Magazines/Box_762x54_PK_250rnd_Tracer.et"
+      }
+      SCR_PrefabCategory "{5CE521F8191478D4}" {
+       m_iRatio 1
+       m_Prefab "{63C1E699345B24F9}Prefabs/Weapons/Magazines/Magazine_545x39_AK_30rnd_Base.et"
+      }
+      SCR_PrefabCategory "{5CE521F819B4A256}" {
+       m_iRatio 1
+       m_Prefab "{E5912E45754CD421}Prefabs/Weapons/Magazines/Magazine_545x39_AK_30rnd_Tracer.et"
+      }
+      SCR_PrefabCategory "{5CE521F8185C3FB6}" {
+       m_iRatio 1
+       m_Prefab "{9569026177545A20}Prefabs/Weapons/Magazines/Magazine_545x39_RPK_45rnd_Base.et"
+      }
+      SCR_PrefabCategory "{5CE521F818E0FE62}" {
+       m_iRatio 1
+       m_Prefab "{5897D01F41DB5D2D}Prefabs/Weapons/Magazines/Magazine_545x39_RPK_45rnd_Tracer.et"
+      }
+      SCR_PrefabCategory "{5CE521F81F8AF3D3}" {
+       m_iRatio 1
+       m_Prefab "{11B9CC1FB4AEE740}Prefabs/Weapons/Magazines/Magazine_556x45_STANAG_30rnd_Base.et"
+      }
+      SCR_PrefabCategory "{5CE521F81E50B364}" {
+       m_iRatio 1
+       m_Prefab "{A9A385FE1F7BF4BD}Prefabs/Weapons/Magazines/Magazine_556x45_STANAG_30rnd_Tracer.et"
+      }
+      SCR_PrefabCategory "{5CE521F81D0D5B71}" {
+       m_iRatio 1
+       m_Prefab "{6D18CC33708EE712}Prefabs/Weapons/Magazines/Magazine_762x51_M14_20rnd_Base.et"
+      }
+      SCR_PrefabCategory "{5CE521F81DD0587B}" {
+       m_iRatio 1
+       m_Prefab "{761A03A9C5BA8D68}Prefabs/Weapons/Magazines/Magazine_762x54_SVD_10rnd_Base.et"
+      }
+      SCR_PrefabCategory "{5CE521F81C80D470}" {
+       m_iRatio 1
+       m_Prefab "{9B5AA2C731485ACA}Prefabs/Weapons/Magazines/Magazine_9x18_PM_8rnd_Base.et"
+      }
+      SCR_PrefabCategory "{5CE521F823496F2B}" {
+       m_iRatio 1
+       m_Prefab "{DFFBF5F097FCF797}Prefabs/Weapons/Magazines/Magazine_9x19_M9_15rnd_Base.et"
+      }
+      SCR_PrefabCategory "{5CE521F822111E89}" {
+       m_iRatio 1
+       m_Prefab "{FA5C25BF66A53DCF}Prefabs/Weapons/Rifles/AK74/Rifle_AK74.et"
+      }
+      SCR_PrefabCategory "{5CE521F822D22C96}" {
+       m_iRatio 1
+       m_Prefab "{B31929F65F0D0279}Prefabs/Weapons/Rifles/M14/Rifle_M21.et"
+      }
+      SCR_PrefabCategory "{5CE521F82182476B}" {
+       m_iRatio 1
+       m_Prefab "{81EB948E6414BD6F}Prefabs/Weapons/Rifles/M14/Rifle_M21_ARTII.et"
+      }
+      SCR_PrefabCategory "{5CE521F82020C30B}" {
+       m_iRatio 1
+       m_Prefab "{3E413771E1834D2F}Prefabs/Weapons/Rifles/M16/Rifle_M16A2.et"
+      }
+      SCR_PrefabCategory "{5CE521F820F3EA5D}" {
+       m_iRatio 1
+       m_Prefab "{B1482FB64E3D2D45}Prefabs/Weapons/Rifles/M16/Rifle_M16A2_4x20.et"
+      }
+      SCR_PrefabCategory "{5CE521F8279BEB7D}" {
+       m_iRatio 1
+       m_Prefab "{5A987A8A13763769}Prefabs/Weapons/Rifles/M16/Rifle_M16A2_M203.et"
+      }
+      SCR_PrefabCategory "{5CE521F8264F35DA}" {
+       m_iRatio 1
+       m_Prefab "{3EB02CDAD5F23C82}Prefabs/Weapons/Rifles/SVD/Rifle_SVD.et"
+      }
+      SCR_PrefabCategory "{5CE521F826E8D1AF}" {
+       m_iRatio 1
+       m_Prefab "{6415B7923DE28C1B}Prefabs/Weapons/Rifles/SVD/Rifle_SVD_PSO.et"
+      }
+      SCR_PrefabCategory "{5CE521F825DAE79F}" {
+       m_iRatio 1
+       m_Prefab "{9C948630078D154D}Prefabs/Weapons/Rifles/VZ58/Rifle_VZ58P.et"
+      }
+      SCR_PrefabCategory "{5CE521F82494027F}" {
+       m_iRatio 1
+       m_Prefab "{443CEFF17E040B11}Prefabs/Weapons/Rifles/VZ58/Rifle_VZ58V.et"
+      }
+      SCR_PrefabCategory "{5D3A3B6B1180A5C8}" {
+       m_iRatio 1
+       m_Prefab "{6A81D8F28F757DCA}Prefabs/Weapons/Rifles/M14/Rifle_BaconBarrettM82_B.et"
+      }
+      SCR_PrefabCategory "{5D3A3B6B0AE9521B}" {
+       m_iRatio 1
+       m_Prefab "{A541091D99372EFB}Prefabs/Weapons/Magazines/BaconM82_Magazine_M2.et"
+      }
+      SCR_PrefabCategory "{5D3A3B6B35E33D1E}" {
+       m_iRatio 1
+       m_Prefab "{A96C759A6CD34C09}Prefabs/Weapons/Rifles/3RBN_HK416_Geissele/3RBN_HK416_Base.et"
+      }
+      SCR_PrefabCategory "{5D3A3B6B302799CE}" {
+       m_iRatio 1
+       m_Prefab "{C03A598A815F8625}Prefabs/Weapons/Magazines/Magazine_3RBN_556x45_PMAG_30rnd_Ball_Black.et"
+      }
+      SCR_PrefabCategory "{5D3A3B6AA7629F2A}" {
+       m_iRatio 1
+       m_Prefab "{6B3665E8CC4C54B9}Prefabs/Weapons/MachineGuns/3RBN_MK48/MG_MK48_Base.et"
+      }
+      SCR_PrefabCategory "{5D3A3B6AA04B47C9}" {
+       m_iRatio 1
+       m_Prefab "{33B2F23061F91FA9}Prefabs/Weapons/Rifles/3RBN_M110K1/Rifle_3RBN_M110K1_base.et"
+      }
+      SCR_PrefabCategory "{5D3A3B6AA120814D}" {
+       m_iRatio 1
+       m_Prefab "{40718DA86EAD2634}Prefabs/Weapons/Rifles/3RBN_MK17/Rifle_3RBN_MK17_base.et"
+      }
+      SCR_PrefabCategory "{5D3A3B6AA2140C4C}" {
+       m_iRatio 1
+       m_Prefab "{B65A392671027B27}Prefabs/Weapons/Rifles/3RBN_M4A1_BlockII_MK18/Rifle_3RBN_MK18_AFG2.et"
+      }
+      SCR_PrefabCategory "{5D3A3B69716A72E4}" {
+       m_iRatio 1
+       m_Prefab "{C020BA0B0FA0B3AB}Prefabs/Weapons/Magazines/Box_762x51_MK48_100rnd_AP.et"
+      }
+      SCR_PrefabCategory "{5D3A3B6972238EF9}" {
+       m_iRatio 1
+       m_Prefab "{C8131C67B20A07E1}Prefabs/Weapons/Magazines/Magazine_3RBN_762x51_MK17_20rnd_Base.et"
+      }
+      SCR_PrefabCategory "{5D3A3B69730F7CA0}" {
+       m_iRatio 1
+       m_Prefab "{196781CDF1800EE9}Prefabs/Weapons/Magazines/Magazine_3RBN_762x51_M110_20rnd_Base.et"
+      }
+     }
+    }
+   }
+  }
+  SCR_PrefabsSpawner "{5CE6A046B0A9D6B4}" {
+   m_eType ZombieCiv
+   m_iTotalPrefabs 0
+   m_aPrefabsCategories {
+    SCR_PrefabCategory "{5CE6A046BB8277B5}" {
+     m_iRatio 50
+     m_Prefab "{F84E9F4DCFA8B006}Prefabs/Characters/Factions/OPFOR/ZOMBIE/Character_ZOMBIE_Unarmed.et"
+    }
+   }
+  }
+  SCR_PrefabsSpawner "{5CE6A045B99A5E7C}" {
+   m_eType ZombieMilitary
+   m_iTotalPrefabs 0
+   m_aPrefabsCategories {
+    SCR_PrefabCategory "{5CE6A0456683BAC2}" {
+     m_iRatio 50
+     m_Prefab "{FC6CB2616B24294A}Prefabs/Characters/Factions/OPFOR/ZOMBIE/Character_ZOMBIE_Soldier.et"
+    }
+   }
+  }
+  SCR_PrefabsSpawner "{5CE6AB5D2CE49CCD}" {
+   m_eType CivilVehicles
+   m_iTotalPrefabs 0
+   m_aPrefabsCategories {
+    SCR_PrefabsCategory "{5CE6AB5D3085656C}" {
+     m_iRatio 10
+     m_sName "Civ Vehicles"
+     m_aPrefabsCategories {
+      SCR_PrefabCategory "{5CE6AB5D35F49B30}" {
+       m_iRatio 3
+       m_Prefab "{F649585ABB3706C4}Prefabs/Vehicles/Wheeled/M151A2/M151A2.et"
+      }
+      SCR_PrefabCategory "{5CE6AB5D38860980}" {
+       m_iRatio 3
+       m_Prefab "{47D94E1193A88497}Prefabs/Vehicles/Wheeled/M151A2/M151A2_transport.et"
+      }
+      SCR_PrefabCategory "{5CE6AB5D3F715DC8}" {
+       m_iRatio 2
+       m_Prefab "{81FDAD5EB644CC3D}Prefabs/Vehicles/Wheeled/M923A1/M923A1_transport_covered.et"
+      }
+      SCR_PrefabCategory "{5CE6AB5D3E73D0BD}" {
+       m_iRatio 2
+       m_Prefab "{48A6D4372444B85A}Prefabs/Vehicles/Wheeled/M923A1/M923A1_transport_covered_closed.et"
+      }
+      SCR_PrefabCategory "{5CE6AB5D3D4904D6}" {
+       m_iRatio 3
+       m_Prefab "{259EE7B78C51B624}Prefabs/Vehicles/Wheeled/UAZ469/UAZ469.et"
+      }
+      SCR_PrefabCategory "{5CE6AB5D3CA58931}" {
+       m_iRatio 2
+       m_Prefab "{D9B91FAB817A6033}Prefabs/Vehicles/Wheeled/Ural4320/Ural4320_transport_covered.et"
+      }
+      SCR_PrefabCategory "{5CE6AB5D43A7DCC7}" {
+       m_iRatio 1
+       m_Prefab "{4C81D7ED8F8C0D87}Prefabs/Vehicles/Wheeled/Ural4320/Ural4320_tanker.et"
+      }
+      SCR_PrefabCategory "{5CE6AB5D42CBDE3B}" {
+       m_iRatio 1
+       m_Prefab "{2BE1F8B9299B67C1}Prefabs/Vehicles/Wheeled/M923A1/M923A1_tanker.et"
+      }
+     }
+    }
+   }
+  }
+  SCR_PrefabsSpawner "{5CE6AB5CA10AD89F}" {
+   m_eType MilitaryVehicles
+   m_iTotalPrefabs 0
+   m_aPrefabsCategories {
+    SCR_PrefabsCategory "{5CE6AB5CAA5D99EF}" {
+     m_iRatio 10
+     m_sName "Mil Vehicles"
+     m_aPrefabsCategories {
+      SCR_PrefabCategory "{5CE6AB5CB6D4D715}" {
+       m_iRatio 10
+       m_Prefab "{4A71F755A4513227}Prefabs/Vehicles/Wheeled/M998/M1025.et"
+      }
+      SCR_PrefabCategory "{5CE6AB5CB438A8BD}" {
+       m_iRatio 30
+       m_Prefab "{5674FAEB9AB7BDD0}Prefabs/Vehicles/Wheeled/M998/M998.et"
+      }
+      SCR_PrefabCategory "{5CE6AB5CBB41BB04}" {
+       m_iRatio 5
+       m_Prefab "{DD774A8FD0989A78}Prefabs/Vehicles/Wheeled/M998/M1025_armed_M2HB_MERDC.et"
+      }
+      SCR_PrefabCategory "{5CE6AB5CCD602AE9}" {
+       m_iRatio 1
+       m_Prefab "{C012BB3488BEA0C2}Prefabs/Vehicles/Wheeled/BTR70/BTR70.et"
+      }
+     }
+    }
+   }
+  }
+  SCR_PrefabsSpawner "{5CE6EDD8A2874D73}" {
+   m_eType MilitaryHeliVehicles
+   m_aPrefabsCategories {
+    SCR_PrefabsCategory "{5D3D00A6A0003584}" {
+     m_iRatio 2
+     m_sName "Mil Heli"
+     m_aPrefabsCategories {
+      SCR_PrefabCategory "{5D3D00A75C010F13}" {
+       m_iRatio 1
+       m_Prefab "{CE2BCACA842B6D78}Prefabs/Vehicles/Helicopters/R3D_MD500/R3D_MD500_Black_Benches.et"
+      }
+      SCR_PrefabCategory "{5D3D00A75D687BE3}" {
+       m_iRatio 1
+       m_Prefab "{1D7AFAB389AC9C64}Prefabs/Vehicles/Helicopters/R3D_MD500/R3D_MD500_Digital_Benches.et"
+      }
+     }
+    }
+   }
+  }
+ }
+}
