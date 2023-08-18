@@ -1,0 +1,8 @@
+Projectile : "{D40A105437369C1D}Prefabs/Weapons/Core/Ammo_GrenadeLauncher_Base.et" {
+ ID "DA5C6308000CDEF2"
+ components {
+  CollisionTriggerComponent "{9024A6C4994B6581}" {
+   SafetyDistance 3
+  }
+ }
+}

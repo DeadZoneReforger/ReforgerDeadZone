@@ -1,0 +1,16 @@
+GenericEntity : "{EB8683B514FBE62D}Prefabs/World/Locations/Common/Aquatic/LocationAquaticSeaMinor.et" {
+ ID "5278CCE99D8927EE"
+ components {
+  SCR_EditableCommentComponent "{529AB059519FE609}" {
+   m_UIInfo SCR_EditableCommentUIInfo "{5298E609432D192D}" {
+    Name "Marker"
+   }
+   m_sColor 0.502 0 0 1
+  }
+  SCR_MapDescriptorComponent "{527892B6ED748CEB}" {
+   DisplayName "Trader"
+   MainType "Name Local"
+  }
+ }
+ coords 6212.154 0 9306.191
+}

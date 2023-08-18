@@ -1,0 +1,14 @@
+GenericEntity : "{911D6C8DC7BA2D63}Prefabs/Weapons/Core/Rifle_Base.et" {
+ ID "5260C45AAAA407F4"
+ components {
+  WeaponComponent "{CFBAA4B706BA66E8}" {
+   components {
+    AttachmentSlotComponent "{5CC8683D251E57F9}" {
+     AttachmentSlot InventoryStorageSlot Optics_Slot {
+      Prefab "{F228899B86772612}Prefabs/Weapons/Attachments/Optics/3RBN_Optic_Acog4x20.et"
+     }
+    }
+   }
+  }
+ }
+}
