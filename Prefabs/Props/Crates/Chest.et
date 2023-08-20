@@ -1,0 +1,56 @@
+GenericEntity : "{0E564BA0ADE3B864}Prefabs/Systems/Arsenal/AmmoBoxes/AmmoBoxArsenal_Equipment_Base.et" {
+ ID "F0DBA538AC2A0552"
+ components {
+  EPF_PersistenceComponent "{5D907D91E6168A2F}" {
+   m_pSaveData EPF_ItemSaveDataClass "{5D908A8B59D3D20E}" {
+    m_aComponents {
+     EPF_BaseInventoryStorageComponentSaveDataClass "{5D908A8B5BE992BB}" {
+     }
+    }
+   }
+  }
+  MeshObject "{5872F0EB7FA40561}" {
+   Object "{62A30D148D0D93B0}Assets/Props/Military/AmmoBox/EquipmentBoxWooden_01/EquipmentBoxWooden_Equipment_01.xob"
+  }
+  RigidBody "{5872F0EB7DFB5A9D}" {
+   ResponseIndex "SmallDestructible"
+  }
+  SCR_ArsenalComponent "{589F01C9C8D4A475}" {
+   Enabled 0
+  }
+  SCR_FactionAffiliationComponent "{5A50E7650A1AE9EC}" {
+   "faction affiliation" "US"
+  }
+  SCR_UniversalInventoryStorageComponent "{5476A2F100DF4EFF}" {
+   Enabled 1
+   Attributes SCR_ItemAttributeCollection "{5476CDB2EAD8225E}" {
+    ItemDisplayName UIInfo "{54F48AF1F3C103C1}" {
+     Name "Storage Chest"
+     Description "Storage Chest"
+    }
+    ItemPhysAttributes ItemPhysicalAttributes "{5D907D936723A071}" {
+     Weight 15
+     SizeSetupStrategy Size
+     ItemDimensions 3 3 3
+    }
+    m_SlotType SLOT_BACKPACK
+   }
+   m_fMaxWeight 350
+  }
+  UniversalInventoryStorageComponent "{58A17A341AB8F069}" {
+   Enabled 0
+  }
+  SCR_ArsenalInventoryStorageManagerComponent "{58A0B19B1E191CC1}" {
+   Enabled 0
+  }
+  ActionsManagerComponent "{5476B36C403D4CC0}" {
+   additionalActions {
+    SCR_OpenStorageAction "{5476DE57AA50402F}" {
+     UIInfo UIInfo "{52E6EC759A11C684}" {
+      Name "#AR-Inventory_OpenStorage"
+     }
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,17 @@
+SCR_DestructibleBuildingEntity : "{A43A100E3C377DB2}Prefabs/Structures/Core/Building_Base.et" {
+ ID "523676E9BF5D1C49"
+ {
+  $grp SCR_LAGPrefabSpawnPoint {
+   {
+    ID "5DA0FD79FF708944"
+    coords 1.255 0.2 0.999
+    m_eType ItemMilitary
+   }
+   {
+    ID "5DA0FD79FF70E855"
+    coords -0.358 0.2 0.999
+    m_eType ItemMilitary
+   }
+  }
+ }
+}

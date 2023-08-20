@@ -1,0 +1,15 @@
+MetaFileClass {
+ Name "{BFBD94F65277304F}Prefabs/Structures/Military/Bunkers/Bunker_01/Bunker_01_1fp_Base.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

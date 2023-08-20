@@ -1,0 +1,20 @@
+GenericEntity : "{4CC2C69DE1AEF103}Prefabs/Props/Core/Destructible_Props_Base.et" {
+ ID "51E2DC2DD52F3EAB"
+ {
+  $grp SCR_LAGPrefabSpawnPoint {
+   {
+    ID "5D9D7A6663611A53"
+    coords -0.29 0.495 0.655
+   }
+   {
+    ID "5D9D7A6663611AB7"
+    coords -0.29 0.495 -0.436
+    m_eType ItemMilitary
+   }
+   {
+    ID "5DA0F3B7EC53FF30"
+    coords 0.537 0.495 -0.137
+   }
+  }
+ }
+}

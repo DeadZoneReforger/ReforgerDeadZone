@@ -1,0 +1,17 @@
+SCR_DestructibleBuildingEntity : "{A9195A7D1F744209}Prefabs/Structures/Military/Bunkers/Bunker_01/Bunker_01_Base.et" {
+ ID "5272E317ABD81A17"
+ {
+  $grp SCR_LAGPrefabSpawnPoint {
+   {
+    ID "5DA0FD799EB8BFCD"
+    coords 1.089 0.2 0.608
+    m_eType ItemMilitary
+   }
+   {
+    ID "5DA0FD799EB954C2"
+    coords -0.336 0.2 1.314
+    m_eType ItemMilitary
+   }
+  }
+ }
+}
