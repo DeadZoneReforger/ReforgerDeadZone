@@ -1,0 +1,20 @@
+FrameWidgetClass {
+ {
+  HorizontalLayoutWidgetClass "{5CEAB7C94A55AF1E}" {
+   Prefab "{5CEAB7C94A55AF1E}"
+   components {
+    SCR_WatermarkComponent "{56A6C7C1234F6E26}" {
+     m_sWatermarkNamePC "DeadZone"
+     m_sWatermarkNameXbox "DeadZone"
+    }
+   }
+   {
+    TextWidgetClass "{5CEAB7C94A55AF1D}" {
+     Prefab "{5CEAB7C94A55AF1D}"
+     Text "DeadZone"
+     "Font Size" 15
+    }
+   }
+  }
+ }
+}

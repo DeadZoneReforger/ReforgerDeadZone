@@ -1,0 +1,15 @@
+MetaFileClass {
+ Name "{603A3D285626DB68}UI/layouts/Menus/PlayerList/Playerlist_GroupMenu.layout"
+ Configurations {
+  LayoutResourceClass PC {
+  }
+  LayoutResourceClass XBOX_ONE : PC {
+  }
+  LayoutResourceClass XBOX_SERIES : PC {
+  }
+  LayoutResourceClass PS4 : PC {
+  }
+  LayoutResourceClass HEADLESS : PC {
+  }
+ }
+}

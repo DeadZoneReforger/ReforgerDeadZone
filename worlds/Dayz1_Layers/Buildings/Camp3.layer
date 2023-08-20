@@ -1,0 +1,137 @@
+$grp SCR_LAGPrefabSpawnPoint {
+ {
+  coords 4333.436 80.091 4033.763
+  m_eType ItemMilitary
+ }
+ {
+  coords 4339.17 79.357 4004.069
+  m_eType ItemMilitary
+ }
+ {
+  coords 4351.998 76.502 4013.425
+  m_eType ItemMilitary
+ }
+ {
+  coords 4351.769 76.536 4012.366
+  m_eType ItemMilitary
+ }
+ {
+  coords 4351.204 76.919 4014.803
+  m_eType ItemMilitary
+ }
+ {
+  coords 4349.908 76.205 4022.497
+  m_eType ItemMilitary
+ }
+ {
+  coords 4349.619 76.195 4023.437
+  m_eType ItemMilitary
+ }
+ {
+  coords 4348.566 76.613 4024.038
+  m_eType ItemMilitary
+ }
+ {
+  coords 4348.124 76.613 4023.591
+  m_eType ItemMilitary
+ }
+}
+SCR_DestructibleBuildingEntity : "{1FFA94F4319C780D}Prefabs/Structures/Infrastructure/Naval/Sheds/FishermanShed_01_V1.et" {
+ coords 4347.516 0.025 4022.151
+ angleY -121.261
+}
+DecalEntity : "{4AD6EB80A8B1FA3A}Prefabs/Decals/Dirt/Decal_Dirt_Patch_03.et" {
+ coords 4339.277 0.001 4015.615
+ angleX -90
+ angleY -180
+ angleZ -180
+ scale 10
+}
+GenericEntity : "{4EF68238FE2FC26B}Prefabs/Compositions/Misc/SubCompositions/CanvasCover_Cluttered_USSR_04.et" {
+ coords 4349.781 75.092 4009.288
+ angleY -2.612
+}
+$grp GenericEntity : "{6105032F794BA64B}Prefabs/Props/Civilian/LogChopping_01.et" {
+ {
+  coords 4339.5 75.227 4015.165
+ }
+ {
+  coords 4337.055 75.205 4016.313
+ }
+ {
+  coords 4336.796 75.331 4020.306
+ }
+}
+SCR_DestructibleBuildingEntity : "{6CDAFB08D5F88533}Prefabs/Structures/Infrastructure/Naval/Piers/Pier_Stairs01.et" {
+ coords 4344.922 0.085 4021.194
+ angleY -123.17
+}
+$grp StaticModelEntity : "{9C7477A3F066F74F}Prefabs/Terrain/Erosion/ErodedEmbankment_01/ErodedEmbankment_01_forest_straight.et" {
+ {
+  coords 4326.051 75.584 4022.003
+  angleX -18.863
+  angleY 98.775
+ }
+ {
+  coords 4327.988 75.228 4012.594
+  angleX -10.878
+  angleY 49.782
+  angleZ 4.648
+ }
+}
+DecalEntity : "{AF4AA779A4546D51}Prefabs/Decals/Dirt/Decal_Dirt_Patch_02.et" {
+ coords 4336.815 -0.053 4022.781
+ angleX -90
+ angleY -180
+ angleZ -180
+ scale 5
+}
+SCR_DestructibleBuildingEntity : "{B952B23CBCF785AB}Prefabs/Structures/Infrastructure/Naval/Sheds/FishermanShed_01_V2.et" {
+ coords 4349.499 0.447 4013.629
+ angleY -92.276
+}
+$grp GenericEntity : "{BE16EE8FAA315FE2}Prefabs/Props/Military/Sandbags/Sandbag_01_long_high_burlap.et" {
+ {
+  coords 4331.705 74.421 4017.688
+  angleY 46.988
+ }
+ {
+  coords 4333.87 74.208 4015.368
+  angleY 46.988
+  angleZ 3.902
+ }
+}
+GenericEntity G_Camp3 : "{C6F2E9AE8E1B709F}Prefabs/World/Locations/Eden/Urban/Levie_Base_01.et" {
+ components {
+  SCR_EditableCommentComponent "{529AB059519FE609}" {
+   m_UIInfo SCR_EditableCommentUIInfo "{5298E609432D192D}" {
+    Name "Camp"
+   }
+  }
+  SCR_MapDescriptorComponent "{527892B6ED748CEB}" {
+   DisplayName "Camp"
+  }
+ }
+ coords 4335.99 75.261 4018.341
+}
+$grp SCR_DestructibleBuildingEntity : "{D0947E26A8A39ECF}Prefabs/Structures/Forest/DeerStands/DeerStand_01.et" {
+ {
+  coords 4339.287 0.001 4004.247
+  angleY 16.333
+ }
+ {
+  coords 4333.64 -0.322 4033.409
+  angleY 110.346
+ }
+}
+GameEntity : "{D9842C11742C00CF}Prefabs/Props/Civilian/Fireplace_01.et" {
+ coords 4338.386 75.289 4018.017
+}
+GenericEntity : "{DFF391458A7AC773}Prefabs/Props/Military/WaterTanks/MobileWaterTank_US_01.et" {
+ coords 4345.126 75.372 4025.578
+ angleY 75.207
+}
+GenericEntity : "{E5B343A1918DB525}Prefabs/Structures/BuildingParts/Entry/WoodenStairs_01.et" {
+ coords 4346.694 75.882 4014.045
+ angleY -94.816
+}

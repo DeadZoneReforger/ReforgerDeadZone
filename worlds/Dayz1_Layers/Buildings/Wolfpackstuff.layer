@@ -1,0 +1,247 @@
+$grp SCR_DestructibleBuildingEntity : "{1E1FF3AE13CDC15D}Prefabs/Structures/Walls/Concrete/ConcreteRetainingWall_01/ConcreteRetainingWall_01_Corner.et" {
+ {
+  coords 9539.054 34.481 1807.365
+  angleY 10.814
+  scale 2.5
+ }
+ {
+  coords 9598.706 34.481 1794.259
+  angleY 280
+  scale 2.5
+ }
+ {
+  coords 9625.979 34.567 1786.985
+  angleY -68.017
+ }
+}
+$grp SCR_DestructibleBuildingEntity : "{329AA27D49D3CA99}Prefabs/Structures/City/5_Floor_Appartment.et" {
+ {
+  coords 9586.162 43.068 1811.76
+  angleY -179.137
+ }
+ {
+  coords 9556.809 43.068 1817.484
+  angleY -177.567
+ }
+}
+$grp SCR_DestructibleBuildingEntity : "{3D72037A4F2BD6FB}Prefabs/Structures/Houses/Military/Barracks/Barracks_S.et" {
+ {
+  coords 9615.521 38.708 1812.624
+  angleY -153.207
+ }
+ {
+  coords 9627.511 38.772 1801.339
+  angleY -66.26
+ }
+}
+SCR_PowerPole : "{64BBD0AB89D67A12}Prefabs/Structures/Infrastructure/Power/TransformerStation110kV_E_01/Transformer110kV_E_01_single.et" {
+ coords 9570.354 43.975 1847.509
+ angleY 11.661
+ scale 0.7
+}
+StaticModelEntity : "{6A004A8F0571D456}Prefabs/Structures/Infrastructure/Towers/TransmitterTower_01/TransmitterTower_01_small.et" {
+ coords 9546.606 65.101 1811.681
+ angleY 11.072
+}
+SCR_DestructibleBuildingEntity : "{6AD4788522334B53}Prefabs/Structures/Infrastructure/Power/TransformerStation_E_02/TransformerStation_E_02.et" {
+ coords 9559.176 1.674 1852.182
+ angleY 10.983
+}
+$grp GenericEntity : "{7022F1A36DC9510C}Prefabs/Structures/BuildingParts/Entry/ConcreteStairs_02_SideSquareWide.et" {
+ {
+  coords 9605.479 40.251 1811.667
+  angleY 10.976
+ }
+ {
+  coords 9606.966 33.328 1791.97
+  angleY 113.051
+ }
+ {
+  coords 9602.121 38.999 1794.029
+  angleY 113.051
+ }
+ {
+  coords 9606.19 40.251 1815.346
+  angleY 10.976
+ }
+ {
+  coords 9540.928 38.982 1832.553
+  angleY 12.623
+ }
+ {
+  coords 9541.731 38.982 1836.14
+  angleY 12.623
+ }
+ {
+  coords 9543.751 38.982 1836.868
+  angleY 104.387
+ }
+}
+$grp GenericEntity : "{9134C20BE9368D76}Prefabs/Structures/BuildingParts/Entry/ConcreteStairs_02_SideLong.et" {
+ {
+  coords 9608.705 35.758 1791.23
+  angleY 113.051
+ }
+ {
+  coords 9603.816 39 1793.31
+  angleY 113.051
+ }
+ {
+  coords 9605.178 41.768 1810.333
+  angleY -168.661
+ }
+ {
+  coords 9606.166 45 1815.26
+  angleY -168.661
+ }
+}
+$grp GenericEntity : "{94021BCA593A8CFF}Prefabs/Structures/BuildingParts/Entry/ConcreteStairs_02_Wide.et" {
+ {
+  coords 9609.167 35.086 1793.044
+  angleY 113.051
+ }
+ {
+  coords 9604.137 38.49 1795.142
+  angleY 113.051
+ }
+ {
+  coords 9542.853 44.385 1833.392
+  angleY -167.407
+ }
+ {
+  coords 9541.668 40.859 1828.091
+  angleY -167.407
+ }
+}
+$grp GenericEntity : "{B08DF585ECD2CF4D}Prefabs/Structures/BuildingParts/Entry/ConcreteStairs_02_SideSquareNarrow.et" {
+ {
+  coords 9605.539 40.203 1817.254
+  angleY -80.725
+ }
+ {
+  coords 9606.348 45.02 1816.199
+  angleY -168.661
+ }
+ {
+  coords 9605.538 45.067 1817.254
+  angleY -80.725
+ }
+ {
+  coords 9605.539 43.621 1817.254
+  angleY -80.725
+ }
+ {
+  coords 9606.349 43.466 1816.199
+  angleY -168.661
+ }
+}
+$grp GenericEntity : "{CAF8666F26CEB7AD}Prefabs/Structures/BuildingParts/Entry/ConcreteStairs_02_Narrow.et" {
+ {
+  coords 9605.13 44.432 1815.509
+  angleY -168.661
+ }
+ {
+  coords 9604.093 40.973 1810.342
+  angleY -168.661
+ }
+}
+SCR_DestructibleBuildingEntity : "{E0D823883B9C3E26}Prefabs/Structures/Military/Houses/GuardHouse_03/GuardHouse_03_white.et" {
+ coords 9593.119 2.696 1839.957
+ angleY -167.271
+}
+$grp SCR_DestructibleBuildingEntity : "{F7B9B2DD8B512720}Prefabs/Structures/Walls/Concrete/ConcreteRetainingWall_02/ConcreteRetainingWall_02_8m.et" {
+ {
+  coords 9578.459 15.963 1844.692
+  angleY 10.814
+  scale 7
+ }
+ {
+  coords 9573.103 15.963 1816.649
+  angleY 10.814
+  scale 7
+ }
+ {
+  coords 9607.745 13.274 1810.017
+  angleY 22.544
+  scale 6.3
+ }
+}
+$grp SCR_DestructibleBuildingEntity : "{FD1CE2903D41D4A7}Prefabs/Structures/Walls/Concrete/ConcreteRetainingWall_01/ConcreteRetainingWall_01_8m.et" {
+ {
+  coords 9587.783 34.461 1798
+  angleY 10.814
+  scale 2.5
+ }
+ {
+  coords 9602.495 31.997 1794.029
+  angleY 22.926
+ }
+ {
+  coords 9546.354 34.461 1835.144
+  angleY 101.086
+  scale 2.5
+ }
+ {
+  coords 9631.076 34.508 1799.088
+  angleY -67.004
+ }
+ {
+  coords 9634.041 34.508 1806.08
+  angleY -67.004
+ }
+ {
+  coords 9552.892 34.461 1804.665
+  angleY 10.814
+  scale 2.5
+ }
+ {
+  coords 9621.477 34.508 1789.61
+  angleY 22.926
+ }
+ {
+  coords 9599.958 34.508 1798.711
+  angleY 22.926
+ }
+ {
+  coords 9572.309 34.461 1800.956
+  angleY 10.814
+  scale 2.5
+ }
+ {
+  coords 9614.162 34.508 1792.703
+  angleY 22.926
+ }
+ {
+  coords 9543.324 34.461 1819.685
+  angleY 101.086
+  scale 2.5
+ }
+ {
+  coords 9628.019 34.508 1791.885
+  angleY -67.004
+ }
+ {
+  coords 9550.156 34.461 1854.545
+  angleY 101.086
+  scale 2.5
+ }
+ {
+  coords 9601.179 34.461 1807.573
+  angleY -78.416
+  scale 2.5
+ }
+ {
+  coords 9605.147 34.461 1826.94
+  angleY -78.416
+  scale 2.5
+ }
+ {
+  coords 9607.166 34.508 1795.662
+  angleY 22.926
+ }
+ {
+  coords 9608.313 34.461 1842.372
+  angleY -78.416
+  scale 2.5
+ }
+}

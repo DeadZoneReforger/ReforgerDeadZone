@@ -1,0 +1,236 @@
+SCR_DestructibleBuildingEntity : "{05446F713779A94D}Prefabs/Structures/Military/Houses/GuardHouse_02/GuardHouse_02.et" {
+ coords 4892.858 0.001 11912.965
+}
+StaticModelEntity : "{341011A1EC5F233A}Prefabs/Structures/Military/Fortifications/BlastCover_E_01/BlastCover_E_01_22x18.et" {
+ coords 4718.674 26.626 11751.455
+ angleY 93.447
+}
+SCR_DestructibleBuildingEntity : "{88AC0210CBA0A9C1}Prefabs/Structures/Industrial/Houses/PortableCabin_E_01/PortableCabin_E_01_checkers.et" {
+ coords 4881.568 0.001 11892.657
+}
+StaticModelEntity AirfieldMisc : "{979A564D476B5AAE}Prefabs/Structures/Military/Radar/ApproachRadar_RPL5_01/ApproachRadar_RPL5_01_tall.et" {
+ coords 4872.468 0.001 11892.552
+ {
+  $grp GenericEntity : "{388B774519BD6294}Prefabs/Props/Wrecks/T62_wreck.et" {
+   {
+    coords -3.505 0 12.947
+    angleY 37.215
+   }
+   {
+    coords -4.572 0 20.617
+    angleY -173.764
+   }
+  }
+  GenericEntity : "{47A2F2F3C8FAACD5}Prefabs/Props/Military/Camps/PalletAmmo_01_Soviet.et" {
+   coords 22.427 0 -2.916
+   angleY -12.314
+  }
+  GenericEntity : "{AE0FFC699F429214}Prefabs/Props/Military/Camps/PalletAmmo_01_US.et" {
+   coords 22.777 0 -0.937
+   angleY 4.708
+  }
+  GenericEntity : "{DB4F61D5F37432F7}Prefabs/Props/Military/Camps/PalletFuel_01.et" {
+   coords 25.167 0 -2.297
+   angleY 13.844
+  }
+ }
+}
+SCR_DestructibleEntity AirfieldWalls : "{A968F1BDCB2595BD}Prefabs/Structures/Walls/Concrete/ConcreteWall_01/ConcreteWall_01_camo_6m_B.et" {
+ coords 4893.209 0.001 11887.241
+ {
+  $grp SCR_DestructibleBuildingEntity : "{1E1FF3AE13CDC15D}Prefabs/Structures/Walls/Concrete/ConcreteRetainingWall_01/ConcreteRetainingWall_01_Corner.et" {
+   {
+    coords -99.532 1.55 -380.193
+    angleY 0
+   }
+   {
+    coords -99.002 1.523 -258.741
+    angleY 90
+   }
+   {
+    coords -93.916 1.399 -380.713
+    angleY -90.25
+   }
+   {
+    coords -93.251 1.423 -259.47
+    angleY -180
+   }
+  }
+  $grp SCR_DestructibleBuildingEntity : "{323D779591F59437}Prefabs/Structures/Walls/Concrete/ConcreteRetainingWall_02/ConcreteRetainingWall_02_8m_grass.et" {
+   {
+    coords -96.404 1.133 -264.231
+    angleY 90
+    scale 1.3
+   }
+   {
+    coords -96.368 1.074 -284.583
+    angleY 90
+    scale 1.3
+   }
+   {
+    coords -96.389 1.097 -294.923
+    angleY 90
+    scale 1.3
+   }
+   {
+    coords -96.355 1.038 -315.27
+    angleY 90
+    scale 1.3
+   }
+   {
+    coords -96.394 1.04 -305.08
+    angleY 90
+    scale 1.3
+   }
+   {
+    coords -96.328 0.962 -365.148
+    angleY 90
+    scale 1.3
+   }
+   {
+    coords -96.288 0.96 -375.34
+    angleY 90
+    scale 1.3
+   }
+   {
+    coords -96.337 1.055 -324.3
+    angleY 90
+    scale 1.3
+   }
+   {
+    coords -96.302 0.996 -344.651
+    angleY 90
+    scale 1.3
+   }
+   {
+    coords -96.34 0.998 -334.461
+    angleY 90
+    scale 1.3
+   }
+   {
+    coords -96.323 1.019 -354.992
+    angleY 90
+    scale 1.3
+   }
+   {
+    coords -96.407 1.076 -274.391
+    angleY 90
+    scale 1.3
+   }
+  }
+  $grp SCR_DestructibleEntity : "{398A34BD4D1D0873}Prefabs/Structures/Walls/Concrete/ConcreteWall_01/ConcreteWall_01_camo_6m_D_B.et" {
+   {
+    coords -17.754 0 -0.104
+   }
+   {
+    coords 5.785 0 11.762
+    angleY -90.637
+   }
+   {
+    coords -29.099 0 17.532
+    angleY 90
+   }
+   {
+    coords -29.112 0 35.043
+    angleY 89.334
+   }
+  }
+  GenericEntity : "{4707866BD7633CA1}Prefabs/Structures/BuildingParts/Doors/Door_MetalGate_03/Door_MetalGate_03_Small_RIGHT_EXT_ST_B.et" {
+   coords -13.018 0 31.251
+  }
+  $grp SCR_DestructibleEntity : "{55DE005DF1D9875D}Prefabs/Structures/Walls/Concrete/ConcreteWall_01/ConcreteWall_01_camo_6m_D_A.et" {
+   {
+    coords -11.865 0 -0.079
+   }
+   {
+    coords -23.077 0 31.885
+    angleY -179.543
+   }
+  }
+  SCR_DestructibleEntity : "{6AF8587D431DD7BC}Prefabs/Structures/Walls/Concrete/ConcreteWall_01/ConcreteWall_01_D_camo.et" {
+   coords 5.739 0 29.574
+   angleY -90.002
+  }
+  $grp SCR_DestructibleEntity : "{A968F1BDCB2595BD}Prefabs/Structures/Walls/Concrete/ConcreteWall_01/ConcreteWall_01_camo_6m_B.et" {
+   {
+    coords -23.652 0 -0.128
+   }
+   {
+    coords -29.538 0 -0.071
+   }
+   {
+    coords 5.968 0 -0.102
+    angleY -90.542
+   }
+   {
+    coords 5.874 0 5.779
+    angleY -90.542
+   }
+   {
+    coords 5.723 0 17.661
+    angleY -90.019
+   }
+   {
+    coords -29.254 0 5.786
+    angleY 90.947
+   }
+   {
+    coords -29.149 0 11.644
+    angleY 90.947
+   }
+   {
+    coords 5.767 0.027 23.648
+    angleY -90
+   }
+   {
+    coords -11.747 0 31.21
+   }
+   {
+    coords -29.075 0 29.354
+    angleY 90
+   }
+   {
+    coords -29.149 0 23.441
+    angleY 90
+   }
+  }
+  SCR_DestructibleEntity : "{C53CC55D77E11A93}Prefabs/Structures/Walls/Concrete/ConcreteWall_01/ConcreteWall_01_camo_6m_A.et" {
+   coords -5.943 0 -0.025
+  }
+  StaticModelEntity : "{F1E0197D444D3A19}Prefabs/Structures/BuildingParts/Doors/DoorSet_MetalGate_01_Long.et" {
+   coords -23.139 0 31.768
+  }
+  SCR_DestructibleBuildingEntity : "{F50905235FBAA094}Prefabs/Structures/Military/Houses/GuardBox_01/GuardBox_01_beige.et" {
+   coords -13.993 0 30.794
+   angleY -179.991
+  }
+ }
+}
+GenericEntity : "{DED4DB7D08E6E0BE}Prefabs/Structures/Military/Radar/ApproachRadar_RPL5_01/ApproachRadar_RPL5_01.et" {
+ coords 4872.466 33.357 11892.553
+}
+$grp SCR_DestructibleBuildingEntity : "{E30E1250FD927736}Prefabs/Structures/Industrial/Houses/PortableCabin_E_01/PortableCabin_E_01_beige.et" {
+ {
+  coords 4892.204 0.001 11891.837
+ }
+ {
+  coords 4887.528 0.001 11891.841
+ }
+}
+GenericEntity : "{F15B99F6B06E7200}Prefabs/Structures/Military/Radar/ApproachRadar_RPL5_01/ApproachRadar_RPL5_01_generator.et" {
+ coords 4866.282 28.595 11892.097
+}
+$grp StaticModelEntity : "{F8E70CBC00C9E30E}Prefabs/Structures/Military/Fortifications/BlastCover_E_01/BlastCover_E_01_8x5.et" {
+ AirfieldDCovers {
+  coords 4729.761 27.964 11789.34
+  angleY 91.658
+ }
+ {
+  coords 4725.217 27.763 11815.121
+  angleY 80.834
+ }
+ {
+  coords 4728.851 27.94 11836.95
+  angleY 123.69
+ }
+}
