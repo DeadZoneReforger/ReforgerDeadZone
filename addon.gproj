@@ -1,0 +1,20 @@
+GameProject {
+ ID "DeadZoneDayz"
+ GUID "5D7C70564524C2AF"
+ TITLE "DeadZoneDayz"
+ Dependencies {
+  "58D0FB3206B6F859" "5D6EA74A94173EDF" "5D6EBC81EB1842EF" "5CF5342ADBFB51CC" "5D84C738432BFE6A" "5DCB0A41482E0BE2"
+ }
+ Configurations {
+  GameProjectConfig PC {
+  }
+  GameProjectConfig XBOX_ONE {
+  }
+  GameProjectConfig XBOX_SERIES {
+  }
+  GameProjectConfig PS4 {
+  }
+  GameProjectConfig HEADLESS {
+  }
+ }
+}
