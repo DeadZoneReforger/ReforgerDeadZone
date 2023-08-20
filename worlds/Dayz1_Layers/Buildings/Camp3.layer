@@ -105,7 +105,7 @@ GenericEntity G_Camp3 : "{C6F2E9AE8E1B709F}Prefabs/World/Locations/Eden/Urban/Le
  components {
   SCR_EditableCommentComponent "{529AB059519FE609}" {
    m_UIInfo SCR_EditableCommentUIInfo "{5298E609432D192D}" {
-    Name "#AR-MapLocation_Camp"
+    Name "Camp"
    }
   }
   SCR_MapDescriptorComponent "{527892B6ED748CEB}" {
