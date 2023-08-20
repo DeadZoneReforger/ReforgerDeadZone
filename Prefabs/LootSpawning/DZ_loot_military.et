@@ -1,0 +1,5 @@
+SCR_LAGPrefabSpawnPoint {
+ ID "5DCB490B378BE38B"
+ coords -0.004 -0.001 -0.013
+ m_eType ItemMilitary
+}

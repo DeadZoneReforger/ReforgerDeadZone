@@ -1,0 +1,65 @@
+SCR_ChimeraCharacter {
+ ID "520EC961A090B1EE"
+ components {
+  AIControlComponent "{520EA1D2DB109F34}" {
+  }
+  EPF_PersistenceComponent "{5A12D8F4DFED6D84}" {
+   m_bSelfSpawn 0
+   m_pSaveData EPF_CharacterSaveDataClass "{5A12D8F4DA8632DC}" {
+    m_aComponents {
+     EPF_HitZoneContainerComponentSaveDataClass "{5A12D8F4D807DD8A}" {
+     }
+     EPF_CharacterControllerComponentSaveDataClass "{5CFED52E8CB02A22}" {
+      m_bEnabled 0
+     }
+     EPF_BaseInventoryStorageComponentSaveDataClass "{5D22E99D79014EF0}" {
+     }
+     EPF_CharacterInventoryStorageComponentSaveDataClass "{5CFED52E980265CA}" {
+     }
+     EPF_CompartmentAccessComponentSaveDataClass "{5D431C1B88F3D6DD}" {
+     }
+    }
+   }
+  }
+  SCR_CharacterDamageManagerComponent "{55872AD7B4E959F2}" {
+   m_bPermitUnconsciousness 0
+  }
+  SCR_CharacterStaminaComponent "{520EA1D2F659C824}" {
+   StaminaRegainPerS 0.1
+   StaminaDrainRun -0.005
+   StaminaDrainSprint -0.009
+   DefaultCharacterMass 56
+   EncumbranceMassMin 80
+   EncumbranceDrainMax -0.06
+  }
+  BaseLoadoutManagerComponent "{520EA1D2DB11821E}" {
+   Slots {
+    LoadoutSlotInfo Jacket {
+     Prefab "{9F546CCA2582D16F}Prefabs/Characters/Uniforms/Jacket_M88.et"
+    }
+    LoadoutSlotInfo Pants {
+     Prefab "{DCF980831E880F6A}Prefabs/Characters/Uniforms/Pants_M88.et"
+    }
+    LoadoutSlotInfo Boots {
+     Prefab "{DAAFD15478BDE1C3}Prefabs/Characters/Footwear/CombatBoots_US_01.et"
+    }
+   }
+  }
+  SCR_InventoryStorageManagerComponent "{520EA1D2DB118DE5}" {
+   InitialInventoryItems {
+    ItemsInitConfigurationItem "{5D7A9C87EA07F5CF}" {
+     TargetStorage "Prefabs/Characters/Uniforms/Jacket_M88.et"
+     PrefabsToSpawn {
+      "{A81F501D3EF6F38E}Prefabs/Items/Medicine/FieldDressing_US_01.et"
+     }
+    }
+    ItemsInitConfigurationItem "{5D7B77B19D4807D1}" {
+     TargetStorage "Prefabs/Characters/Uniforms/Pants_M88.et"
+     PrefabsToSpawn {
+      "{3A421547BC29F679}Prefabs/Items/Equipment/Flashlights/Flashlight_MX991/Flashlight_MX991.et"
+     }
+    }
+   }
+  }
+ }
+}

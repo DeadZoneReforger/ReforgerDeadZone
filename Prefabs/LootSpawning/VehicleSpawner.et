@@ -1,0 +1,14 @@
+SCR_LAGPrefabSpawnPoint {
+ ID "5E18BD2F4FA2A298"
+ components {
+  SCR_EditableCommentComponent "{5DEB169F3F0966FB}" {
+   m_EntityType COMMENT
+   m_UIInfo SCR_BlockUIInfo "{5DEB169FDBEE2B55}" {
+    Name "VehicleSpawn"
+   }
+   m_bAutoRegister ALWAYS
+  }
+ }
+ coords 0.001 0 0
+ m_eType VehicleCiv
+}

@@ -1,0 +1,15 @@
+SCR_PrefabSpawnPoint {
+ ID "5D7F16F2A4208210"
+ components {
+  SCR_EditableCommentComponent "{5D7F16F2A420821F}" {
+   m_UIInfo SCR_BlockUIInfo "{5D7F16F2A4208229}" {
+    Name "Wrecks"
+   }
+   m_bAutoRegister NEVER
+   m_fMaxDrawDistance 10
+   m_fSizeCoef 1.342
+  }
+ }
+ coords 0.126 0.569 -0.467
+ m_eType Wrecks
+}

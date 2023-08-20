@@ -1,0 +1,5 @@
+SCR_LAGPrefabSpawnPoint : "{A94949C8B6A3893B}Prefabs/respawntest/DZ_loot_military.et" {
+ ID "5DCB490B378BE38B"
+ coords 2514.065 110.86 5652.889
+ m_eType ItemCiv
+}

@@ -1,0 +1,14 @@
+GenericEntity : "{F9E6107C47C1B088}Prefabs/Weapons/Core/LongRangeRifle_Base.et" {
+ ID "5260C45AAAA407F4"
+ components {
+  WeaponComponent "{CFBAA4B706BA66E8}" {
+   components {
+    MuzzleComponent "{CA6BE4D6B867541F}" {
+     MagazinePosition InventoryStorageSlot "{B80A64F4C834E9CB}" {
+      Prefab "{4FB17FCBB6BB8635}Prefabs/Weapons/Magazines/3RBN_Magazine_762x51_M110_20rnd_Base.et"
+     }
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,84 @@
+SCR_BaseGameMode {
+ ID "5D7A9B280BB1B23C"
+ components {
+  EPF_BasicRespawnSystemComponent "{5E18C84B48CFB4B2}" {
+   m_SpawnLogic SCR_SpawnLogic "{5E18C84B4BADBD7E}" {
+   }
+  }
+  EPF_PersistenceManagerComponent "{5D6ED6C2AD953A40}" {
+   m_pConnectionInfo EDF_JsonFileDbConnectionInfo "{5D6ED6C2A3CA0970}" {
+    m_sDatabaseName "EnfusionPersistenceFramework.Tests"
+   }
+  }
+  SCR_DestructionManagerComponent "{59751432896EFC0B}" {
+  }
+  SCR_HintManagerComponent "{59E8CC4E575D1802}" {
+  }
+  SCR_MapConfigComponent "{5D634B74D8962854}" {
+  }
+  SCR_NametagConfigComponent "{597514328498E41D}" {
+   Enabled 0
+   m_sConfigPath "{8547E1B142411624}Configs/NameTags/NametagRoleplay.conf"
+  }
+  SCR_NotificationSenderComponent "{5CE71B92E08D59EE}" {
+   m_iKillFeedType DISABLED
+  }
+  SCR_RadialMenuGameModeComponent "{5D652A9BFBB3618A}" : "{613C4FB2CE7715F9}Configs/RadialMenu/SCR_RadialMenuGameModeComponent.ct" {
+  }
+  SCR_RadialMenuItemsComponent "{5D652A9BE54DF3E0}" : "{6757977AD8C6080D}Configs/RadialMenu/SCR_RadialMenuItemsComponent.ct" {
+  }
+  SCR_TimeAndWeatherHandlerComponent "{5D66E9646AB51591}" {
+   m_fDayTimeAcceleration 5
+   m_fNightTimeAcceleration 12
+  }
+  RplComponent "{5D6ED6C2B5A94993}" {
+   Streamable Disabled
+  }
+ }
+ {
+  ScriptedChatEntity ScriptedChatEntity {
+   ID "5D7AB887782A3D0F"
+   "Base style" BaseChatChannelStyle "{5DCA08D9D88BCD54}" {
+   }
+   Channels {
+    DZ_GlobalChatChannel "{5D62ED15F23E39AD}" {
+     "Channel name" "Global"
+     Style BaseChatChannelStyle "{5DCA08D9DF73F500}" {
+     }
+    }
+    LocalChatChannel "{5D7466F626A7987B}" {
+     "Channel name" "Local"
+    }
+   }
+  }
+  PerceptionManager PerceptionManager1 : "{028DAEAD63E056BE}Prefabs/World/Game/PerceptionManager.et" {
+   ID "5D7AB887782A3D11"
+   coords 0 0 0
+  }
+  TagManager TagManager : "{2FA9E172CAB1857A}Prefabs/MP/Managers/TagManager.et" {
+   ID "5D7AB887782A3D1A"
+   coords 0 0 0
+  }
+  SCR_FactionManager "5E293A862AEDB8D7" : "{4A188E44289B9A50}Prefabs/MP/Managers/Factions/FactionManager_Editor.et" {
+   ID "5E18D5294CED2A79"
+   coords 0 0 0
+   m_bCanChangeFactionsPlayable 0
+  }
+  RadioManagerEntity RadioManager : "{B8E09FAB91C4ECCD}Prefabs/Radio/RadioManager.et" {
+   ID "5D7AB887782A3D1C"
+  }
+  HitRegistrationManager HitRegManager1 : "{0EDA3D48791120DD}Prefabs/MP/HitRegManager.et" {
+   ID "5D7AB887782A3D22"
+  }
+  SCR_GarbageManager GarbageManager : "{9B883A7D8EBB282A}Prefabs/MP/Managers/GarbageManager.et" {
+   ID "5D7AB887782A3D21"
+   CharacterLifetime 240
+   VehicleLifetime 240
+   ItemLifetime 240
+   m_bOnlyDestroyed 1
+  }
+  SCR_MPDestructionManager MPDestructionManager : "{9BB369F2803C6F71}Prefabs/MP/MPDestructionManager.et" {
+   ID "5D7AB887782A3D24"
+  }
+ }
+}
