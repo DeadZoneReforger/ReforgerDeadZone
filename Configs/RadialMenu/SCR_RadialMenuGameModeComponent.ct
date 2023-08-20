@@ -1,7 +1,0 @@
-SCR_RadialMenuGameModeComponent {
- m_Menu SCR_RadialMenu "{5C7E7549355B981C}" : "{D9448EF097CB0ACB}Configs/HUD/RadialMenu/GlobalRadialMenu.conf" {
-  m_Inputs SCR_RadialMenuInputs "{5B26E2FE7B2FF1D4}" {
-   m_sPerformAction "RadialTrigger"
-  }
- }
-}

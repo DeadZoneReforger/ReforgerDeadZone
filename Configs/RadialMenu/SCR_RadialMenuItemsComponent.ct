@@ -1,8 +1,0 @@
-SCR_RadialMenuItemsComponent {
- m_MenuController SCR_RadialMenuController "{5D652A9BD53FA605}" {
-  m_RMControls SCR_RadialMenuControllerInputs "{5D652A9BD53FA613}" {
-   m_sControllerContext "WeaponSelectionContext"
-   m_sOpenAction "Inventory_WeaponSwitchingRadial"
-  }
- }
-}
