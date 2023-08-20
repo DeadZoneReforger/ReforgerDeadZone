@@ -1,0 +1,9 @@
+GenericEntity : "{0845FCD5D1E53541}Prefabs/Items/Core/FieldDressing_Base.et" {
+ ID "3472273B5965FE24"
+ components {
+  EPF_PersistenceComponent "{5A0D2D213B33ECD8}" {
+   m_bSelfSpawn 0
+   m_bStorageRoot 0
+  }
+ }
+}

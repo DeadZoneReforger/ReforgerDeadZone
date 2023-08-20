@@ -1,0 +1,8 @@
+GenericEntity : "{4CDB9A030F685F80}Prefabs/Items/Medicine/SalineBag_01/SalineBag_US_01_base.et" {
+ ID "508AB2013EEE1E00"
+ components {
+  EPF_PersistenceComponent "{5A0D2D213B33ECD8}" {
+   m_bStorageRoot 0
+  }
+ }
+}

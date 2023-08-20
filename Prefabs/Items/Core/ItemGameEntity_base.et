@@ -1,0 +1,9 @@
+GameEntity {
+ ID "56A4B11C0BE428DA"
+ components {
+  EPF_PersistenceComponent "{5A28749C4A4957A0}" {
+   m_bSelfSpawn 0
+   m_bStorageRoot 0
+  }
+ }
+}

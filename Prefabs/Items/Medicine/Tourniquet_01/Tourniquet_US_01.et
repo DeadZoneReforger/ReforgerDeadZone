@@ -1,0 +1,8 @@
+GenericEntity : "{260827F90690140A}Prefabs/Items/Medicine/Tourniquet_01/Tourniquet_US_01_base.et" {
+ ID "508AB2013EEE1E00"
+ components {
+  EPF_PersistenceComponent "{5A0D2D213B33ECD8}" {
+   m_bStorageRoot 0
+  }
+ }
+}

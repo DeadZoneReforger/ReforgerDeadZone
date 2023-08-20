@@ -1,0 +1,9 @@
+GenericEntity {
+ ID "511E9C6ADE70F798"
+ components {
+  EPF_PersistenceComponent "{5A130610DFD33448}" {
+   m_bSelfSpawn 0
+   m_bStorageRoot 0
+  }
+ }
+}

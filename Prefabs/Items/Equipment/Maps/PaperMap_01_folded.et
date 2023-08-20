@@ -1,0 +1,9 @@
+GenericEntity : "{7B6990100263E2B3}Prefabs/Items/Core/Map_Base.et" {
+ ID "508AB2013EEE1E00"
+ components {
+  EPF_PersistenceComponent "{5A0D2D213B33ECD8}" {
+   m_bSelfSpawn 0
+   m_bStorageRoot 0
+  }
+ }
+}

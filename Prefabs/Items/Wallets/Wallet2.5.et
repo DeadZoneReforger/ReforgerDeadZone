@@ -1,0 +1,70 @@
+GenericEntity {
+ ID "5D9077F7C20AC072"
+ components {
+  ADM_CurrencyComponent "{5D9077F7C20AC075}" {
+   m_Value 2500
+  }
+  EPF_PersistenceComponent "{5D9093E8898A7DA0}" {
+   m_bSelfSpawn 0
+   m_bStorageRoot 0
+   m_pSaveData EPF_ItemSaveDataClass "{5D9093E8BCB710BC}" {
+    m_aComponents {
+     EPF_BaseInventoryStorageComponentSaveDataClass "{5D9093E8BE762C13}" {
+     }
+    }
+   }
+  }
+  InventoryItemComponent "{5D9077F7C20AC07B}" {
+   Attributes SCR_ItemAttributeCollection "{5D9077F7C20AC07E}" {
+    ItemDisplayName UIInfo "{5D9077F7C20AC002}" {
+     Name "Wallet"
+     Description "Protector of currency"
+    }
+    ItemPhysAttributes ItemPhysicalAttributes "{5D9077F7C20AC001}" {
+     Weight 0.01
+    }
+    m_Size SLOT_1x1
+    m_SlotType SLOT_LOADOUT_STORAGE
+   }
+  }
+  MeshObject "{5D9077F7C20AC007}" {
+   Object "{402839377B0ADE78}Assets/Wallet/Wallet.xob"
+  }
+  RigidBody "{5D9077F7C20AC005}" {
+   Layers 131072
+   Active Active
+   Mass 2
+   CenterOfMass 0 0.02 0
+   LinearDamping 0.5
+   AngularDamping 0.5
+   AngularSleepingThreashold 1
+   ModelGeometry 1
+   CCDRadius 0.02
+  }
+  ActionsManagerComponent "{5D9077F7C20AC00B}" {
+   ActionContexts {
+    UserActionContext "{5D9077F7C20AC00F}" {
+     ContextName "default"
+     Position PointInfo "{5D9077F7C20AC00D}" {
+     }
+    }
+   }
+   additionalActions {
+    SCR_PickUpItemAction "{5D9077F7C20AC010}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo UIInfo "{5D9077F7C20AC011}" {
+      Name "#AR-Inventory_PickUp"
+     }
+    }
+   }
+  }
+  RplComponent "{5D9077F7C20AC017}" {
+  }
+ }
+ coords 148.455 1.918 138.251
+ angleX 90
+ angleY 180
+ angleZ -180
+}
