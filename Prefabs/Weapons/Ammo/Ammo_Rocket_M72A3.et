@@ -1,8 +1,0 @@
-Projectile : "{C0BDA86B5AA5648C}Prefabs/Weapons/Core/Ammo_Rocket_Base.et" {
- ID "DA5C6308000CDEF2"
- components {
-  CollisionTriggerComponent "{5184AB9D098A0025}" {
-   SafetyDistance 3
-  }
- }
-}
