@@ -1,0 +1,15 @@
+MetaFileClass {
+ Name "{A51B5534915AE3B6}Prefabs/Characters/Vests/Vest_SovietHarness/Vest_SovietHarness_belt_empty.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}
