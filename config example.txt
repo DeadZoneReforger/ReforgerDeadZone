@@ -84,7 +84,7 @@
             {
                 "modId": "5D6EA74A94173EDF",
                 "name": "EFPD",
-		version": ""            
+		"version": ""            
 	    },
             {
                 "modId": "5D6EBC81EB1842EF",
