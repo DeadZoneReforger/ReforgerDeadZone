@@ -3,7 +3,7 @@
 	"region": "US",
 	"bindAddress": "0.0.0.0", /// this depends on your server host (this comment needs to be removed to use the config)
 	"bindPort": 27015,   /// this depends on your server host (this comment needs to be removed to use the config)
-	"publicAddress": "10.0.0.1", /// this depends on your server host (this comment needs to be removed to use the config)
+	"publicAddress": "0.0.0.0", /// this depends on your server host (this comment needs to be removed to use the config)
 	"publicPort": 27015,  /// this depends on your server host (this comment needs to be removed to use the config)
 	"game": {
 		"name": "Dayz",
