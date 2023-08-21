@@ -1,10 +1,10 @@
 {
 	"dedicatedServerId": "blahblahblah",
 	"region": "US",
-	"bindAddress": "0.0.0.0", /// this depends on your server host (this comment needs to be removed to use the config)
-	"bindPort": 27015,   /// this depends on your server host (this comment needs to be removed to use the config)
-	"publicAddress": "0.0.0.0", /// this depends on your server host (this comment needs to be removed to use the config)
-	"publicPort": 27015,  /// this depends on your server host (this comment needs to be removed to use the config)
+	"bindAddress": "0.0.0.0", 
+	"bindPort": 27015,  
+	"publicAddress": "0.0.0.0", 
+	"publicPort": 27015,  
 	"game": {
 		"name": "Dayz",
 	    "passwordAdmin": "",
@@ -27,8 +27,8 @@
 		},
 	"mods": [
             {
-                "modId": "5D7C70564524C2AF",  ///replace this with your version of the mod (this comment needs to be removed to use the config)
-                "name": "DeadZone",
+                "modId": "5E2A450D417F6D0D", 
+                "name": "Dayz",
 		"version": ""
             },
             {
@@ -111,7 +111,7 @@
                 "name": ".45 ACP M1A1",
 		"version": ""
             }
-
+          ]
 
  }
 }
