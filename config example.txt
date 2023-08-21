@@ -54,7 +54,7 @@
             {
                 "modId": "59B70A5A19E9B51E",
                 "name": "VERGYS",
-		version": ""
+		"version": ""
             },
             {
                 "modId": "5CA8700DA56766CB",
