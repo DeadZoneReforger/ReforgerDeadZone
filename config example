@@ -1,0 +1,116 @@
+{
+	"dedicatedServerId": "blahblahblah",
+	"region": "US",
+	"bindAddress": "0.0.0.0", /// this depends on your server host (this comment needs to be removed to use the config)
+	"bindPort": 27015,   /// this depends on your server host (this comment needs to be removed to use the config)
+	"publicAddress": "10.0.0.1", /// this depends on your server host (this comment needs to be removed to use the config)
+	"publicPort": 27015,  /// this depends on your server host (this comment needs to be removed to use the config)
+	"game": {
+		"name": "Dayz",
+	    "passwordAdmin": "",
+		"password": "",
+		"scenarioId": "{9F92E5C271151436}Missions/DeadZone.conf",
+		"maxPlayers": 75,
+		"visible": true,
+	"supportedPlatforms": [
+			"PLATFORM_XBL",
+			"PLATFORM_PC"
+			],
+		"gameProperties": {
+			"serverMaxViewDistance": 2500,
+			"serverMinGrassDistance": 50,
+			"networkViewDistance": 1000,
+			"disableThirdPerson": false,
+			"fastValidation": true,
+			"battlEye": true,
+			"missionHeader": {}
+		},
+				"mods": [
+            {
+                "modId": "59689E02BA18B635",
+                "name": "UNFLIP ME",
+				"version": "1.0.0"
+            },
+            {
+                "modId": "5DCB0A41482E0BE2",
+                "name": "DeadZonesExtras",
+				"version": ""
+            },
+            {
+                "modId": "5D7C70564524C2AF",  ///replace this with your version of the mod (this comment needs to be removed to use the config)
+                "name": "DeadZone",
+				  "version": ""
+            },
+            {
+                "modId": "5D2D1436D1FA5A13",
+                "name": "Shop",
+				"version": ""
+            },
+            {
+                "modId": "5D84C738432BFE6A",
+                "name": "wolfsbuildingpack",
+				"version": ""
+            },
+            {
+                "modId": "59B70A5A19E9B51E",
+                "name": "VERGYS",
+				"version": ""
+            },
+            {
+                "modId": "5CA8700DA56766CB",
+                "name": "DRU",
+				"version": ""
+            },
+            {
+                "modId": "5AB890B71D748750",
+                "name": "M4A1",
+				"version": ""
+            },
+            {
+                "modId": "5B3ED33ADA805340",
+                "name": "TASK FORCE MATTOCK WEAPONS",
+				"version": ""
+            },
+            {
+                "modId": "5AB301290317994A",
+                "name": "SUPPRESSOR SYSTEM",
+				"version": "" 
+           },
+            {
+                "modId": "5ABD0CB57F7E9EB1",
+                "name": "ris",
+				"version": ""            
+			},
+            {
+                "modId": "5D6EA74A94173EDF",
+                "name": "EFPD",
+				"version": ""            
+			},
+            {
+                "modId": "5D6EBC81EB1842EF",
+                "name": "EFP",
+				"version": ""            
+			},
+            {
+                "modId": "5CF5342ADBFB51CC",
+                "name": "serverstop",
+				"version": ""
+            },
+            {
+                "modId": "5CA6BA2F63DE1174",
+                "name": "M17",
+				"version": ""
+            },
+            {
+                "modId": "596C9B6D077DE741",
+                "name": ".45 ACP M1A1",
+				"version": ""
+            },
+            {
+                "modId": "5AAAC70D754245DD",
+                "name": "SERVER ADMIN TOOLS",
+				"version": ""
+            }
+		]
+	}
+}
