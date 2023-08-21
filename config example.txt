@@ -27,9 +27,9 @@
 		},
 	"mods": [
             {
-                "modId": "59689E02BA18B635",
-                "name": "UNFLIP ME",
-		"version": "1.0.0"
+                "modId": "5D7C70564524C2AF",  ///replace this with your version of the mod (this comment needs to be removed to use the config)
+                "name": "DeadZone",
+		"version": ""
             },
             {
                 "modId": "5DCB0A41482E0BE2",
@@ -37,10 +37,25 @@
 		"version": ""
             },
             {
-                "modId": "5D7C70564524C2AF",  ///replace this with your version of the mod (this comment needs to be removed to use the config)
-                "name": "DeadZone",
+                "modId": "5D6EA74A94173EDF",
+                "name": "EFPD",
+		"version": ""            
+	    },
+            {
+                "modId": "5D6EBC81EB1842EF",
+                "name": "EFP",
+		"version": ""            
+	    },
+            {
+                "modId": "5CF5342ADBFB51CC",
+                "name": "serverstop",
 		"version": ""
             },
+            {
+                "modId": "5AAAC70D754245DD",
+                "name": "SERVER ADMIN TOOLS",
+		"version": ""
+            }
             {
                 "modId": "5D2D1436D1FA5A13",
                 "name": "Shop",
@@ -50,6 +65,11 @@
                 "modId": "5D84C738432BFE6A",
                 "name": "wolfsbuildingpack",
 		"version": ""
+            },
+            {
+                "modId": "59689E02BA18B635",
+                "name": "UNFLIP ME",
+		"version": "1.0.0"
             },
             {
                 "modId": "59B70A5A19E9B51E",
@@ -82,21 +102,6 @@
 		"version": ""            
 	    },
             {
-                "modId": "5D6EA74A94173EDF",
-                "name": "EFPD",
-		"version": ""            
-	    },
-            {
-                "modId": "5D6EBC81EB1842EF",
-                "name": "EFP",
-		"version": ""            
-	    },
-            {
-                "modId": "5CF5342ADBFB51CC",
-                "name": "serverstop",
-		"version": ""
-            },
-            {
                 "modId": "5CA6BA2F63DE1174",
                 "name": "M17",
 		"version": ""
@@ -104,11 +109,6 @@
             {
                 "modId": "596C9B6D077DE741",
                 "name": ".45 ACP M1A1",
-		"version": ""
-            },
-            {
-                "modId": "5AAAC70D754245DD",
-                "name": "SERVER ADMIN TOOLS",
 		"version": ""
             }
           ]
