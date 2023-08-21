@@ -1,0 +1,47 @@
+{
+  "admins": {
+	"0000000-0000-0000-0000-000000000": "admin 1",
+	"0000000-0000-0000-0000-000000000": "admin 2",
+	"0000000-0000-0000-0000-000000000": "admin 3"
+  },
+  "bans": {
+	"0000000-0000-0000-0000-000000000": "banned user 1",
+	"0000000-0000-0000-0000-000000000": "banned user 2",
+	"0000000-0000-0000-0000-000000000": "banned user 3"
+  },
+  "repeatedChatMessages": [
+    {
+      "message": "Welcome to our server we can be contacted at discord.gg/",
+      "intervalMinutes": 30
+    },
+    {
+	 "message": "Traders at Old Wood (west from Morton) and Lacans Head (east from Tyrone) --> NO SAFEZONE",
+	 "intervalMinutes": 25
+	},
+    {
+      "message": "!!!!Server restart in 10 Minutes!!!!",
+      "intervalMinutes": 170
+    },
+    {
+      "message": "!!!!Server restart in 5 Minutes!!!!",
+      "intervalMinutes": 175
+    },
+    {
+      "message": "!!!!Server restart in 2 Minutes!!!",
+      "intervalMinutes": 178
+    }
+  ],
+  "scheduledChatMessages": [
+    {
+      "message": "Example midnight message (in UTC time)",
+      "hour": 0,
+      "minute": 0
+    }
+  ],
+  "chatMessagesUtcTime": true,
+  "repeatedChatMessagesCycle": false,
+  "statsFileUpdateIntervalSeconds": 40,
+  "banReloadIntervalMinutes": 1,
+  "statsFileName": "$profile:ServerAdminTools_Stats.json",
+  "logPlayerCoordinates": false
+}
