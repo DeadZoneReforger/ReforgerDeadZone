@@ -25,10 +25,10 @@
 			"battlEye": true,
 			"missionHeader": {}
 		},
-	"mods": [
+"mods": [
             {
-                "modId": "5E2A450D417F6D0D", 
-                "name": "Dayz",
+                "modId": "YourModID", 
+                "name": "YourModNameHere",
 		"version": ""
             },
             {
@@ -112,5 +112,6 @@
 		"version": ""
             }
   ]
+
  }
 }
