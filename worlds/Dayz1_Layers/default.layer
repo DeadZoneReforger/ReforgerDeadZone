@@ -34,11 +34,6 @@ SCR_BaseGameMode Gamemode2 : "{E610646B582890B8}Prefabs/GameMode/Gamemode.et" {
   }
  }
  PlayerControllerPrefab "{CC42DCDAD458D66B}Prefabs/Characters/Core/PlayerControllerMP.et"
- {
-  SCR_AIWorld : "{70CCCF16487C927F}Prefabs/AI/SCR_AIWorld_Eden.et" {
-   coords 0 0 0
-  }
- }
 }
 SCR_LAGPrefabsSpawnerManager : "{6903D8DB4B0957FF}Prefabs/LootSpawning/LootSpawner.et" {
 }
