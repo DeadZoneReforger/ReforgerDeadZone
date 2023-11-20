@@ -1,5 +1,5 @@
 SCR_BaseGameMode {
- ID "5D7A9B280BB1B23C"
+ ID "0000000000000001"
  components {
   EPF_BasicRespawnSystemComponent "{5E18C84B48CFB4B2}" {
    m_SpawnLogic SCR_SpawnLogic "{5E18C84B4BADBD7E}" {
@@ -9,6 +9,10 @@ SCR_BaseGameMode {
    m_pConnectionInfo EDF_JsonFileDbConnectionInfo "{5D6ED6C2A3CA0970}" {
     m_sDatabaseName "EnfusionPersistenceFramework.Tests"
    }
+  }
+  SCR_BaseSupportStationComponent "{5EE77E212A493B6C}" {
+   m_fRange 0
+   m_bIsEnabled 0
   }
   SCR_DestructionManagerComponent "{59751432896EFC0B}" {
   }
@@ -27,6 +31,12 @@ SCR_BaseGameMode {
   }
   SCR_RadialMenuItemsComponent "{5D652A9BE54DF3E0}" : "{6757977AD8C6080D}Configs/RadialMenu/SCR_RadialMenuItemsComponent.ct" {
   }
+  SCR_ResupplySupportStationComponent "{5EE77E21D5763C4A}" {
+   m_fRange 0
+   m_bIsEnabled 0
+  }
+  SCR_SupportStationManagerComponent "{5EE77E213BE27392}" {
+  }
   SCR_TimeAndWeatherHandlerComponent "{5D66E9646AB51591}" {
    m_fDayTimeAcceleration 5
    m_fNightTimeAcceleration 12
@@ -36,6 +46,10 @@ SCR_BaseGameMode {
   }
  }
  {
+  SCR_AIWorld : "{70CCCF16487C927F}Prefabs/AI/SCR_AIWorld_Eden.et" {
+   ID "5EE77E2444B490D1"
+   coords 0 0 0
+  }
   ScriptedChatEntity ScriptedChatEntity {
    ID "5D7AB887782A3D0F"
    "Base style" BaseChatChannelStyle "{5DCA08D9D88BCD54}" {
@@ -69,16 +83,6 @@ SCR_BaseGameMode {
   }
   HitRegistrationManager HitRegManager1 : "{0EDA3D48791120DD}Prefabs/MP/HitRegManager.et" {
    ID "5D7AB887782A3D22"
-  }
-  SCR_GarbageManager GarbageManager : "{9B883A7D8EBB282A}Prefabs/MP/Managers/GarbageManager.et" {
-   ID "5D7AB887782A3D21"
-   CharacterLifetime 240
-   VehicleLifetime 240
-   ItemLifetime 240
-   m_bOnlyDestroyed 1
-  }
-  SCR_MPDestructionManager MPDestructionManager : "{9BB369F2803C6F71}Prefabs/MP/MPDestructionManager.et" {
-   ID "5D7AB887782A3D24"
   }
  }
 }
