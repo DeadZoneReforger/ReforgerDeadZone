@@ -1,6 +1,6 @@
 $grp StaticModelEntity : "{07F043DD6AACCD0B}Prefabs/Structures/Infrastructure/Barriers/BarGate_01/BarGate_01.et" {
  {
-  coords 4330.622 9.265 6019
+  coords 4330.622 17.665 6019
   angleY -5.829
   Flags 525315
  }
@@ -11,7 +11,7 @@ $grp StaticModelEntity : "{07F043DD6AACCD0B}Prefabs/Structures/Infrastructure/Ba
  }
 }
 GenericEntity Tents1 : "{0C51EDCEEC144BC1}Prefabs/Compositions/Misc/SubCompositions/CrateWooden_Cluttered_US_03.et" {
- coords 4362.981 57.655 6008.421
+ coords 4362.981 58.088 6008.421
  angleY -36.406
  {
   StaticModelEntity : "{095874B519DCF161}Prefabs/Structures/Military/Camps/TentUS_01/TentUS_01_Assembled.et" {
@@ -89,225 +89,412 @@ $grp GenericEntity : "{1A8791C2BC2B8B75}Prefabs/Structures/Military/Flags/FlagPo
  }
 }
 SCR_DestructibleBuildingEntity BarrackB5 : "{4BE4C27399CF3B00}Prefabs/Structures/Military/Bunkers/ShelterMilitary_E_01/ShelterMilitary_E_01.et" {
- coords 4345.729 8.936 5984.573
+ coords 4345.729 14.649 5984.573
  angleY -7.126
+ {
+  GenericEntity {
+   ID "5A2EDE59F3085E69"
+   coords 0 0 0
+  }
+ }
 }
 SCR_DestructibleBuildingEntity BarrackB1 : "{67418023AB7FB8DA}Prefabs/Structures/Military/Houses/Barracks_01/Barracks_01_medical_white.et" {
- coords 4394.488 8.936 5995.516
+ coords 4394.488 17.336 5995.516
  angleY -94
+ {
+  GenericEntity {
+   ID "557280C63D3629BB"
+   coords -2.021 0.119 -9.589
+  }
+  GenericEntity {
+   ID "557280C63D36232C"
+   coords 0.843 0.119 -0.147
+  }
+  GenericEntity {
+   ID "557280C63D362342"
+   coords 3.199 0.119 0.069
+  }
+  GenericEntity {
+   ID "557280C63D362CB2"
+   coords 3.393 0.119 -7.295
+  }
+  GenericEntity {
+   ID "557280C63D362DD9"
+   coords -4.913 0.119 2.54
+  }
+  GenericEntity {
+   ID "557280C63D362E0E"
+   coords 5.559 0.119 -7.295
+  }
+  GenericEntity {
+   ID "557280C63D362E21"
+   coords 3.393 0.119 -2.954
+  }
+  GenericEntity {
+   ID "557280C63D362E4F"
+   coords 5.634 0.119 -10.245
+  }
+  GenericEntity {
+   ID "557280C63D362E51"
+   coords 5.583 0.119 -2.955
+  }
+  GenericEntity {
+   ID "557280C63D362E6F"
+   coords 3.325 0.119 -14.436
+  }
+  GenericEntity {
+   ID "557280C63D362E7F"
+   coords 5.631 0.119 -14.433
+  }
+  GenericEntity {
+   ID "557280C63D362F12"
+   coords 5.471 0.119 0.069
+  }
+  GenericEntity {
+   ID "557280C63D362F33"
+   coords 5.471 0.119 4.171
+  }
+  GenericEntity {
+   ID "557280C63D362F4C"
+   coords -5.535 0.119 -2.859
+  }
+  GenericEntity {
+   ID "557280C63D362F51"
+   coords -5.535 0.119 -7.405
+  }
+  GenericEntity {
+   ID "557280C63D362F5E"
+   coords -3.534 0.119 -7.405
+  }
+  GenericEntity {
+   ID "557280C63D362F7A"
+   coords -3.535 0.119 -2.851
+  }
+ }
 }
 $grp SCR_LAGPrefabSpawnPoint : "{A94949C8B6A3893B}Prefabs/LootSpawning/DZ_loot_military.et" {
  {
-  coords 4405.987 58.269 6024.627
+  coords 4405.987 58.745 6024.627
  }
  {
-  coords 4406.09 58.271 6023.344
+  coords 4406.09 58.747 6023.344
  }
  {
-  coords 4408.426 58.268 6024.616
+  coords 4408.426 58.744 6024.616
  }
  {
-  coords 4408.6 58.27 6023.5
+  coords 4408.6 58.746 6023.5
  }
  {
-  coords 4411.221 58.275 6023.702
+  coords 4411.221 58.751 6023.702
  }
  {
-  coords 4413.479 58.27 6024.095
+  coords 4413.479 58.746 6024.095
  }
  {
-  coords 4410.652 58.691 6020.29
+  coords 4410.652 59.167 6020.29
  }
  {
-  coords 4409.912 58.691 6020.276
+  coords 4409.912 59.167 6020.276
  }
  {
-  coords 4398.887 58.271 6020.621
+  coords 4398.887 58.747 6020.621
  }
  {
-  coords 4393.874 58.274 6019.134
+  coords 4393.874 58.75 6019.134
  }
  {
-  coords 4396.518 58.268 6019.368
+  coords 4396.518 58.744 6019.368
  }
  {
-  coords 4413.283 58.269 6025.34
+  coords 4413.283 58.745 6025.34
  }
  {
-  coords 4393.956 58.283 6020.282
+  coords 4393.956 58.759 6020.282
  }
  {
-  coords 4398.927 58.269 6019.57
+  coords 4398.927 58.745 6019.57
  }
  {
-  coords 4396.415 58.27 6020.411
+  coords 4396.415 58.746 6020.411
  }
  {
-  coords 4391.653 58.269 6018.906
+  coords 4391.653 58.745 6018.906
  }
  {
-  coords 4394.476 58.691 6023.766
+  coords 4394.476 59.167 6023.766
  }
  {
-  coords 4391.563 58.269 6020.171
+  coords 4391.563 58.745 6020.171
  }
  {
-  coords 4395.227 58.691 6023.66
+  coords 4395.227 59.167 6023.66
  }
  {
-  coords 4410.97 58.27 6024.955
+  coords 4410.97 58.746 6024.955
  }
  {
-  coords 4363.056 58.613 6007.073
+  coords 4363.056 59.027 6007.073
  }
  {
-  coords 4363.219 58.484 6008.122
+  coords 4363.219 58.898 6008.122
  }
  {
-  coords 4362.719 58.461 6008.804
+  coords 4362.719 58.875 6008.804
  }
  {
-  coords 4393.51 58.648 6011.417
+  coords 4393.51 59.124 6011.417
  }
  {
-  coords 4393.711 58.648 6010.853
+  coords 4393.711 59.124 6010.853
  }
  {
-  coords 4393.671 58.648 6009.953
+  coords 4393.671 59.124 6009.953
  }
  {
-  coords 4394.016 58.648 6007.861
+  coords 4394.016 59.124 6007.861
  }
  {
-  coords 4394.258 58.648 6007.426
+  coords 4394.258 59.124 6007.426
  }
  {
-  coords 4394.254 58.648 6006.853
+  coords 4394.254 59.124 6006.853
  }
  {
-  coords 4394.364 58.648 6005.976
+  coords 4394.364 59.124 6005.976
  }
  {
-  coords 4391.289 58.648 6005.359
+  coords 4391.289 59.124 6005.354
  }
  {
-  coords 4391.225 58.648 6005.923
+  coords 4391.225 59.124 6005.923
  }
  {
-  coords 4391.089 58.648 6006.66
+  coords 4391.089 59.124 6006.66
  }
  {
-  coords 4390.954 58.648 6007.406
+  coords 4390.954 59.124 6007.406
  }
  {
-  coords 4390.404 58.568 6009.85
+  coords 4390.404 59.044 6009.85
  }
  {
-  coords 4389.683 58.621 6011.003
+  coords 4389.683 59.097 6011.003
  }
  {
-  coords 4397.436 58.621 6011.646
+  coords 4397.436 59.097 6011.646
  }
  {
-  coords 4396.846 58.621 6012.006
+  coords 4396.846 59.097 6012.006
  }
  {
-  coords 4452.187 67.842 6024.864
+  coords 4452.187 68.15 6024.864
  }
  {
-  coords 4452.35 67.842 6024.012
+  coords 4452.35 68.15 6024.012
  }
  {
-  coords 4449.979 67.842 6019.517
+  coords 4449.979 68.15 6019.517
  }
  {
-  coords 4448.089 67.842 6019.197
+  coords 4448.089 68.15 6019.197
  }
  {
-  coords 4447.274 66.937 6019.908
+  coords 4447.274 67.245 6019.908
  }
  {
-  coords 4446.583 63.677 6019.347
+  coords 4446.583 63.985 6019.347
  }
  {
-  coords 4452.771 63.662 6018.28
+  coords 4452.771 63.97 6018.28
  }
  {
-  coords 4453.592 63.662 6018.469
+  coords 4453.592 63.97 6018.469
  }
  {
-  coords 4452.537 63.656 6020.589
+  coords 4452.537 63.964 6020.589
  }
  {
-  coords 4454.755 63.656 6022.563
+  coords 4454.755 63.964 6022.563
  }
  {
-  coords 4452.182 63.656 6024.245
+  coords 4452.182 63.964 6024.245
  }
  {
-  coords 4426.714 58.775 5996.91
+  coords 4426.714 58.939 5996.91
  }
  {
-  coords 4428.51 58.775 5997.048
+  coords 4428.51 58.939 5997.048
  }
  {
-  coords 4428.588 58.775 5995.496
+  coords 4428.588 58.939 5995.496
  }
  {
-  coords 4426.687 58.775 5995.402
+  coords 4426.687 58.939 5995.402
  }
  {
-  coords 4353.396 58.754 5992.05
+  coords 4353.396 59.125 5992.05
  }
  {
-  coords 4354.105 58.754 5992.037
+  coords 4354.105 59.125 5992.037
  }
  {
-  coords 4355.335 58.693 5989.91
+  coords 4355.333 59.064 5989.91
  }
  {
-  coords 4355.377 58.72 5990.511
+  coords 4355.375 59.091 5990.511
  }
  {
-  coords 4367.427 58.698 5991.2
+  coords 4367.427 59.054 5991.2
  }
  {
-  coords 4367.45 58.718 5991.769
+  coords 4367.45 59.074 5991.769
  }
  {
-  coords 4365.916 58.754 5993.287
+  coords 4365.916 59.11 5993.287
  }
  {
-  coords 4355.463 58.756 5984.319
+  coords 4355.463 59.127 5984.313
  }
  {
-  coords 4347.52 58.708 5982.422
+  coords 4347.566 59.174 5982.422
  }
  {
-  coords 4348.142 58.692 5982.577
+  coords 4348.188 59.158 5982.577
  }
  {
-  coords 4349.56 58.802 5982.266
+  coords 4349.606 59.268 5982.266
  }
  {
-  coords 4350.698 58.598 5981.813
+  coords 4350.744 59.064 5981.813
  }
  {
-  coords 4343.272 58.754 5982.544
+  coords 4343.316 59.22 5982.544
  }
  {
-  coords 4343.695 58.56 5980.737
+  coords 4343.741 59.026 5980.737
  }
  {
-  coords 4320.663 58.922 6014.808
+  coords 4320.663 59.245 6014.808
  }
  {
-  coords 4322.74 58.922 6015.017
+  coords 4322.74 59.245 6015.017
  }
 }
 SCR_DestructibleBuildingEntity BarrackB2 : "{ABF506279E60CA67}Prefabs/Structures/Military/Houses/Barracks_E_02/Barracks_E_02_camo.et" {
- coords 4437.447 8.936 6000.499
+ coords 4437.447 17.336 6000.499
  angleY -6
+ {
+  GenericEntity {
+   ID "5A4A8AE07C377F4C"
+   {
+    GenericEntity {
+     ID "59A49CC9CA896B4D"
+     coords 17.339 0.219 -6.212
+    }
+    GenericEntity {
+     ID "59A49CC9CA896B59"
+     coords 21.059 0.219 -6.212
+    }
+    GenericEntity {
+     ID "59A498466819E140"
+     coords -18.164 0.219 -0.921
+    }
+    GenericEntity {
+     ID "59A49CC8CEC9D485"
+     coords -18.171 0.219 -4.271
+    }
+    GenericEntity {
+     ID "59A4A862B08E622D"
+     coords -13.449 0.219 5.981
+    }
+    GenericEntity {
+     ID "59A4A862B08E63FB"
+     coords -16.022 0.219 5.922
+    }
+    GenericEntity {
+     ID "59A4A862B08E69D3"
+     coords -16.021 0.219 4.426
+    }
+    GenericEntity {
+     ID "59A4A862B08FD3FB"
+     coords -13.46 0.219 4.486
+    }
+    GenericEntity {
+     ID "59A4A862B08FD7C2"
+     coords -13.458 0.219 2.991
+    }
+    GenericEntity {
+     ID "59A4A862B08FF3E4"
+     coords -16.006 0.219 2.947
+    }
+    GenericEntity {
+     ID "59A4FAFB3403C203"
+     coords 9.486 0.312 -3.016
+    }
+    GenericEntity {
+     ID "59A4FAFB3403C216"
+     coords 9.488 0.312 -4.262
+    }
+    GenericEntity {
+     ID "59A4FAFB3403C23E"
+     coords 9.485 0.312 -5.505
+    }
+    GenericEntity {
+     ID "59A4FAFB3403C288"
+     coords 3.313 0.219 -5.442
+    }
+    GenericEntity {
+     ID "59A4FAFB3403C3B1"
+     coords 3.313 0.219 -6.687
+    }
+    GenericEntity {
+     ID "59A4984668195985"
+     coords 18.656 0.219 3.062
+    }
+    GenericEntity {
+     ID "59A49846681959A5"
+     coords 18.653 0.219 5.484
+    }
+    GenericEntity {
+     ID "59A49846681959B8"
+     coords 13.388 0.219 3.061
+    }
+    GenericEntity {
+     ID "59A49846681959E0"
+     coords 19.789 0.219 5.481
+    }
+    GenericEntity {
+     ID "59A49846681959F6"
+     coords 19.79 0.219 3.062
+    }
+    GenericEntity {
+     ID "59A4984668196606"
+     coords 9.02 0.219 5.484
+    }
+    GenericEntity {
+     ID "59A498466819664A"
+     coords 13.389 0.219 5.485
+    }
+    GenericEntity {
+     ID "59A4984668196654"
+     coords 12.208 0.219 3.062
+    }
+    GenericEntity {
+     ID "59A4984668196667"
+     coords 12.208 0.219 5.481
+    }
+    GenericEntity {
+     ID "59A4984668196670"
+     coords 9.019 0.219 3.061
+    }
+    GenericEntity {
+     ID "59A49846681958C3"
+     coords 15.864 0.219 -4.321
+    }
+   }
+  }
+ }
 }
 GenericEntity G_Military7 : "{C6F2E9AE8E1B709F}Prefabs/World/Locations/Eden/Urban/Levie_Base_01.et" {
  components {
@@ -317,10 +504,10 @@ GenericEntity G_Military7 : "{C6F2E9AE8E1B709F}Prefabs/World/Locations/Eden/Urba
    }
   }
  }
- coords 4415.002 57.655 5965.026
+ coords 4415.002 66.055 5965.026
 }
 SCR_DestructibleEntity MISCLOTSOFSTUFF : "{C84262844F1BE9EE}Prefabs/Structures/Walls/Concrete/ConcreteWall_01/ConcreteWall_01_camo_3m.et" {
- coords 4461.555 8.937 5990.924
+ coords 4461.555 17.337 5990.924
  angleY -93.274
  scale 1.6
  {
@@ -369,6 +556,25 @@ SCR_DestructibleEntity MISCLOTSOFSTUFF : "{C84262844F1BE9EE}Prefabs/Structures/W
    coords 17.972 0 88.296
    angleY 178.289
    scale 0.625
+   {
+    GenericEntity {
+     ID "56DEA885BBF6C9F1"
+     {
+      GenericEntity {
+       ID "56DEA8865B0CBE5E"
+       coords 5.437 0.36 0.736
+      }
+      GenericEntity {
+       ID "56DEA8865B0F1A15"
+       coords 2.595 0.36 -4.579
+      }
+      GenericEntity {
+       ID "56DEA8865B0F1A6E"
+       coords 4.979 0.36 -4.472
+      }
+     }
+    }
+   }
   }
   SCR_DestructibleBuildingEntity : "{06804C659EF7C47D}Prefabs/Structures/Infrastructure/Power/TransformerStation_E_01/TransformerStation_E_01.et" {
    coords -0.037 0 85.227
@@ -692,18 +898,18 @@ SCR_DestructibleEntity MISCLOTSOFSTUFF : "{C84262844F1BE9EE}Prefabs/Structures/W
    scale 0.625
   }
   GenericEntity : "{6BDDFE9FA1D4B2F0}Prefabs/Props/Wrecks/UAZ469_wreck.et" {
-   coords 106.474 -1.413 69.456
+   coords 106.474 -1.61 69.456
    angleY 33.286
    scale 0.625
   }
   $grp GenericEntity : "{6BE5C753730DBFED}Prefabs/Props/Wrecks/M923A1_wreck_static.et" {
    {
-    coords 106.379 -1.296 65.53
+    coords 106.379 -1.609 65.53
     angleY -24.466
     scale 0.625
    }
    {
-    coords 107.709 -1.127 59.091
+    coords 107.709 -1.398 59.091
     angleY -7.702
     scale 0.625
    }
@@ -765,20 +971,20 @@ SCR_DestructibleEntity MISCLOTSOFSTUFF : "{C84262844F1BE9EE}Prefabs/Structures/W
   }
   $grp GenericEntity : "{84CBCE9163176B3E}Prefabs/Props/Wrecks/S105_wreck.et" {
    {
-    coords 104.651 -1.019 71.539
+    coords 104.651 -1.385 71.539
     angleY 4.061
     scale 0.625
    }
    {
-    coords 110.229 -0.929 48.802
+    coords 110.229 -1.231 48.802
     angleY -7.867
     scale 0.625
    }
    {
-    coords 111.668 -0.332 44.91
-    angleX 2.051
-    angleY 17.526
-    angleZ -92.366
+    coords 111.675 -0.489 44.91
+    angleX -1.498
+    angleY 17.673
+    angleZ -92.365
     scale 0.625
    }
   }
@@ -970,11 +1176,6 @@ SCR_DestructibleEntity MISCLOTSOFSTUFF : "{C84262844F1BE9EE}Prefabs/Structures/W
     angleY 42.328
     scale 0.625
    }
-  }
-  StaticModelEntity : "{B03F9691E961C4CA}Prefabs/Structures/Military/Fortifications/DirtCover_01/DirtCover_01_long_v3.et" {
-   coords 111.389 -0.854 45.001
-   angleY 108.267
-   scale 0.625
   }
   GenericEntity : "{B1EF20282529F4B4}Prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_US_01.et" {
    coords 107.897 -0.875 76.899
@@ -1218,6 +1419,25 @@ SCR_DestructibleEntity MISCLOTSOFSTUFF : "{C84262844F1BE9EE}Prefabs/Structures/W
    coords 10.455 0 88.292
    angleY -0.932
    scale 0.625
+   {
+    GenericEntity {
+     ID "5D0CA7790AF264C0"
+     {
+      GenericEntity {
+       ID "5B18D34F320EE759"
+       coords -0.212 0.497 1.608
+      }
+      GenericEntity {
+       ID "5B18D34F320EE58A"
+       coords 2.756 0.497 -8.535
+      }
+      GenericEntity {
+       ID "5B18D34F320EE594"
+       coords -1.121 0.497 2.688
+      }
+     }
+    }
+   }
   }
   $grp SCR_DestructibleBuildingEntity : "{D15C35F865541979}Prefabs/Structures/Infrastructure/Bridges/ConcreteBridge_01/ConcreteBridge_01_Wide_PillarBig.et" {
    {
@@ -1310,6 +1530,35 @@ SCR_DestructibleEntity MISCLOTSOFSTUFF : "{C84262844F1BE9EE}Prefabs/Structures/W
    coords -2.49 -8.425 98.994
    angleY -91.75
    scale 0.625
+   {
+    GenericEntity {
+     ID "5E0EE61723C73943"
+     {
+      GenericEntity {
+       ID "5E0670C4B6BF785A"
+       coords 0 -0.003 -0.001
+      }
+     }
+    }
+    GenericEntity {
+     ID "5E0EE61723C7398D"
+     {
+      GenericEntity {
+       ID "5E0670C4B6BF785A"
+       coords 0 0 -0.003
+      }
+     }
+    }
+    GenericEntity {
+     ID "5E0EE6175FC9057E"
+     {
+      GenericEntity {
+       ID "5E0670C4B6BF785A"
+       coords 0 -0.003 -0.003
+      }
+     }
+    }
+   }
   }
   $grp SCR_DestructibleBuildingEntity : "{F7B9B2DD8B512720}Prefabs/Structures/Walls/Concrete/ConcreteRetainingWall_02/ConcreteRetainingWall_02_8m.et" {
    {
@@ -1393,11 +1642,23 @@ SCR_DestructibleEntity MISCLOTSOFSTUFF : "{C84262844F1BE9EE}Prefabs/Structures/W
 }
 $grp SCR_DestructibleBuildingEntity : "{DAC148D18C3835B9}Prefabs/Structures/Military/Bunkers/ShelterMilitary_E_01/ShelterMilitary_E_01_long.et" {
  BarrackB4 {
-  coords 4356.667 8.936 5988.687
+  coords 4356.667 14.58 5988.687
   angleY -3.429
+  {
+   GenericEntity {
+    ID "5A2EDE59D00841E1"
+    coords 0 0 0
+   }
+  }
  }
  BarrackB3 {
-  coords 4368.755 8.936 5990.038
+  coords 4368.755 15.007 5990.038
   angleY -3.429
+  {
+   GenericEntity {
+    ID "5A2EDE59D00841E1"
+    coords 0 0 0
+   }
+  }
  }
 }
