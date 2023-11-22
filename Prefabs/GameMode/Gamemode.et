@@ -25,7 +25,18 @@ SCR_BaseGameMode {
    m_sConfigPath "{8547E1B142411624}Configs/NameTags/NametagRoleplay.conf"
   }
   SCR_NotificationSenderComponent "{5CE71B92E08D59EE}" {
-   m_iKillFeedType DISABLED
+   m_iKillFeedType FULL
+   m_iReceiveKillFeedType ALL
+   m_aKillfeedTypeNames {
+    SCR_NotificationKillfeedTypeName "{5EEB4C611BB351BB}" {
+     m_iKillfeedType FULL
+    }
+   }
+   m_aKillfeedReceiveTypeNames {
+    SCR_NotificationKillfeedreceiveTypeName "{5EEB4C61074AFE9F}" {
+     m_iKillfeedreceiveType ALL
+    }
+   }
   }
   SCR_RadialMenuGameModeComponent "{5D652A9BFBB3618A}" : "{613C4FB2CE7715F9}Configs/RadialMenu/SCR_RadialMenuGameModeComponent.ct" {
   }
@@ -45,13 +56,19 @@ SCR_BaseGameMode {
    m_aEvents {
     ServerAdminTools_EventsApiAdminActionEvent "{5EE8131A06778F96}" {
     }
-    ServerAdminTools_EventsApiEvent "{5EE8131A0CE936B4}" {
-    }
     ServerAdminTools_EventsApiPlayerJoinedEvent "{5EE8131A0FA84436}" {
+    }
+    ServerAdminTools_EventsApiGameStartEvent "{5EED32D416A1318C}" {
     }
     ServerAdminTools_EventsApiPlayerKilledEvent "{5EE8131A08FE84F1}" {
     }
     ServerAdminTools_EventsApiServerFPSLowEvent "{5EE8131A0ABF1E67}" {
+    }
+    ServerAdminTools_EventsApiConflictBaseCapturedEvent "{5EED314792EB4668}" {
+    }
+    ServerAdminTools_EventsApiGameEndEvent "{5EED32D45BEDA6D4}" {
+     m_GameOverScreenConfig SCR_GameOverScreenConfig "{5EED32D47D40A0DC}" : "{651583FFFB7FC765}Configs/GameOverScreen/GameOverScreensConfig.conf" {
+     }
     }
    }
   }
