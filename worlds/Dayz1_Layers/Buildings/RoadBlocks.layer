@@ -167,35 +167,33 @@ GenericEntity RoadBlock9 : "{05137D09E06465C6}Prefabs/Compositions/Misc/SubCompo
   }
  }
 }
-$grp GenericEntity : "{2A27606856B8A913}Prefabs/Compositions/Slotted/SlotRoadLarge/Barricade_L_USSR_01.et" {
+$grp GenericEntity : "{2A27606856B8A914}Prefabs/Compositions/Slotted/SlotRoadLarge/Barricade_L_USSR_01.et" {
  RoadBlock4 {
   coords 4568.421 19.539 9829.919
   angleY 178.232
   {
-   GenericEntity {
-    ID "59B69060CC907583"
-    components {
-     SCR_ArsenalComponent "{589F01C9C8D4A475}" {
-      Enabled 0
+   $grp GenericEntity {
+    {
+     components {
+      SCR_ArsenalComponent "{589F01C9C8D4A475}" {
+       Enabled 0
+      }
      }
     }
-   }
-   GenericEntity {
-    ID "59D87A54352A18C1"
     {
-     GenericEntity {
-      ID "5C5AC612652E574F"
-      {
-       GameEntity {
-        ID "59A297CB53D15C0E"
-        Flags 2097155
+     {
+      GenericEntity {
+       {
+        GameEntity {
+         Flags 2097155
+        }
        }
       }
      }
     }
-   }
-   GenericEntity {
-    coords 0 0 0
+    {
+     coords 0 0 0
+    }
    }
    GenericEntity : "{01E0B52B5BA2EF72}Prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_04.et" {
     coords -2.884 -0.597 -14.749
@@ -247,30 +245,28 @@ $grp GenericEntity : "{2A27606856B8A913}Prefabs/Compositions/Slotted/SlotRoadLar
   coords 6809.979 112.78 5907.269
   angleY -120.196
   {
-   GenericEntity {
-    ID "59B69060CC907583"
-    components {
-     SCR_ArsenalComponent "{589F01C9C8D4A475}" {
-      Enabled 0
+   $grp GenericEntity {
+    {
+     components {
+      SCR_ArsenalComponent "{589F01C9C8D4A475}" {
+       Enabled 0
+      }
      }
     }
-   }
-   GenericEntity {
-    ID "59D87A54352A18C1"
     {
-     GenericEntity {
-      ID "5C5AC612652E574F"
-      {
-       GameEntity {
-        ID "59A297CB53D15C0E"
-        Flags 2097155
+     {
+      GenericEntity {
+       {
+        GameEntity {
+         Flags 2097155
+        }
        }
       }
      }
     }
-   }
-   GenericEntity {
-    coords 0 0 0
+    {
+     coords 0 0 0
+    }
    }
    GenericEntity : "{01E0B52B5BA2EF72}Prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_04.et" {
     coords -3.509 0.735 -15.569
@@ -298,24 +294,23 @@ $grp GenericEntity : "{2B24356C351A2538}Prefabs/Props/Wrecks/M113_wreck.et" {
    GenericEntity {
     coords 0 0 0
    }
-   GenericEntity : "{172D03072FE6ECAA}Prefabs/Compositions/Slotted/SlotRoadMedium/Barricade_M_US_01.et" {
+   GenericEntity : "{172D03072FE6ECAB}Prefabs/Compositions/Slotted/SlotRoadMedium/Barricade_M_US_01.et" {
     coords -6.532 0.142 -1.779
     angleY 28.461
     {
-     GenericEntity {
-      ID "59B6900A84CEA62A"
+     $grp GenericEntity {
       {
-       GameEntity {
-        ID "59B6900AB04C3A46"
-        Flags 2098179
+       {
+        GameEntity {
+         Flags 2098179
+        }
        }
       }
-     }
-     GenericEntity {
-      ID "59A28CAE63B6B32D"
-      components {
-       SCR_ArsenalComponent "{589F01C9C8D4A475}" {
-        Enabled 0
+      {
+       components {
+        SCR_ArsenalComponent "{589F01C9C8D4A475}" {
+         Enabled 0
+        }
        }
       }
      }
@@ -618,10 +613,6 @@ GenericEntity RoadBlock7 : "{3BAF6AA8C20D924D}Prefabs/Compositions/Misc/SubCompo
     scale 10
    }
   }
-  GenericEntity : "{8A4C9D5B12F83209}Prefabs/Compositions/Misc/SubCompositions/BarbedCoil_Cluttered_USSR_01.et" {
-   coords -0.177 0.029 20.48
-   angleY -51.696
-  }
   GenericEntity : "{8BE153775299BA55}Prefabs/Compositions/Misc/SubCompositions/PalletFuel_Cluttered_US_01.et" {
    coords 3.303 0.038 12.984
    angleY -117.812
@@ -651,6 +642,39 @@ StaticModelEntity RoadBlock5 : "{6DEC3A82BA35F108}Prefabs/Compositions/Misc/SubC
   GenericEntity : "{01E0B52B5BA2EF72}Prefabs/Compositions/Misc/SubCompositions/Sandbag_Barricade_USSR_04.et" {
    coords 11.627 0.512 4.585
    angleY 88.081
+  }
+  GenericEntity : "{07D58C64654F71A3}Prefabs/Compositions/Slotted/SlotFlatSmall/SandbagPosition_S_USSR_03.et" {
+   coords -10.009 -0.589 1.435
+   angleX -1.997
+   angleY -101.673
+   {
+    $grp GenericEntity {
+     {
+      components {
+       SCR_ArsenalComponent "{589F01C9C8D4A475}" {
+        Enabled 0
+       }
+      }
+     }
+     {
+      {
+       DecalEntity {
+        coords 0 0 0
+        angleX -88.628
+        angleY -180
+        angleZ 180
+       }
+      }
+     }
+     {
+      components {
+       SCR_ArsenalComponent "{589F01C9C8D4A475}" {
+        Enabled 0
+       }
+      }
+     }
+    }
+   }
   }
   DecalEntity : "{25AB7FF81B8EDEF9}Prefabs/Decals/Dirt/Decal_Dirt_Tracks_01.et" {
    coords -19.772 -1.434 -2.876
@@ -690,41 +714,6 @@ StaticModelEntity RoadBlock5 : "{6DEC3A82BA35F108}Prefabs/Compositions/Misc/SubC
    angleX -90
    angleY -77.156
    scale 4.2
-  }
-  GenericEntity : "{FFD9E8A7CD2592B5}Prefabs/Compositions/Slotted/SlotFlatSmall/SandbagPosition_S_USSR_03.et" {
-   coords -10.009 -0.589 1.435
-   angleX -1.997
-   angleY -101.673
-   {
-    GenericEntity {
-     ID "58B8CD49C3D692E7"
-     components {
-      SCR_ArsenalComponent "{589F01C9C8D4A475}" {
-       Enabled 0
-      }
-     }
-    }
-    GenericEntity {
-     ID "56FCD4F10A89F858"
-     {
-      DecalEntity {
-       ID "56E0B29E01E2AC90"
-       coords 0 0 0
-       angleX -88.628
-       angleY -180
-       angleZ 180
-      }
-     }
-    }
-    GenericEntity {
-     ID "58B8CD49C3D69273"
-     components {
-      SCR_ArsenalComponent "{589F01C9C8D4A475}" {
-       Enabled 0
-      }
-     }
-    }
-   }
   }
  }
 }
