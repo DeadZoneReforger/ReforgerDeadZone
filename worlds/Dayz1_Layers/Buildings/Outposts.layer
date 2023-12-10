@@ -588,51 +588,46 @@ GenericEntity Outpost1 : "{D99955DFCF7D3962}Prefabs/Props/Wrecks/CannonWreck_01.
    angleY 175.613
    angleZ 0.444
   }
-  GenericEntity : "{68ED84218EA1BDC2}Prefabs/Compositions/Slotted/SlotFlatSmall/Antenna_S_USSR_01.et" {
+  GenericEntity : "{68ED84218EA1BDC3}Prefabs/Compositions/Slotted/SlotFlatSmall/Antenna_S_USSR_01.et" {
    coords 4.705 -0.024 -15.042
    angleX -5.777
    angleY 173.406
    angleZ 0.667
    {
-    GenericEntity {
-     ID "569AA69B4170FBC8"
-     coords -4.02 -0.157 -5.215
-    }
-    GenericEntity {
-     ID "561882BC97B43283"
-     coords -0.181 0.572 6.681
-    }
-    GenericEntity {
-     ID "58C28EA1A4E7A2BC"
-     components {
-      SCR_ArsenalComponent "{589F01C9C8D4A475}" {
-       Enabled 0
+    $grp GenericEntity {
+     {
+      coords -4.02 -0.157 -5.215
+     }
+     {
+      coords -0.181 0.572 6.681
+     }
+     {
+      components {
+       SCR_ArsenalComponent "{589F01C9C8D4A475}" {
+        Enabled 0
+       }
       }
      }
+     {
+      coords -4.035 -0.386 -4.805
+     }
+     {
+      coords -2.568 -0.443 -6.007
+     }
+     {
+      coords 0.38 -0.428 -4.865
+     }
+     {
+      coords 1.644 -0.337 -4.678
+     }
     }
-    GenericEntity {
-     ID "569AA69B4170FBA8"
-     coords -4.035 -0.386 -4.805
-    }
-    GenericEntity {
-     ID "569AA69B4170FBD8"
-     coords -2.568 -0.443 -6.007
-    }
-    GenericEntity {
-     ID "57030A2C693E3B87"
-     coords 0.38 -0.428 -4.865
-    }
-    GenericEntity {
-     ID "561882BE1B0A09C1"
-     coords 1.644 -0.337 -4.678
-    }
-    StaticModelEntity {
-     ID "561882BF04415C1F"
-     coords -3.297 -0.395 -5.263
-    }
-    StaticModelEntity {
-     ID "569AA69B4170FB02"
-     coords -0.629 -0.459 -4.628
+    $grp StaticModelEntity {
+     {
+      coords -3.297 -0.395 -5.263
+     }
+     {
+      coords -0.629 -0.459 -4.628
+     }
     }
    }
   }
