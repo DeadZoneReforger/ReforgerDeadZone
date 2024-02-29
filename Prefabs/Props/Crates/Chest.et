@@ -1,10 +1,10 @@
-GenericEntity : "{0E564BA0ADE3B864}Prefabs/Systems/Arsenal/AmmoBoxes/AmmoBoxArsenal_Equipment_Base.et" {
+GenericEntity : "{0E564BA0ADE3B864}Prefabs/Props/Military/Arsenal/AmmoBoxes/AmmoBoxArsenal_Equipment_Base.et" {
  ID "F0DBA538AC2A0552"
  components {
-  EPF_PersistenceComponent "{5D907D91E6168A2F}" {
-   m_pSaveData EPF_ItemSaveDataClass "{5D908A8B59D3D20E}" {
+  EPF_PersistenceComponent "{60BA97976C297E71}" {
+   m_pSaveData EPF_ItemSaveDataClass "{60BA97976C297E7C}" {
     m_aComponents {
-     EPF_BaseInventoryStorageComponentSaveDataClass "{5D908A8B5BE992BB}" {
+     EPF_BaseInventoryStorageComponentSaveDataClass "{60BA97976C297E02}" {
      }
     }
    }
@@ -19,7 +19,11 @@ GenericEntity : "{0E564BA0ADE3B864}Prefabs/Systems/Arsenal/AmmoBoxes/AmmoBoxArse
    Enabled 0
   }
   SCR_FactionAffiliationComponent "{5A50E7650A1AE9EC}" {
+   Enabled 0
    "faction affiliation" "US"
+  }
+  SCR_ResupplySupportStationComponent "{5E2CE1BA1701C633}" {
+   Enabled 0
   }
   SCR_UniversalInventoryStorageComponent "{5476A2F100DF4EFF}" {
    Enabled 1
@@ -28,7 +32,7 @@ GenericEntity : "{0E564BA0ADE3B864}Prefabs/Systems/Arsenal/AmmoBoxes/AmmoBoxArse
      Name "Storage Chest"
      Description "Storage Chest"
     }
-    ItemPhysAttributes ItemPhysicalAttributes "{5D907D936723A071}" {
+    ItemPhysAttributes ItemPhysicalAttributes "{60BA97976C297E09}" {
      Weight 15
      SizeSetupStrategy Size
      ItemDimensions 3 3 3
@@ -51,6 +55,9 @@ GenericEntity : "{0E564BA0ADE3B864}Prefabs/Systems/Arsenal/AmmoBoxes/AmmoBoxArse
      }
     }
    }
+  }
+  SCR_ResourceComponent "{5E5ABDF371AE8B21}" {
+   Enabled 0
   }
  }
 }
