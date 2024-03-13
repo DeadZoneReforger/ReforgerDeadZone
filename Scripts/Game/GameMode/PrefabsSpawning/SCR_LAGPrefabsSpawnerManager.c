@@ -1,6 +1,6 @@
 enum E_DZ_PrefabSpawnType
 {
-	ItemCiv,
+    ItemCiv,
     ItemMilitary,
     VehicleCiv,
     Wrecks,
@@ -21,7 +21,7 @@ class SCR_LAGPrefabsSpawnerManager : GenericEntity
 	protected ref array<ref SCR_LAGPrefabsSpawner> m_aPrefabsSpawners;
 
 	//! Static lists of all SCR_PrefabSpawnPoints
-	protected static ref map<E_DZ_PrefabSpawnType, ref array<SCR_LAGPrefabSpawnPoint>> s_aPrefabSpawnPoints = new ref map<E_DZ_PrefabSpawnType, ref array<SCR_LAGPrefabSpawnPoint>>();
+	protected static ref map<E_DZ_PrefabSpawnType, ref array<SCR_LAGPrefabSpawnPoint>> s_aPrefabSpawnPoints = new map<E_DZ_PrefabSpawnType, ref array<SCR_LAGPrefabSpawnPoint>>();
 
 	//------------------------------------------------------------------------------------------------
 	static void RegisterPrefabSpawnPoint(SCR_LAGPrefabSpawnPoint prefabSpawnPoint)
@@ -32,7 +32,7 @@ class SCR_LAGPrefabsSpawnerManager : GenericEntity
 
 			if (!spawnPoints)
 			{
-				spawnPoints = new ref array<SCR_LAGPrefabSpawnPoint>();
+				spawnPoints = new array<SCR_LAGPrefabSpawnPoint>();
 				s_aPrefabSpawnPoints.Insert(prefabSpawnPoint.GetType(), spawnPoints);
 			}
 
@@ -90,6 +90,6 @@ class SCR_LAGPrefabsSpawnerManager : GenericEntity
 	//------------------------------------------------------------------------------------------------
 	void ~SCR_LAGPrefabsSpawnerManager()
 	{
-		s_aPrefabSpawnPoints = new ref map<E_DZ_PrefabSpawnType, ref array<SCR_LAGPrefabSpawnPoint>>();
+		s_aPrefabSpawnPoints = new map<E_DZ_PrefabSpawnType, ref array<SCR_LAGPrefabSpawnPoint>>();
 	}
 };
