@@ -9,81 +9,34 @@ GenericEntity {
    m_AdditionalMerchandise {
     ADM_ShopMerchandise "{5D9077F4CBC1939B}" {
      m_Merchandise ADM_MerchandiseItem "{5D9077F4FCAF053E}" {
-      m_sPrefab "{100E7B779E327EFC}Prefabs/Props/Crates/Chest.et"
+      m_iMaxPurchaseQuantity 1
+      m_iMaxSellQuantity 1
+      m_sPrefab "{2106E3577C3E2246}Prefabs/Props/Crates/Chest.et"
      }
-     m_RequiredPayment {
-      ADM_PaymentMethodCurrency "{5D907D9008D747C6}" {
-       m_Quantity 650
+     m_BuyPayment {
+      ADM_PaymentMethodCurrency "{60FE314E51163212}" {
+       m_Quantity 750
       }
      }
-    }
-    ADM_ShopMerchandise "{5D8E76B97619E001}" {
-     m_Merchandise ADM_MerchandiseItem "{5D8E76B9712B5C12}" {
-      m_sPrefab "{820072CD0E212DCE}Prefabs/Weapons/Rifles/3RBN_M110K1_base.et"
-     }
-     m_RequiredPayment {
-      ADM_PaymentMethodCurrency "{5D9032742B6C9D16}" {
-       m_Quantity 355
-      }
-     }
-    }
-    ADM_ShopMerchandise "{5D8E76B976806F9D}" {
-     m_Merchandise ADM_MerchandiseItem "{5D8E76B9E1482337}" {
-      m_sPrefab "{CA05E99A9432A04C}Prefabs/Weapons/Rifles/3RBN_MK17_base.et"
-     }
-     m_RequiredPayment {
-      ADM_PaymentMethodCurrency "{5D9032742DB09BE6}" {
-       m_Quantity 325
-      }
-     }
-    }
-    ADM_ShopMerchandise "{5D8E76B976D6F735}" {
-     m_Merchandise ADM_MerchandiseItem "{5D8E76B9EA008C6B}" {
-      m_sPrefab "{D500512C27A07210}Prefabs/Weapons/Rifles/3RBN_MK18_AFG.et"
-     }
-     m_RequiredPayment {
-      ADM_PaymentMethodCurrency "{5D903274216500A4}" {
-       m_Quantity 250
-      }
-     }
-    }
-    ADM_ShopMerchandise "{5D8E76B976FAD631}" {
-     m_Merchandise ADM_MerchandiseItem "{5D8E76B9959267E0}" {
-      m_sPrefab "{BFC763A0EC802040}Prefabs/Weapons/Rifles/3RBN_HK416_VFG.et"
-     }
-     m_RequiredPayment {
-      ADM_PaymentMethodCurrency "{5D9032743BEFD3E7}" {
-       m_Quantity 250
-      }
-     }
-    }
-    ADM_ShopMerchandise "{5D8E76BED5AB1F75}" {
-     m_Merchandise ADM_MerchandiseItem "{5D8E76BEDEDB2155}" {
-      m_sPrefab "{4FB17FCBB6BB8635}Prefabs/Weapons/Magazines/3RBN_Magazine_762x51_M110_20rnd_Base.et"
-     }
-     m_RequiredPayment {
-      ADM_PaymentMethodCurrency "{5D9032743D533A00}" {
-       m_Quantity 65
-      }
-     }
-    }
-    ADM_ShopMerchandise "{5D8E76BED5C64A5C}" {
-     m_Merchandise ADM_MerchandiseItem "{5D8E76BEC13841A4}" {
-      m_sPrefab "{9EC5E261F5318F3D}Prefabs/Weapons/Magazines/3RBN_Magazine_762x51_MK17_20rnd_Base.et"
-     }
-     m_RequiredPayment {
-      ADM_PaymentMethodCurrency "{5D90327437D7D4FE}" {
-       m_Quantity 60
+     m_SellPayment {
+      ADM_PaymentMethodCurrency "{60FE314E79BD605F}" {
+       m_Quantity 500
       }
      }
     }
     ADM_ShopMerchandise "{5D8E76BED5E9349A}" {
      m_Merchandise ADM_MerchandiseItem "{5D8E76BE9DD8C5C3}" {
+      m_iMaxPurchaseQuantity 0
       m_sPrefab "{EEFE8BFFB4440348}Prefabs/Weapons/Magazines/3RBN_Box_762x51_MK48_100rnd_Ball_Tracer.et"
      }
-     m_RequiredPayment {
-      ADM_PaymentMethodCurrency "{5D9032740C16C81C}" {
-       m_Quantity 135
+     m_BuyPayment {
+      ADM_PaymentMethodCurrency "{60FE3814A63FC393}" {
+       m_Quantity 110
+      }
+     }
+     m_SellPayment {
+      ADM_PaymentMethodCurrency "{60FE3814A71916F9}" {
+       m_Quantity 25
       }
      }
     }
@@ -91,9 +44,14 @@ GenericEntity {
      m_Merchandise ADM_MerchandiseItem "{5D9032750CE47127}" {
       m_sPrefab "{FA5C25BF66A53DCF}Prefabs/Weapons/Rifles/AK74/Rifle_AK74.et"
      }
-     m_RequiredPayment {
-      ADM_PaymentMethodCurrency "{5D90327405D918D2}" {
-       m_Quantity 275
+     m_BuyPayment {
+      ADM_PaymentMethodCurrency "{60FE3814A2D2169F}" {
+       m_Quantity 165
+      }
+     }
+     m_SellPayment {
+      ADM_PaymentMethodCurrency "{60FE3814A3EB1E9B}" {
+       m_Quantity 15
       }
      }
     }
@@ -101,9 +59,14 @@ GenericEntity {
      m_Merchandise ADM_MerchandiseItem "{5D903275086B7608}" {
       m_sPrefab "{81EB948E6414BD6F}Prefabs/Weapons/Rifles/M14/Rifle_M21_ARTII.et"
      }
-     m_RequiredPayment {
-      ADM_PaymentMethodCurrency "{5D9032741A7C5773}" {
-       m_Quantity 350
+     m_BuyPayment {
+      ADM_PaymentMethodCurrency "{60FE3813D4A3D63F}" {
+       m_Quantity 175
+      }
+     }
+     m_SellPayment {
+      ADM_PaymentMethodCurrency "{60FE3813D5A508E8}" {
+       m_Quantity 65
       }
      }
     }
@@ -111,9 +74,14 @@ GenericEntity {
      m_Merchandise ADM_MerchandiseItem "{5D9032753F1AA09D}" {
       m_sPrefab "{3E413771E1834D2F}Prefabs/Weapons/Rifles/M16/Rifle_M16A2.et"
      }
-     m_RequiredPayment {
-      ADM_PaymentMethodCurrency "{5D9032741248712A}" {
-       m_Quantity 275
+     m_BuyPayment {
+      ADM_PaymentMethodCurrency "{60FE3813C0AD3BB5}" {
+       m_Quantity 110
+      }
+     }
+     m_SellPayment {
+      ADM_PaymentMethodCurrency "{60FE3813C1915FA0}" {
+       m_Quantity 15
       }
      }
     }
@@ -121,9 +89,14 @@ GenericEntity {
      m_Merchandise ADM_MerchandiseItem "{5D9032752566E166}" {
       m_sPrefab "{6415B7923DE28C1B}Prefabs/Weapons/Rifles/SVD/Rifle_SVD_PSO.et"
      }
-     m_RequiredPayment {
-      ADM_PaymentMethodCurrency "{5D9032746B50A346}" {
-       m_Quantity 350
+     m_BuyPayment {
+      ADM_PaymentMethodCurrency "{60FE3813F6FAE606}" {
+       m_Quantity 275
+      }
+     }
+     m_SellPayment {
+      ADM_PaymentMethodCurrency "{60FE3813F7DBB2A8}" {
+       m_Quantity 15
       }
      }
     }
@@ -131,9 +104,14 @@ GenericEntity {
      m_Merchandise ADM_MerchandiseItem "{5D903275D881A3C3}" {
       m_sPrefab "{D2B48DEBEF38D7D7}Prefabs/Weapons/MachineGuns/M249/MG_M249.et"
      }
-     m_RequiredPayment {
-      ADM_PaymentMethodCurrency "{5D9032746326702E}" {
-       m_Quantity 300
+     m_BuyPayment {
+      ADM_PaymentMethodCurrency "{60FE3813FE8E8D2C}" {
+       m_Quantity 200
+      }
+     }
+     m_SellPayment {
+      ADM_PaymentMethodCurrency "{60FE3813FF6E8382}" {
+       m_Quantity 75
       }
      }
     }
@@ -141,9 +119,14 @@ GenericEntity {
      m_Merchandise ADM_MerchandiseItem "{5D903275C6109968}" {
       m_sPrefab "{D182DCDD72BF7E34}Prefabs/Weapons/MachineGuns/M60/MG_M60.et"
      }
-     m_RequiredPayment {
-      ADM_PaymentMethodCurrency "{5D9032746623C349}" {
-       m_Quantity 320
+     m_BuyPayment {
+      ADM_PaymentMethodCurrency "{60FE3813E704D98E}" {
+       m_Quantity 275
+      }
+     }
+     m_SellPayment {
+      ADM_PaymentMethodCurrency "{60FE3813E375DAD2}" {
+       m_Quantity 50
       }
      }
     }
@@ -151,9 +134,14 @@ GenericEntity {
      m_Merchandise ADM_MerchandiseItem "{5D903275C3972070}" {
       m_sPrefab "{A89BC9D55FFB4CD8}Prefabs/Weapons/MachineGuns/PKM/MG_PKM.et"
      }
-     m_RequiredPayment {
-      ADM_PaymentMethodCurrency "{5D90327473F48ACD}" {
-       m_Quantity 300
+     m_BuyPayment {
+      ADM_PaymentMethodCurrency "{60FE3813E84B5709}" {
+       m_Quantity 200
+      }
+     }
+     m_SellPayment {
+      ADM_PaymentMethodCurrency "{60FE3813E9003BCC}" {
+       m_Quantity 15
       }
      }
     }
@@ -161,9 +149,14 @@ GenericEntity {
      m_Merchandise ADM_MerchandiseItem "{5D903275CA39D887}" {
       m_sPrefab "{A7AF84C6C58BA3E8}Prefabs/Weapons/MachineGuns/RPK74/MG_RPK74.et"
      }
-     m_RequiredPayment {
-      ADM_PaymentMethodCurrency "{5D90327458A5C38C}" {
-       m_Quantity 275
+     m_BuyPayment {
+      ADM_PaymentMethodCurrency "{60FE3813B443C7A4}" {
+       m_Quantity 175
+      }
+     }
+     m_SellPayment {
+      ADM_PaymentMethodCurrency "{60FE3813B582B9B1}" {
+       m_Quantity 25
       }
      }
     }
@@ -171,9 +164,14 @@ GenericEntity {
      m_Merchandise ADM_MerchandiseItem "{5D903275F7FCCEA1}" {
       m_sPrefab "{4FCBBDF274FD2157}Prefabs/Weapons/Magazines/Box_556x45_M249_200rnd_Ball.et"
      }
-     m_RequiredPayment {
-      ADM_PaymentMethodCurrency "{5D9032745161677A}" {
-       m_Quantity 175
+     m_BuyPayment {
+      ADM_PaymentMethodCurrency "{60FE3813A65295E0}" {
+       m_Quantity 85
+      }
+     }
+     m_SellPayment {
+      ADM_PaymentMethodCurrency "{60FE3813A31EE673}" {
+       m_Quantity 15
       }
      }
     }
@@ -181,9 +179,14 @@ GenericEntity {
      m_Merchandise ADM_MerchandiseItem "{5D903275F805622B}" {
       m_sPrefab "{982F5BA41A3738CF}Prefabs/Weapons/Magazines/Box_762x51_M60_100rnd_Ball.et"
      }
-     m_RequiredPayment {
-      ADM_PaymentMethodCurrency "{5D903275AB5AFB7B}" {
-       m_Quantity 125
+     m_BuyPayment {
+      ADM_PaymentMethodCurrency "{60FE3813AFCAD20A}" {
+       m_Quantity 100
+      }
+     }
+     m_SellPayment {
+      ADM_PaymentMethodCurrency "{60FE3813A881EBA4}" {
+       m_Quantity 10
       }
      }
     }
@@ -191,9 +194,14 @@ GenericEntity {
      m_Merchandise ADM_MerchandiseItem "{5D903275E484EEE1}" {
       m_sPrefab "{BEEA49E27174B224}Prefabs/Weapons/Magazines/Box_762x54_PK_100rnd_Tracer.et"
      }
-     m_RequiredPayment {
-      ADM_PaymentMethodCurrency "{5D903275A3BA05B7}" {
-       m_Quantity 125
+     m_BuyPayment {
+      ADM_PaymentMethodCurrency "{60FE381259C3936C}" {
+       m_Quantity 95
+      }
+     }
+     m_SellPayment {
+      ADM_PaymentMethodCurrency "{60FE38125AD2BE86}" {
+       m_Quantity 10
       }
      }
     }
@@ -201,9 +209,14 @@ GenericEntity {
      m_Merchandise ADM_MerchandiseItem "{5D903275EC1ECF7A}" {
       m_sPrefab "{BC74DAC891D48540}Prefabs/Weapons/Magazines/Magazine_545x39_RPK_45rnd_Ball.et"
      }
-     m_RequiredPayment {
-      ADM_PaymentMethodCurrency "{5D903275BA5E96AF}" {
+     m_BuyPayment {
+      ADM_PaymentMethodCurrency "{60FE381278ED7905}" {
        m_Quantity 65
+      }
+     }
+     m_SellPayment {
+      ADM_PaymentMethodCurrency "{60FE38127A39A6EF}" {
+       m_Quantity 5
       }
      }
     }
@@ -211,9 +224,14 @@ GenericEntity {
      m_Merchandise ADM_MerchandiseItem "{5D90327595CD1FC2}" {
       m_sPrefab "{2EBF60EF24B108FC}Prefabs/Weapons/Magazines/Magazine_556x45_STANAG_30rnd_Ball.et"
      }
-     m_RequiredPayment {
-      ADM_PaymentMethodCurrency "{5D903275B26D2FA2}" {
-       m_Quantity 50
+     m_BuyPayment {
+      ADM_PaymentMethodCurrency "{60FE381261C36A54}" {
+       m_Quantity 35
+      }
+     }
+     m_SellPayment {
+      ADM_PaymentMethodCurrency "{60FE381262DD40D6}" {
+       m_Quantity 2
       }
      }
     }
@@ -221,59 +239,14 @@ GenericEntity {
      m_Merchandise ADM_MerchandiseItem "{5D90A4253865CAF3}" {
       m_sPrefab "{761A03A9C5BA8D68}Prefabs/Weapons/Magazines/Magazine_762x54_SVD_10rnd_Base.et"
      }
-     m_RequiredPayment {
-      ADM_PaymentMethodCurrency "{5D90A42521A7D023}" {
-       m_Quantity 65
+     m_BuyPayment {
+      ADM_PaymentMethodCurrency "{60FE381268D83E47}" {
+       m_Quantity 50
       }
      }
-    }
-    ADM_ShopMerchandise "{5D9307552CDA98E8}" {
-     m_Merchandise ADM_MerchandiseItem "{5D930755EC5A8322}" {
-      m_sPrefab "{0194723485EBD77B}Prefabs/Characters/Vests/Vest_Lifchik/Vest_5_no_groin.et"
-     }
-     m_RequiredPayment {
-      ADM_PaymentMethodCurrency "{5D930755EFDA6201}" {
-       m_Quantity 125
-      }
-     }
-    }
-    ADM_ShopMerchandise "{5D9307552D17763A}" {
-     m_Merchandise ADM_MerchandiseItem "{5D9307559CDCF629}" {
-      m_sPrefab "{482241B00767EE9A}Prefabs/Characters/Vests/Vest_Lifchik/Vest_1.et"
-     }
-     m_RequiredPayment {
-      ADM_PaymentMethodCurrency "{5D930755A3D4BD84}" {
-       m_Quantity 150
-      }
-     }
-    }
-    ADM_ShopMerchandise "{5D9307552D23A923}" {
-     m_Merchandise ADM_MerchandiseItem "{5D9307549F62DCAB}" {
-      m_sPrefab "{E4922074CEE1C1B6}Prefabs/Characters/Uniforms/Jacket_ArmbandBlueRU_W_Gloves.et"
-     }
-     m_RequiredPayment {
-      ADM_PaymentMethodCurrency "{5D930754BFD9CAAA}" {
-       m_Quantity 60
-      }
-     }
-    }
-    ADM_ShopMerchandise "{5D9307552D9D6C6D}" {
-     m_Merchandise ADM_MerchandiseItem "{5D930754835C59ED}" {
-      m_sPrefab "{88FB6D064C8CAF3F}Prefabs/Characters/Uniforms/Jacket_ArmbandRedRU.et"
-     }
-     m_RequiredPayment {
-      ADM_PaymentMethodCurrency "{5D930754B3A6040F}" {
-       m_Quantity 60
-      }
-     }
-    }
-    ADM_ShopMerchandise "{5D9307549CF5DAAF}" {
-     m_Merchandise ADM_MerchandiseItem "{5D9307548EB55F68}" {
-      m_sPrefab "{545B1E09A7213CE5}Prefabs/Characters/Uniforms/Jacket_ArmbandWhiteRU.et"
-     }
-     m_RequiredPayment {
-      ADM_PaymentMethodCurrency "{5D930754B610A955}" {
-       m_Quantity 60
+     m_SellPayment {
+      ADM_PaymentMethodCurrency "{60FE381269963B59}" {
+       m_Quantity 2
       }
      }
     }
@@ -281,9 +254,14 @@ GenericEntity {
      m_Merchandise ADM_MerchandiseItem "{5D9307572BDCFE94}" {
       m_sPrefab "{06B68C58B72EAAC6}Prefabs/Items/Equipment/Backpacks/Backpack_ALICE_Medium.et"
      }
-     m_RequiredPayment {
-      ADM_PaymentMethodCurrency "{5D930757D1628552}" {
-       m_Quantity 75
+     m_BuyPayment {
+      ADM_PaymentMethodCurrency "{60FE38120EAD955A}" {
+       m_Quantity 100
+      }
+     }
+     m_SellPayment {
+      ADM_PaymentMethodCurrency "{60FE38120F93772B}" {
+       m_Quantity 10
       }
      }
     }
@@ -291,9 +269,14 @@ GenericEntity {
      m_Merchandise ADM_MerchandiseItem "{5D930757DE5F694B}" {
       m_sPrefab "{FDA7B6630DB87991}Prefabs/Items/Equipment/Backpacks/Backpack_M70_Swiss.et"
      }
-     m_RequiredPayment {
-      ADM_PaymentMethodCurrency "{5D930757DB88F8DF}" {
-       m_Quantity 95
+     m_BuyPayment {
+      ADM_PaymentMethodCurrency "{60FE38123702A240}" {
+       m_Quantity 110
+      }
+     }
+     m_SellPayment {
+      ADM_PaymentMethodCurrency "{60FE381237EC2700}" {
+       m_Quantity 10
       }
      }
     }
@@ -301,9 +284,14 @@ GenericEntity {
      m_Merchandise ADM_MerchandiseItem "{5DD171336B075BD9}" {
       m_sPrefab "{48720FC416263FC1}Prefabs/Weapons/Magazines/Vz58/Magazine_762x39_Vz58_30rnd_Ball.et"
      }
-     m_RequiredPayment {
-      ADM_PaymentMethodCurrency "{5DD1713310716535}" {
-       m_Quantity 78
+     m_BuyPayment {
+      ADM_PaymentMethodCurrency "{60FE381226905E22}" {
+       m_Quantity 45
+      }
+     }
+     m_SellPayment {
+      ADM_PaymentMethodCurrency "{60FE381227761328}" {
+       m_Quantity 2
       }
      }
     }
