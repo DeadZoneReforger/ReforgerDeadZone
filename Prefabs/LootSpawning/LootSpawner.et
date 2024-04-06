@@ -609,14 +609,6 @@ SCR_LAGPrefabsSpawnerManager {
      m_iRatio 10
      m_Prefab "{A5AC18C1DA89F35D}Prefabs/Characters/Footwear/verg_ones_black.et"
     }
-    SCR_LAGPrefabCategory "{5D9077F7E7FCAD28}" {
-     m_iRatio 4
-     m_Prefab "{B0E67230AEEE2DF4}Prefabs/Items/Wallet2.5.et"
-    }
-    SCR_LAGPrefabCategory "{5D9077F7E09877B2}" {
-     m_iRatio 4
-     m_Prefab "{308E6FE8D1520752}Prefabs/Items/Wallet5.et"
-    }
     SCR_LAGPrefabCategory "{5DA137764A2F9197}" {
      m_iRatio 5
      m_Prefab "{575EA58E67448C2A}Prefabs/Items/Equipment/Flashlights/Flashlight_Soviet_01/Flashlight_Soviet_01.et"
