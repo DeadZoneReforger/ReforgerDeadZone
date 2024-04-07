@@ -3,6 +3,7 @@ GenericEntity {
  components {
   ADM_ShopComponent "{5D8E76B95B781F34}" {
    m_ShopName "Shop"
+   m_WalletPrefab "{6FAB074595C22CF5}Prefabs/Items/Wallets/EmptyWallet.et"
    m_Categories {
     "{BD4950A18820150A}Configs/ShopCategories/Rifles.conf" "{C6A3C02F85B92641}Configs/ShopCategories/ammo.conf" "{6BDDF75629B8526A}Configs/ShopCategories/clothing.conf"
    }
