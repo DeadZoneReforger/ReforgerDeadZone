@@ -1,8 +1,0 @@
-GenericEntity : "{E05D296E39EC9E00}Prefabs/Characters/Vests/Vest_SovietHarness/Vest_SovietHarness_base.et" {
- ID "50D8C49B3558F152"
- components {
-  MeshObject "{5312D798A817A294}" {
-   Enabled 0
-  }
- }
-}
