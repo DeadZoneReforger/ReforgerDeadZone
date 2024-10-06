@@ -5,6 +5,8 @@ GenericEntity {
    m_Value 0
   }
   EPF_PersistenceComponent "{610C87E1AA0A678B}" {
+   m_bSelfSpawn 0
+   m_bStorageRoot 0
    m_pSaveData EPF_ItemSaveDataClass "{610C91273EB88EC0}" {
     m_aComponents {
      EPF_BaseInventoryStorageComponentSaveDataClass "{610C91273B98AF01}" {
@@ -32,7 +34,6 @@ GenericEntity {
   }
   RigidBody "{610C359F8AAE5B50}" {
    Layers 131072
-   Active Active
    Mass 2
    CenterOfMass 0 0.02 0
    LinearDamping 0.5
