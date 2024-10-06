@@ -1,0 +1,16 @@
+SCR_EntityCatalogManagerComponent {
+ m_aEntityCatalogs {
+  SCR_EntityCatalogMultiList "{5C9AD18D9D38E99E}" : "{EAD206A79A774696}Configs/EntityCatalog/FactionLess/Characters_EntityCatalog_Factionless.conf" {
+  }
+  SCR_EntityCatalogMultiList "{5C9AD18D9B68853E}" : "{77243A71AF0E5A75}Configs/EntityCatalog/FactionLess/Vehicles_EntityCatalog_Factionless.conf" {
+  }
+  SCR_EntityCatalogMultiList "{61C8EED3993E46B7}" : "{2E8FFD9558E26113}Configs/EntityCatalog/FactionLess/Groups_EntityCatalog_Factionless.conf" {
+  }
+  SCR_EntityCatalogMultiList "{61C8EED39E8B0DC3}" : "{0CC054C7DEDC766E}Configs/EntityCatalog/FactionLess/WeaponTripod_EntityCatalog_Factionless.conf" {
+  }
+  SCR_EntityCatalogMultiList "{5C9AD18D98F9181C}" : "{BB12292052E2F5B8}Configs/EntityCatalog/FactionLess/InventoryItems_EntityCatalog_Factionless.conf" {
+  }
+  SCR_EntityCatalog "{5C9EDDD29E61EF44}" : "{B80293331FB7BFCF}Configs/EntityCatalog/FactionLess/SupplyContainerItems_EntityCatalog_Factionless.conf" {
+  }
+ }
+}
