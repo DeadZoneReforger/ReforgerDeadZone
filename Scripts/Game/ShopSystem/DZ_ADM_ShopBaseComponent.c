@@ -13,9 +13,14 @@ modded class ADM_ShopBaseComponent: ScriptComponent
 	
 	override bool AskSell(IEntity player, ADM_PlayerShopManagerComponent playerManager, ADM_ShopMerchandise merchandise, int quantity)
 	{
-		IEntity emptyWallet = GetGame().SpawnEntityPrefab(Resource.Load(m_WalletPrefab));	
 		if (!Replication.IsServer())
 			return false;
+		
+		SCR_InventoryStorageManagerComponent plyInventory = SCR_InventoryStorageManagerComponent.Cast(player.FindComponent(SCR_InventoryStorageManagerComponent));
+		IEntity item = GetGame().SpawnEntityPrefab(Resource.Load(m_WalletPrefab));
+		vector mat[4];
+		player.GetTransform(mat);
+		item.SetTransform(mat);
 		
 		bool canSell = merchandise.GetType().CanSell(player, this, merchandise, quantity);
 		if (!canSell) 
@@ -23,48 +28,46 @@ modded class ADM_ShopBaseComponent: ScriptComponent
 			playerManager.SetTransactionMessage("Error! You do not have the required merchandise to sell!");
 			return false;
 		}
-		
-		bool canCollect = merchandise.GetType().CanCollectMerchandise(player, this, merchandise, quantity);
+
+		bool canCollect = merchandise.GetType().CanCollectMerchandise(player, this, merchandise, quantity); ///returns canSell 
 		if (!canCollect)
 		{
+			
 			playerManager.SetTransactionMessage("Error! Merchandise could not be sold!");
 			return false;
 		}
 		
-		bool didCollect = merchandise.GetType().CollectMerchandise(player, this, merchandise, quantity);
-		if (!didCollect)
+		bool shouldRemoveWallet = false; 
+		if (IsSellPaymentOnlyCurrency(merchandise)) ///check if the item being sold uses currency
 		{
+			array<IEntity> currencyItems = ADM_CurrencyComponent.FindCurrencyInInventory(plyInventory); // thanks to Lag from plxyable for the cast option
+			if (currencyItems.Count() <= 0)
+			{
+
+				bool insertResult = ADM_Utils.InsertAutoEquipItem(plyInventory, item);
+				if (!insertResult)
+				{
+					playerManager.SetTransactionMessage("Error! You don't have room for the wallet.");
+					return false;
+				}
+				 shouldRemoveWallet = true; /// player didnt have a wallet
+			}
+				
+		} 	/// does wallet check before removing items 
+		
+		bool didCollect = merchandise.GetType().CollectMerchandise(player, this, merchandise, quantity);
+		if (!didCollect) /// remove the items being sold if it fails returns items and removes wallet if we gave it to the player
+		{
+			if(shouldRemoveWallet) /// player didnt have a wallet before selling so remove the one we gave them if we fail to sell items
+			{
+				bool removedWallet = plyInventory.TryDeleteItem(item);
+				//Print("DZ [removedWallet] " + removedWallet);
+			}
+			
 			playerManager.SetTransactionMessage("Error! Merchandise could not be collected!");
 			return false;
 		}
-		if (IsSellPaymentOnlyCurrency(merchandise)) ///check if the item being sold uses currency
-		{
-			array<IEntity> items = {};  /// array for players inventory
-			SCR_InventoryStorageManagerComponent plyInventory = SCR_InventoryStorageManagerComponent.Cast(player.FindComponent(SCR_InventoryStorageManagerComponent));
-			plyInventory.GetItems(items);
-			bool hasWallet false;
-			
-		foreach (IEntity item : items) /// loop through players items array
-		{
-			if (item.GetPrefabData().GetPrefabName() == emptyWallet.GetPrefabData().GetPrefabName()) ///check if the the player has the empty wallet prefab
-			{
-				///Print("DZ [FindWallet] Wallet Found");
-				hasWallet = true;
-				break;
-			}
-		}
-		if (!hasWallet) //checks if the player already has a wallet or not if they dont try to add one
-		{
 
-				bool putWalletIn = ADM_Utils.InsertAutoEquipItem(plyInventory, emptyWallet);
-				if(!putWalletIn) /// couldnt fit/add the wallet
-				{
-					playerManager.SetTransactionMessage("Error! Cash couldnt be added!");
-					return false;
-				}
-		}
-				
-		} 	
 		foreach (ADM_PaymentMethodBase paymentMethod : merchandise.GetSellPayment())
 		{
 			bool returnedPayment = paymentMethod.DistributePayment(player, quantity);
@@ -74,7 +77,6 @@ modded class ADM_ShopBaseComponent: ScriptComponent
 			}
 		}
 		playerManager.SetTransactionMessage("Success! Merchandise sold.");
-		
 		// Invoke OnPostSell (event after a purchase is completed for gamemodes to hook to)
 		// Pass in the shop, player who purchased, and sold item
 		Event_OnPostSell.Invoke(this, player, null);
