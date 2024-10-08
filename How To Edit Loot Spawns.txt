@@ -1,0 +1,35 @@
+Edit Loot Spawns
+
+1. Open the Loot Spawner folder  
+   Navigate to "Prefabs\LootSpawning\" and open "LootSpawner.et".
+
+2. Find the Components List  
+   Once the file is open look at the right side of the screen. You should see a list of components. 
+
+3. Select the SCR_LAGPrefabsSpawnerManager  
+   In the components list find and click on the only item called "SCR_LAGPrefabsSpawnerManager".
+
+4. Find the Unsorted Category  
+   Look towards the bottom right side of the window. Find the category labeled "Unsorted".
+
+5. Locate Prefab Spawners  
+   Under the "Unsorted" category you will see a section titled "Prefab Spawners".
+
+6. Identify Loot Categories  
+   There will be three "SCR_LAGPrefabsSpawner" entries each corresponding to a loot category (e.g. military civilian vehicle).
+
+7. Add a New Gun to Military Loot  
+   - Find the "SCR_LAGPrefabsSpawner" for the military category.
+   - Look towards the right side of "Prefabs Categories" click the "+" button to add a new category.
+
+8. Select SCR_LAGPrefabCategory  
+   After clicking the "+" button choose "SCR_LAGPrefabCategory".
+
+9. Configure the New Category  
+   - A new "SCR_LAGPrefabCategory" box will appear in the list. 
+   - Set the ratio from 1 to 10 depending on how many of this item you want to spawn.
+
+10. Add the Prefab  
+   - Look towards the right side of "Prefab" field click the three dots (...) to browse for the prefab you want to spawn.
+   - Find and select the prefab you want to add then click "OK".
+
