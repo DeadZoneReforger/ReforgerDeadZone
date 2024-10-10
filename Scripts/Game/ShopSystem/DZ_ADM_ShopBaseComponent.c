@@ -18,9 +18,6 @@ modded class ADM_ShopBaseComponent: ScriptComponent
 		
 		SCR_InventoryStorageManagerComponent plyInventory = SCR_InventoryStorageManagerComponent.Cast(player.FindComponent(SCR_InventoryStorageManagerComponent));
 		IEntity item = GetGame().SpawnEntityPrefab(Resource.Load(m_WalletPrefab));
-		vector mat[4];
-		player.GetTransform(mat);
-		item.SetTransform(mat);
 		
 		bool canSell = merchandise.GetType().CanSell(player, this, merchandise, quantity);
 		if (!canSell) 
@@ -43,10 +40,16 @@ modded class ADM_ShopBaseComponent: ScriptComponent
 			array<IEntity> currencyItems = ADM_CurrencyComponent.FindCurrencyInInventory(plyInventory); // thanks to Lag from plxyable for the cast option
 			if (currencyItems.Count() <= 0)
 			{
-
+				//Print("(-) DZ: No Wallet Found");
+				
+				vector mat[4];
+				player.GetTransform(mat);
+				item.SetTransform(mat);
 				bool insertResult = ADM_Utils.InsertAutoEquipItem(plyInventory, item);
+
 				if (!insertResult)
 				{
+					//Print("(-) DZ: Couldnt add wallet");
 					playerManager.SetTransactionMessage("Error! You don't have room for the wallet.");
 					return false;
 				}
