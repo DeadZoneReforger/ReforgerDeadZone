@@ -67,11 +67,6 @@
 		"version": ""
             },
             {
-                "modId": "59689E02BA18B635", (updated dont use)
-                "name": "UNFLIP ME",
-		"version": "1.0.0"
-            },
-            {
                 "modId": "59B70A5A19E9B51E",
                 "name": "VERGYS",
 		"version": ""
@@ -104,11 +99,6 @@
             {
                 "modId": "5CA6BA2F63DE1174",
                 "name": "M17",
-		"version": ""
-            },
-            {
-                "modId": "596C9B6D077DE741", (updated dont use)
-                "name": ".45 ACP M1A1",
 		"version": ""
             }
   ]
