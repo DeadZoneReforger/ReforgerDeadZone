@@ -66,6 +66,11 @@
                 "name": "wolfsbuildingpack",
 		"version": ""
             },
+	    {
+		"modId": "5F0D245931200FD1",
+		"name": "Railway Generator",
+		"version": ""
+            },
             {
                 "modId": "59B70A5A19E9B51E",
                 "name": "VERGYS",
