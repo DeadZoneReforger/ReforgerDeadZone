@@ -1,3 +1,22 @@
+SCR_AIWorld : "{70CCCF16487C927F}Prefabs/AI/SCR_AIWorld_Eden.et" {
+ components {
+  NavmeshWorldComponent "{5584F30E67F617AD}" {
+   NavmeshSettings NavmeshWorld "{50FC63BEBE3973C5}" {
+    NavmeshFilesConfig BaseNavmeshFilesConfig "{60B8A297F9E52831}" {
+     NavmeshFile "{AD5F99CD7C59D5E0}worlds/GameMaster/Navmeshes/GM_Eden.nmn"
+    }
+   }
+  }
+  NavmeshWorldComponent "{5584F30EEFEE1223}" {
+   NavmeshSettings ChimeraNavmeshWorld "{50FC63BEBE3973C5}" {
+    NavmeshFilesConfig BaseNavmeshFilesConfig "{60B8A297F3B4EE8A}" {
+     NavmeshFile "{C35ECF3276824654}worlds/GameMaster/Navmeshes/GM_Eden_vehicles.nmn"
+    }
+   }
+  }
+ }
+ coords 3817.716 169.109 4331.434
+}
 SCR_BaseGameMode Gamemode2 : "{E610646B582890B8}Prefabs/GameMode/Gamemode.et" {
  components {
   EPF_BasicRespawnSystemComponent "{5E18C84B48CFB4B2}" {
@@ -20,10 +39,6 @@ SCR_BaseGameMode Gamemode2 : "{E610646B582890B8}Prefabs/GameMode/Gamemode.et" {
     }
    }
   }
-  SCR_ResupplySupportStationComponent "{5EE77E21D5763C4A}" {
-   Enabled 1
-   m_fRange 0
-  }
   SCR_SupportStationManagerComponent "{5EE77E213BE27392}" {
    Enabled 1
   }
@@ -34,6 +49,8 @@ SCR_BaseGameMode Gamemode2 : "{E610646B582890B8}Prefabs/GameMode/Gamemode.et" {
   }
  }
  PlayerControllerPrefab "{CC42DCDAD458D66B}Prefabs/Characters/Core/PlayerControllerMP.et"
+ m_aDisabledResourceTypes +{
+ }
 }
 PREFIX_Restart {
  components {
