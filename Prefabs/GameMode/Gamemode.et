@@ -44,11 +44,8 @@ SCR_BaseGameMode {
   }
   SCR_RadialMenuItemsComponent "{5D652A9BE54DF3E0}" : "{6757977AD8C6080D}Configs/RadialMenu/SCR_RadialMenuItemsComponent.ct" {
   }
-  SCR_ResupplySupportStationComponent "{5EE77E21D5763C4A}" {
-   m_fRange 0
-   m_bIsEnabled 0
-  }
   SCR_SupportStationManagerComponent "{5EE77E213BE27392}" {
+   Enabled 0
   }
   SCR_TimeAndWeatherHandlerComponent "{5D66E9646AB51591}" {
    m_fDayTimeAcceleration 5
@@ -58,11 +55,10 @@ SCR_BaseGameMode {
    Streamable Disabled
   }
  }
+ m_aDisabledResourceTypes {
+  0
+ }
  {
-  SCR_AIWorld : "{70CCCF16487C927F}Prefabs/AI/SCR_AIWorld_Eden.et" {
-   ID "5EE77E2444B490D1"
-   coords 0 0 0
-  }
   ScriptedChatEntity ScriptedChatEntity {
    ID "5D7AB887782A3D0F"
    "Base style" BaseChatChannelStyle "{5DCA08D9D88BCD54}" {
